@@ -1,0 +1,36 @@
+{
+  "name": "@appshape/capture",
+  "version": "0.0.0",
+  "description": "Captures the pages of a running React app into AppShape designs, anchored to their source.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@appshape/codegen": "workspace:*",
+    "@appshape/dialect-tailwind": "workspace:*",
+    "@appshape/ir": "workspace:*",
+    "@appshape/protocol": "workspace:*",
+    "@appshape/render": "workspace:*",
+    "@jridgewell/trace-mapping": "^0.3.31",
+    "lucide-static": "^1.52.0",
+    "playwright-core": "^1.63.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "typescript": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@appshape/store": "workspace:*",
+    "@types/node": "catalog:",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "tsx": "^4.20.0",
+    "vitest": "catalog:"
+  }
+}

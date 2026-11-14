@@ -1,0 +1,182 @@
+{
+  "specVersion": 1,
+  "generatedAt": "2026-10-05T10:00:00.000Z",
+  "changeset": {
+    "id": "cs_002",
+    "title": "Contact page",
+    "description": "Add a contact page with a simple form and link to it from the navigation.",
+    "status": "ready"
+  },
+  "project": {
+    "name": "Acme web (fixture)",
+    "root": "fixtures/vite-react-router-tw4",
+    "stack": [
+      "React 19",
+      "Vite",
+      "React Router 7 (declarative routes)",
+      "Tailwind CSS v4"
+    ],
+    "adapter": "react-vite",
+    "styleDialect": "tailwind-v4"
+  },
+  "tokens": [
+    "Colors: `primary-50`, `primary-100`, `primary-600`, `primary-700` (defined in `src/index.css` under `@theme`), plus Tailwind's default palette (`gray-*`, `white`).",
+    "Radius, shadows, spacing and font sizes: Tailwind defaults (`rounded-md|lg|xl|full`, `shadow-sm|md`, `gap-*`, `text-*`).",
+    "Font: `font-sans` = Inter."
+  ],
+  "components": [
+    {
+      "name": "Navbar",
+      "file": "src/components/Navbar.tsx",
+      "kind": "project",
+      "usage": "Rendered on every page by `src/App.tsx`."
+    },
+    {
+      "name": "Button",
+      "file": "src/components/ui/button.tsx",
+      "kind": "ui-kit",
+      "usage": "Variants `primary` (default) and `secondary`; pass extra classes via `className`."
+    },
+    {
+      "name": "Badge",
+      "file": "src/components/ui/badge.tsx",
+      "kind": "ui-kit",
+      "usage": "Pill label; extra classes via `className`."
+    },
+    {
+      "name": "Accordion",
+      "file": "src/components/ui/accordion.tsx",
+      "kind": "ui-kit",
+      "usage": "`items: { question, answer }[]`; extra classes via `className`."
+    }
+  ],
+  "frames": [
+    {
+      "frameId": "f_contact",
+      "name": "Contact",
+      "kind": "new",
+      "platform": "web",
+      "target": {
+        "adapter": "react-vite",
+        "route": "/contact",
+        "file": "src/pages/Contact.tsx"
+      },
+      "viewports": [
+        "desktop 1280",
+        "mobile 390"
+      ],
+      "notes": [
+        "Same page shell as Pricing: Navbar and Footer come from the app layout."
+      ],
+      "changes": [
+        {
+          "id": "c1",
+          "opIds": [
+            "op_c1"
+          ],
+          "kind": "createFrame",
+          "title": "Create the Contact page",
+          "details": "New page component in `src/pages/Contact.tsx`, rendered at `/contact`. The tree shows the designed structure and classes.",
+          "annotations": [
+            "Contact form (behavior): On submit: prevent the page reload, clear the form and show “Thanks! We’ll get back to you soon.” below the button. There is no backend yet."
+          ],
+          "tree": "<main className=\"mx-auto w-full max-w-6xl px-6 py-16\">\n  <header className=\"max-w-2xl\">\n    <h1 className=\"text-4xl font-bold tracking-tight text-gray-900\">Contact us</h1>\n    <p className=\"mt-4 text-lg text-gray-600\">Questions about plans, billing or anything else? We are happy to help.</p>\n  </header>\n  <div className=\"mt-12 grid gap-10 md:grid-cols-3\">\n    <form className=\"flex flex-col gap-5 rounded-xl border border-gray-200 bg-white p-6 shadow-md md:col-span-2\">\n      {/* note: On submit: prevent the page reload, clear the form and show\n          “Thanks! We’ll get back to you soon.” below the button. There is no backend yet. */}\n      <label className=\"flex flex-col gap-1.5 text-sm font-medium text-gray-900\">\n        Name\n        <input type=\"text\" name=\"name\" placeholder=\"Jane Doe\" className=\"rounded-md border border-gray-300 px-3 py-2 text-sm font-normal\" />\n      </label>\n      <label className=\"flex flex-col gap-1.5 text-sm font-medium text-gray-900\">\n        Email\n        <input type=\"email\" name=\"email\" placeholder=\"jane@example.com\" className=\"rounded-md border border-gray-300 px-3 py-2 text-sm font-normal\" />\n      </label>\n      <label className=\"flex flex-col gap-1.5 text-sm font-medium text-gray-900\">\n        Message\n        <textarea name=\"message\" placeholder=\"How can we help?\" className=\"min-h-32 rounded-md border border-gray-300 px-3 py-2 text-sm font-normal\" />\n      </label>\n      <Button type=\"submit\" className=\"self-start\">Send message</Button>\n    </form>\n    <aside className=\"flex flex-col gap-2 text-sm text-gray-600\">\n      <h2 className=\"text-base font-semibold text-gray-900\">Other ways to reach us</h2>\n      <p>Email: hello@acme.example</p>\n      <p>We reply within one business day.</p>\n    </aside>\n  </div>\n</main>"
+        }
+      ]
+    },
+    {
+      "frameId": "f_pricing",
+      "name": "Pricing",
+      "kind": "imported",
+      "platform": "web",
+      "target": {
+        "adapter": "react-vite",
+        "route": "/pricing",
+        "file": "src/pages/Pricing.tsx"
+      },
+      "viewports": [
+        "desktop 1280",
+        "mobile 390"
+      ],
+      "changes": [
+        {
+          "id": "c2",
+          "opIds": [
+            "op_c2"
+          ],
+          "kind": "insert",
+          "title": "Add a “Contact” link to the navigation",
+          "scope": "component",
+          "details": "The Navbar is shared by all pages, so the link appears everywhere.",
+          "position": {
+            "parent": {
+              "id": "n_nav_links",
+              "name": "Nav links",
+              "path": "App shell › Navbar › Nav bar › Nav content",
+              "element": "div",
+              "source": {
+                "file": "src/components/Navbar.tsx",
+                "line": 10,
+                "col": 9,
+                "component": "Navbar",
+                "owner": "AppRoutes"
+              }
+            },
+            "after": {
+              "id": "n_nav_pricing",
+              "name": "Pricing link",
+              "path": "App shell › Navbar › Nav bar › Nav content › Nav links",
+              "element": "a",
+              "source": {
+                "file": "src/components/Navbar.tsx",
+                "line": 14,
+                "col": 11,
+                "component": "Navbar",
+                "owner": "AppRoutes"
+              }
+            }
+          },
+          "tree": "<NavLink to=\"/contact\" className=\"hover:text-gray-900\">Contact</NavLink>",
+          "link": {
+            "route": "/contact",
+            "frameId": "f_contact"
+          }
+        }
+      ]
+    }
+  ],
+  "requirements": [
+    "Register the page as the route `/contact` in `src/App.tsx`.",
+    "Each form field has a visible label (wrap the control in a `<label>`) and a `name` attribute: `name`, `email`, `message`."
+  ],
+  "acceptance": [
+    {
+      "changeId": "c1",
+      "text": "`/contact` renders the page with the `h1` “Contact us”."
+    },
+    {
+      "changeId": "c1",
+      "text": "The form has labelled fields `name` (text), `email` (type email) and `message` (textarea) and a submit button “Send message” built with `Button`."
+    },
+    {
+      "changeId": "c1",
+      "text": "The side panel shows “Email: hello@acme.example”."
+    },
+    {
+      "changeId": "c1",
+      "text": "Submitting the form shows “Thanks! We’ll get back to you soon.” without reloading the page (manual check)."
+    },
+    {
+      "changeId": "c2",
+      "text": "The navigation shows “Contact” (to `/contact`) after “Pricing” on every page."
+    },
+    {
+      "text": "The app still type-checks (`pnpm --filter @appshape-fixtures/vite-react-router-tw4 typecheck`)."
+    }
+  ],
+  "hints": [
+    "Routes are declared in `src/App.tsx` with `<Routes>`/`<Route>` from `react-router` (v7, declarative mode).",
+    "Use `Link`/`NavLink` from `react-router` for internal navigation.",
+    "Tailwind CSS v4: theme tokens live in `src/index.css` under `@theme`; use their utilities (e.g. `bg-primary-600`). There is no tailwind.config.js."
+  ]
+}

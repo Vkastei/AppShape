@@ -1,0 +1,25 @@
+{
+  "id": "cmp_badge",
+  "name": "Badge",
+  "kind": "ui-kit",
+  "platform": "web",
+  "source": {
+    "file": "src/components/ui/badge.tsx",
+    "exportName": "Badge"
+  },
+  "props": [
+    {
+      "name": "children",
+      "type": "node",
+      "required": true
+    },
+    {
+      "name": "className",
+      "type": "string"
+    }
+  ],
+  "usage": {
+    "instances": 0,
+    "frames": []
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "n_nlp0gnx2fu",
+  "name": "Textarea",
+  "layout": {
+    "padding": { "top": "$spacing.3", "right": "$spacing.3", "bottom": "$spacing.3", "left": "$spacing.3" }
+  },
+  "box": {
+    "width": { "mode": "fill" },
+    "minHeight": "$spacing.24"
+  },
+  "style": {
+    "background": "$color.background",
+    "color": "$color.foreground",
+    "borderWidth": 1,
+    "borderColor": "$color.input",
+    "radius": "$radius.md",
+    "fontSize": "$fontSize.sm"
+  },
+  "overrides": [
+    {
+      "when": { "viewport": "md" },
+      "layout": {
+        "padding": { "top": "$spacing.2", "right": "$spacing.3", "bottom": "$spacing.2", "left": "$spacing.3" }
+      }
+    },
+    {
+      "when": { "state": "focus" },
+      "style": {
+        "borderColor": "$color.ring",
+        "ring": { "width": 2, "color": "$color.ring/30" }
+      }
+    }
+  ],
+  "origin": "added",
+  "type": "input",
+  "inputType": "textarea",
+  "placeholder": "Write a message…",
+  "label": "Message"
+}

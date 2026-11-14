@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "type": "section",
+      "id": "b_lzknr1tnz4",
+      "name": "Imported pages",
+      "x": 24,
+      "y": -120,
+      "w": 3000,
+      "h": 1040
+    },
+    { "type": "frame", "id": "b_jpeoze5ryg", "frameId": "f_home", "x": 144, "y": 0 },
+    { "type": "frame", "id": "b_hp0zc0wk3u", "frameId": "f_today", "x": 1624, "y": 0 },
+    { "type": "frame", "id": "b_we04tvx6qc", "frameId": "f_wk5jb97n0i", "x": 3224, "y": -120 },
+    { "type": "frame", "id": "b_ue9u0xe187", "frameId": "f_h2pe14zaa9", "x": 3224, "y": 40 },
+    { "type": "frame", "id": "b_n8zw1e5zrh", "frameId": "f_ip8btm765l", "x": 3224, "y": 200 },
+    { "type": "frame", "id": "b_n0lywzoerh", "frameId": "f_hmqtv7a91j", "x": 3224, "y": 360 },
+    {
+      "type": "frame",
+      "id": "b_wc1hw89u6w",
+      "frameId": "f_hmqtv7a91j",
+      "x": 3392,
+      "y": 360,
+      "props": { "variant": "secondary" }
+    },
+    {
+      "type": "frame",
+      "id": "b_3ejva8dxcf",
+      "frameId": "f_hmqtv7a91j",
+      "x": 3560,
+      "y": 360,
+      "props": { "variant": "outline" }
+    },
+    {
+      "type": "frame",
+      "id": "b_o3rptnjshg",
+      "frameId": "f_hmqtv7a91j",
+      "x": 3728,
+      "y": 360,
+      "props": { "variant": "ghost" }
+    },
+    { "type": "frame", "id": "b_nsuad9gke5", "frameId": "f_w6prnv0r05", "x": 3224, "y": 520 }
+  ]
+}

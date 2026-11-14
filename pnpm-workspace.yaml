@@ -1,0 +1,18 @@
+packages:
+  - packages/*
+  - fixtures/*
+  - examples/*
+
+catalog:
+  "@types/node": ^24.4.0
+  typescript: ^5.9.3
+  vitest: ^4.1.8
+  zod: ^4.6.5
+
+onlyBuiltDependencies:
+  - electron
+  - esbuild
+
+ignoredBuiltDependencies:
+  # Squirrel installer support of electron-builder; AppShape builds NSIS installers
+  - electron-winstaller

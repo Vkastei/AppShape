@@ -1,0 +1,53 @@
+# Every night: the generated apps and the app fixtures with the newest React, Next.js and Tailwind
+# (and their Vite and type packages), built and checked the way AppShape checks apps: verify (B3),
+# board-vs-app pictures, animations, interactions, and importing real apps. A red run means a new
+# release of one of them broke something AppShape generates or reads; nothing is committed.
+name: Nightly (latest React, Next.js, Tailwind)
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  latest:
+    # the checks use Edge (installed on Windows runners)
+    runs-on: windows-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Newest React, Next.js and Tailwind in the generated apps and the fixtures
+        shell: bash
+        run: |
+          pnpm --filter "./fixtures/*" update --latest \
+            react react-dom @types/react @types/react-dom next \
+            tailwindcss @tailwindcss/vite @tailwindcss/postcss \
+            vite @vitejs/plugin-react
+          for pkg in react next tailwindcss vite; do
+            echo "$pkg: $(node -p "require('./fixtures/generated-next-app/node_modules/$pkg/package.json').version" 2>/dev/null || node -p "require('./fixtures/generated-vite-react-router/node_modules/$pkg/package.json').version" 2>/dev/null || echo '-')"
+          done
+
+      - name: Every app still builds and typechecks
+        run: pnpm --filter "./fixtures/*" --if-present run build
+
+      - run: pnpm --filter "./packages/*" run typecheck
+
+      # not apps.test.ts: it checks the generated files (package.json included) against the generator
+      - name: Generated apps against their designs (verify, pictures, animations, interactions)
+        run: pnpm --filter @appshape/codegen-demo exec vitest run test/b3.test.ts test/visual.test.ts test/motion.test.ts test/interactions.test.ts
+
+      - name: Importing and capturing real apps
+        run: pnpm --filter @appshape/capture test

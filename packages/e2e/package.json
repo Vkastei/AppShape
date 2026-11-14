@@ -1,0 +1,17 @@
+{
+  "name": "@appshape/e2e",
+  "private": true,
+  "version": "0.0.0",
+  "description": "End-to-end tests: the real CLI, server and editor in an installed Edge/Chrome.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "scripts": {
+    "e2e": "pnpm --filter @appshape/desktop build && playwright test",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
+  }
+}

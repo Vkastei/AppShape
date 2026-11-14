@@ -1,0 +1,20 @@
+{
+  "name": "@appshape/adapter-sdk",
+  "version": "0.0.0",
+  "description": "Interfaces for AppShape platform adapters and style dialects.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@appshape/ir": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
+  }
+}

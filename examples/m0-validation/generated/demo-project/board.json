@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "type": "text",
+      "id": "b_title",
+      "x": -80,
+      "y": -300,
+      "text": "Acme web: design board",
+      "size": 40
+    },
+    {
+      "type": "section",
+      "id": "b_section_pricing",
+      "name": "Pricing refresh",
+      "x": -80,
+      "y": -160,
+      "w": 1950,
+      "h": 3300
+    },
+    {
+      "type": "frame",
+      "id": "b_pricing_desktop",
+      "frameId": "f_pricing",
+      "x": 0,
+      "y": 0,
+      "viewportId": "desktop"
+    },
+    {
+      "type": "frame",
+      "id": "b_pricing_mobile",
+      "frameId": "f_pricing",
+      "x": 1400,
+      "y": 0,
+      "viewportId": "mobile"
+    },
+    {
+      "type": "frame",
+      "id": "b_contact_desktop",
+      "frameId": "f_contact",
+      "x": 2000,
+      "y": 0,
+      "viewportId": "desktop"
+    },
+    {
+      "type": "note",
+      "id": "b_note_pricing",
+      "x": -440,
+      "y": 0,
+      "w": 300,
+      "h": 200,
+      "text": "cs_001 is ready for the agent.\nCheck the Pro highlight on mobile.",
+      "color": "yellow",
+      "attachedTo": { "frameId": "f_pricing" }
+    },
+    {
+      "type": "arrow",
+      "id": "b_arrow_contact",
+      "from": { "itemId": "b_pricing_desktop" },
+      "to": { "itemId": "b_contact_desktop" },
+      "label": "Navbar → Contact",
+      "kind": "flow"
+    }
+  ]
+}

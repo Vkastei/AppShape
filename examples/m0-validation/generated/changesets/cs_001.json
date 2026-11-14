@@ -1,0 +1,328 @@
+{
+  "id": "cs_001",
+  "title": "Pricing refresh",
+  "description": "Make the pricing page feel more polished, highlight the Pro plan and answer common questions.",
+  "status": "ready",
+  "ops": [
+    {
+      "id": "op_c1_1",
+      "frameId": "f_pricing",
+      "op": "restyle",
+      "nodeId": "n_card_starter_root",
+      "scope": "component",
+      "style": {
+        "radius": "$radius.xl",
+        "shadow": "$shadow.md"
+      }
+    },
+    {
+      "id": "op_c1_2",
+      "frameId": "f_pricing",
+      "op": "restyle",
+      "nodeId": "n_card_pro_root",
+      "scope": "component",
+      "style": {
+        "radius": "$radius.xl",
+        "shadow": "$shadow.md"
+      }
+    },
+    {
+      "id": "op_c1_3",
+      "frameId": "f_pricing",
+      "op": "restyle",
+      "nodeId": "n_card_team_root",
+      "scope": "component",
+      "style": {
+        "radius": "$radius.xl",
+        "shadow": "$shadow.md"
+      }
+    },
+    {
+      "id": "op_c2",
+      "frameId": "f_pricing",
+      "op": "restyle",
+      "nodeId": "n_card_pro_root",
+      "scope": "instance",
+      "style": {
+        "ring": {
+          "width": 2,
+          "color": "$color.primary-600"
+        }
+      }
+    },
+    {
+      "id": "op_c3",
+      "frameId": "f_pricing",
+      "op": "insert",
+      "parentId": "n_card_pro_root",
+      "index": 0,
+      "scope": "instance",
+      "node": {
+        "id": "n_card_pro_badge",
+        "origin": "added",
+        "name": "Most popular badge",
+        "box": {
+          "alignSelf": "start",
+          "margin": {
+            "bottom": "$spacing.4"
+          }
+        },
+        "type": "instance",
+        "componentId": "cmp_badge",
+        "props": {
+          "children": "Most popular"
+        },
+        "children": [
+          {
+            "id": "n_card_pro_badge_el",
+            "origin": "added",
+            "layout": {
+              "mode": "flex",
+              "direction": "row",
+              "align": "center",
+              "padding": {
+                "top": "$spacing.0.5",
+                "bottom": "$spacing.0.5",
+                "left": "$spacing.2.5",
+                "right": "$spacing.2.5"
+              }
+            },
+            "style": {
+              "radius": "$radius.full",
+              "background": "$color.primary-50",
+              "fontSize": "$fontSize.xs",
+              "fontWeight": "$fontWeight.medium",
+              "color": "$color.primary-700"
+            },
+            "platformRaw": {
+              "tag": "span"
+            },
+            "type": "box",
+            "children": [
+              {
+                "id": "n_card_pro_badge_label",
+                "origin": "added",
+                "type": "text",
+                "text": "Most popular"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "op_c4",
+      "frameId": "f_pricing",
+      "op": "retext",
+      "nodeId": "n_title",
+      "text": "Simple pricing for every team"
+    },
+    {
+      "id": "op_c5",
+      "frameId": "f_pricing",
+      "op": "insert",
+      "parentId": "n_main",
+      "index": 2,
+      "node": {
+        "id": "n_faq",
+        "origin": "added",
+        "name": "FAQ section",
+        "box": {
+          "maxWidth": "$size.3xl",
+          "margin": {
+            "left": "auto",
+            "right": "auto",
+            "top": "$spacing.20"
+          }
+        },
+        "platformRaw": {
+          "tag": "section"
+        },
+        "type": "box",
+        "children": [
+          {
+            "id": "n_faq_title",
+            "origin": "added",
+            "name": "FAQ title",
+            "semantic": {
+              "role": "heading",
+              "level": 2
+            },
+            "style": {
+              "fontSize": "$fontSize.2xl",
+              "fontWeight": "$fontWeight.bold",
+              "letterSpacing": "$letterSpacing.tight",
+              "color": "$color.gray-900"
+            },
+            "platformRaw": {
+              "tag": "h2"
+            },
+            "type": "text",
+            "text": "Frequently asked questions"
+          },
+          {
+            "id": "n_faq_accordion",
+            "origin": "added",
+            "name": "FAQ list",
+            "box": {
+              "margin": {
+                "top": "$spacing.6"
+              }
+            },
+            "type": "instance",
+            "componentId": "cmp_accordion",
+            "props": {
+              "items": [
+                {
+                  "question": "Can I change plans later?",
+                  "answer": "Yes. You can upgrade or downgrade at any time; the change applies from the next billing period."
+                },
+                {
+                  "question": "Is there a free trial for paid plans?",
+                  "answer": "Every paid plan starts with a 14-day free trial. No credit card required."
+                },
+                {
+                  "question": "Which payment methods do you accept?",
+                  "answer": "All major credit cards and SEPA direct debit."
+                },
+                {
+                  "question": "Can I cancel anytime?",
+                  "answer": "Yes. Cancel in your account settings and keep access until the end of the billing period."
+                }
+              ]
+            },
+            "children": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "op_c6",
+      "frameId": "f_pricing",
+      "op": "delete",
+      "nodeId": "n_compare"
+    },
+    {
+      "id": "op_c7_1",
+      "frameId": "f_pricing",
+      "op": "move",
+      "nodeId": "n_card_starter_cta",
+      "parentId": "n_card_starter_root",
+      "index": 3,
+      "scope": "component"
+    },
+    {
+      "id": "op_c7_2",
+      "frameId": "f_pricing",
+      "op": "move",
+      "nodeId": "n_card_pro_cta",
+      "parentId": "n_card_pro_root",
+      "index": 4,
+      "scope": "component"
+    },
+    {
+      "id": "op_c7_3",
+      "frameId": "f_pricing",
+      "op": "move",
+      "nodeId": "n_card_team_cta",
+      "parentId": "n_card_team_root",
+      "index": 3,
+      "scope": "component"
+    },
+    {
+      "id": "op_c8_1",
+      "frameId": "f_pricing",
+      "op": "relayout",
+      "nodeId": "n_plans",
+      "layout": {
+        "gap": "$spacing.8"
+      }
+    },
+    {
+      "id": "op_c8_2",
+      "frameId": "f_pricing",
+      "op": "relayout",
+      "nodeId": "n_plans",
+      "layout": {
+        "gap": "$spacing.10"
+      },
+      "when": {
+        "viewport": "lg"
+      }
+    }
+  ],
+  "changes": [
+    {
+      "id": "c1",
+      "opIds": [
+        "op_c1_1",
+        "op_c1_2",
+        "op_c1_3"
+      ]
+    },
+    {
+      "id": "c2",
+      "opIds": [
+        "op_c2"
+      ]
+    },
+    {
+      "id": "c3",
+      "opIds": [
+        "op_c3"
+      ]
+    },
+    {
+      "id": "c4",
+      "opIds": [
+        "op_c4"
+      ]
+    },
+    {
+      "id": "c5",
+      "opIds": [
+        "op_c5"
+      ]
+    },
+    {
+      "id": "c6",
+      "opIds": [
+        "op_c6"
+      ]
+    },
+    {
+      "id": "c7",
+      "opIds": [
+        "op_c7_1",
+        "op_c7_2",
+        "op_c7_3"
+      ]
+    },
+    {
+      "id": "c8",
+      "opIds": [
+        "op_c8_1",
+        "op_c8_2"
+      ]
+    }
+  ],
+  "requirements": [
+    "Keep `src/data/plans.ts` as the single source of truth for plans. Which plan is highlighted (c2, c3) must come from the data, not from the array index or the plan name in JSX.",
+    "FAQ content is static for now. Put the questions in a new data file `src/data/faq.ts`.",
+    "Do not change the Navbar, the Footer or the Home page."
+  ],
+  "history": [
+    {
+      "status": "draft",
+      "at": "2026-10-05T10:00:00.000Z",
+      "by": "user"
+    },
+    {
+      "status": "ready",
+      "at": "2026-10-05T10:00:00.000Z",
+      "by": "user"
+    }
+  ],
+  "createdAt": "2026-10-05T10:00:00.000Z",
+  "updatedAt": "2026-10-05T10:00:00.000Z"
+}

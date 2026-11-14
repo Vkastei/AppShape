@@ -1,0 +1,3971 @@
+{
+  "id": "f_pricing",
+  "name": "Pricing",
+  "kind": "imported",
+  "platform": "web",
+  "target": {
+    "adapter": "react-vite",
+    "route": "/pricing",
+    "file": "src/pages/Pricing.tsx"
+  },
+  "viewports": [
+    {
+      "id": "desktop",
+      "width": 1280,
+      "breakpoint": "lg"
+    },
+    {
+      "id": "mobile",
+      "width": 390
+    }
+  ],
+  "baseline": {
+    "id": "n_app",
+    "origin": "imported",
+    "name": "App shell",
+    "source": {
+      "file": "src/App.tsx",
+      "line": 9,
+      "col": 5,
+      "component": "AppRoutes"
+    },
+    "layout": {
+      "mode": "flex",
+      "direction": "column"
+    },
+    "box": {
+      "minHeight": "100vh"
+    },
+    "style": {
+      "background": "$color.gray-50",
+      "fontFamily": "$fontFamily.sans"
+    },
+    "platformRaw": {
+      "tag": "div",
+      "classes": [
+        "flex",
+        "min-h-screen",
+        "flex-col",
+        "bg-gray-50",
+        "font-sans"
+      ]
+    },
+    "type": "box",
+    "children": [
+      {
+        "id": "n_navbar",
+        "origin": "imported",
+        "name": "Navbar",
+        "source": {
+          "file": "src/App.tsx",
+          "line": 10,
+          "col": 7,
+          "component": "AppRoutes"
+        },
+        "type": "instance",
+        "componentId": "cmp_navbar",
+        "props": {},
+        "children": [
+          {
+            "id": "n_nav",
+            "origin": "imported",
+            "name": "Nav bar",
+            "semantic": {
+              "role": "nav"
+            },
+            "source": {
+              "file": "src/components/Navbar.tsx",
+              "line": 5,
+              "col": 5,
+              "component": "Navbar",
+              "owner": "AppRoutes"
+            },
+            "style": {
+              "borderWidth": {
+                "bottom": 1
+              },
+              "borderColor": "$color.gray-200",
+              "background": "$color.white"
+            },
+            "platformRaw": {
+              "tag": "nav",
+              "classes": [
+                "border-b",
+                "border-gray-200",
+                "bg-white"
+              ]
+            },
+            "type": "box",
+            "children": [
+              {
+                "id": "n_nav_inner",
+                "origin": "imported",
+                "name": "Nav content",
+                "source": {
+                  "file": "src/components/Navbar.tsx",
+                  "line": 6,
+                  "col": 7,
+                  "component": "Navbar",
+                  "owner": "AppRoutes"
+                },
+                "layout": {
+                  "mode": "flex",
+                  "direction": "row",
+                  "align": "center",
+                  "justify": "between",
+                  "padding": {
+                    "top": "$spacing.4",
+                    "bottom": "$spacing.4",
+                    "left": "$spacing.6",
+                    "right": "$spacing.6"
+                  }
+                },
+                "box": {
+                  "maxWidth": "$size.6xl",
+                  "margin": {
+                    "left": "auto",
+                    "right": "auto"
+                  }
+                },
+                "platformRaw": {
+                  "tag": "div",
+                  "classes": [
+                    "mx-auto",
+                    "flex",
+                    "max-w-6xl",
+                    "items-center",
+                    "justify-between",
+                    "px-6",
+                    "py-4"
+                  ]
+                },
+                "type": "box",
+                "children": [
+                  {
+                    "id": "n_nav_logo",
+                    "origin": "imported",
+                    "name": "Logo",
+                    "source": {
+                      "file": "src/components/Navbar.tsx",
+                      "line": 7,
+                      "col": 9,
+                      "component": "Navbar",
+                      "owner": "AppRoutes"
+                    },
+                    "style": {
+                      "fontSize": "$fontSize.lg",
+                      "fontWeight": "$fontWeight.bold",
+                      "color": "$color.gray-900"
+                    },
+                    "platformRaw": {
+                      "tag": "a",
+                      "classes": [
+                        "text-lg",
+                        "font-bold",
+                        "text-gray-900"
+                      ]
+                    },
+                    "type": "link",
+                    "href": "/",
+                    "children": [
+                      {
+                        "id": "n_nav_logo_label",
+                        "origin": "imported",
+                        "type": "text",
+                        "text": "Acme"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "n_nav_links",
+                    "origin": "imported",
+                    "name": "Nav links",
+                    "source": {
+                      "file": "src/components/Navbar.tsx",
+                      "line": 10,
+                      "col": 9,
+                      "component": "Navbar",
+                      "owner": "AppRoutes"
+                    },
+                    "layout": {
+                      "mode": "flex",
+                      "direction": "row",
+                      "align": "center",
+                      "gap": "$spacing.6"
+                    },
+                    "style": {
+                      "fontSize": "$fontSize.sm",
+                      "fontWeight": "$fontWeight.medium",
+                      "color": "$color.gray-600"
+                    },
+                    "platformRaw": {
+                      "tag": "div",
+                      "classes": [
+                        "flex",
+                        "items-center",
+                        "gap-6",
+                        "text-sm",
+                        "font-medium",
+                        "text-gray-600"
+                      ]
+                    },
+                    "type": "box",
+                    "children": [
+                      {
+                        "id": "n_nav_home",
+                        "origin": "imported",
+                        "name": "Home link",
+                        "source": {
+                          "file": "src/components/Navbar.tsx",
+                          "line": 11,
+                          "col": 11,
+                          "component": "Navbar",
+                          "owner": "AppRoutes"
+                        },
+                        "overrides": [
+                          {
+                            "when": {
+                              "state": "hover"
+                            },
+                            "style": {
+                              "color": "$color.gray-900"
+                            }
+                          }
+                        ],
+                        "platformRaw": {
+                          "tag": "a",
+                          "classes": [
+                            "hover:text-gray-900"
+                          ]
+                        },
+                        "type": "link",
+                        "href": "/",
+                        "children": [
+                          {
+                            "id": "n_nav_home_label",
+                            "origin": "imported",
+                            "type": "text",
+                            "text": "Home"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "n_nav_pricing",
+                        "origin": "imported",
+                        "name": "Pricing link",
+                        "source": {
+                          "file": "src/components/Navbar.tsx",
+                          "line": 14,
+                          "col": 11,
+                          "component": "Navbar",
+                          "owner": "AppRoutes"
+                        },
+                        "overrides": [
+                          {
+                            "when": {
+                              "state": "hover"
+                            },
+                            "style": {
+                              "color": "$color.gray-900"
+                            }
+                          }
+                        ],
+                        "platformRaw": {
+                          "tag": "a",
+                          "classes": [
+                            "hover:text-gray-900"
+                          ]
+                        },
+                        "type": "link",
+                        "href": "/pricing",
+                        "children": [
+                          {
+                            "id": "n_nav_pricing_label",
+                            "origin": "imported",
+                            "type": "text",
+                            "text": "Pricing"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "n_main",
+        "origin": "imported",
+        "name": "Pricing page",
+        "semantic": {
+          "role": "main"
+        },
+        "source": {
+          "file": "src/pages/Pricing.tsx",
+          "line": 7,
+          "col": 5,
+          "component": "Pricing",
+          "owner": "AppRoutes"
+        },
+        "layout": {
+          "mode": "block",
+          "padding": {
+            "top": "$spacing.16",
+            "bottom": "$spacing.16",
+            "left": "$spacing.6",
+            "right": "$spacing.6"
+          }
+        },
+        "box": {
+          "width": {
+            "mode": "fill"
+          },
+          "maxWidth": "$size.6xl",
+          "margin": {
+            "left": "auto",
+            "right": "auto"
+          }
+        },
+        "platformRaw": {
+          "tag": "main",
+          "classes": [
+            "mx-auto",
+            "w-full",
+            "max-w-6xl",
+            "px-6",
+            "py-16"
+          ]
+        },
+        "type": "box",
+        "children": [
+          {
+            "id": "n_header",
+            "origin": "imported",
+            "name": "Header",
+            "semantic": {
+              "role": "header"
+            },
+            "source": {
+              "file": "src/pages/Pricing.tsx",
+              "line": 8,
+              "col": 7,
+              "component": "Pricing",
+              "owner": "AppRoutes"
+            },
+            "box": {
+              "maxWidth": "$size.2xl",
+              "margin": {
+                "left": "auto",
+                "right": "auto"
+              }
+            },
+            "style": {
+              "textAlign": "center"
+            },
+            "platformRaw": {
+              "tag": "header",
+              "classes": [
+                "mx-auto",
+                "max-w-2xl",
+                "text-center"
+              ]
+            },
+            "type": "box",
+            "children": [
+              {
+                "id": "n_title",
+                "origin": "imported",
+                "name": "Title",
+                "semantic": {
+                  "role": "heading",
+                  "level": 1
+                },
+                "source": {
+                  "file": "src/pages/Pricing.tsx",
+                  "line": 9,
+                  "col": 9,
+                  "component": "Pricing",
+                  "owner": "AppRoutes"
+                },
+                "style": {
+                  "fontSize": "$fontSize.4xl",
+                  "fontWeight": "$fontWeight.bold",
+                  "letterSpacing": "$letterSpacing.tight",
+                  "color": "$color.gray-900"
+                },
+                "platformRaw": {
+                  "tag": "h1",
+                  "classes": [
+                    "text-4xl",
+                    "font-bold",
+                    "tracking-tight",
+                    "text-gray-900"
+                  ]
+                },
+                "type": "text",
+                "text": "Pricing"
+              },
+              {
+                "id": "n_subtitle",
+                "origin": "imported",
+                "name": "Subtitle",
+                "source": {
+                  "file": "src/pages/Pricing.tsx",
+                  "line": 10,
+                  "col": 9,
+                  "component": "Pricing",
+                  "owner": "AppRoutes"
+                },
+                "box": {
+                  "margin": {
+                    "top": "$spacing.4"
+                  }
+                },
+                "style": {
+                  "fontSize": "$fontSize.lg",
+                  "color": "$color.gray-600"
+                },
+                "platformRaw": {
+                  "tag": "p",
+                  "classes": [
+                    "mt-4",
+                    "text-lg",
+                    "text-gray-600"
+                  ]
+                },
+                "type": "text",
+                "text": "Start for free and upgrade when your project grows."
+              }
+            ]
+          },
+          {
+            "id": "n_plans",
+            "origin": "imported",
+            "name": "Plans grid",
+            "source": {
+              "file": "src/pages/Pricing.tsx",
+              "line": 12,
+              "col": 7,
+              "component": "Pricing",
+              "owner": "AppRoutes"
+            },
+            "layout": {
+              "mode": "grid",
+              "columns": 1,
+              "gap": "$spacing.6"
+            },
+            "overrides": [
+              {
+                "when": {
+                  "viewport": "md"
+                },
+                "layout": {
+                  "columns": 3
+                }
+              }
+            ],
+            "box": {
+              "margin": {
+                "top": "$spacing.12"
+              }
+            },
+            "platformRaw": {
+              "tag": "div",
+              "classes": [
+                "mt-12",
+                "grid",
+                "gap-6",
+                "md:grid-cols-3"
+              ]
+            },
+            "type": "list",
+            "dataHint": "plans array in src/data/plans.ts",
+            "children": [
+              {
+                "id": "n_card_starter",
+                "origin": "imported",
+                "name": "PricingCard (Starter)",
+                "source": {
+                  "file": "src/pages/Pricing.tsx",
+                  "line": 14,
+                  "col": 11,
+                  "component": "Pricing",
+                  "repeated": {
+                    "count": 3,
+                    "index": 0,
+                    "key": "starter"
+                  }
+                },
+                "type": "instance",
+                "componentId": "cmp_pricing_card",
+                "props": {
+                  "plan": {
+                    "id": "starter",
+                    "name": "Starter",
+                    "price": 0,
+                    "description": "For side projects and trying things out.",
+                    "features": [
+                      "1 project",
+                      "Community support",
+                      "Basic analytics"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "id": "n_card_starter_root",
+                    "origin": "imported",
+                    "name": "Card",
+                    "source": {
+                      "file": "src/components/PricingCard.tsx",
+                      "line": 6,
+                      "col": 5,
+                      "component": "PricingCard",
+                      "owner": "Pricing"
+                    },
+                    "layout": {
+                      "mode": "flex",
+                      "direction": "column",
+                      "padding": {
+                        "top": "$spacing.6",
+                        "right": "$spacing.6",
+                        "bottom": "$spacing.6",
+                        "left": "$spacing.6"
+                      }
+                    },
+                    "style": {
+                      "radius": "$radius.md",
+                      "borderWidth": 1,
+                      "borderColor": "$color.gray-200",
+                      "background": "$color.white",
+                      "shadow": "$shadow.sm"
+                    },
+                    "platformRaw": {
+                      "tag": "div",
+                      "classes": [
+                        "flex",
+                        "flex-col",
+                        "rounded-md",
+                        "border",
+                        "border-gray-200",
+                        "bg-white",
+                        "p-6",
+                        "shadow-sm"
+                      ]
+                    },
+                    "type": "box",
+                    "children": [
+                      {
+                        "id": "n_card_starter_name",
+                        "origin": "imported",
+                        "name": "Plan name",
+                        "semantic": {
+                          "role": "heading",
+                          "level": 2
+                        },
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 7,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "style": {
+                          "fontSize": "$fontSize.lg",
+                          "fontWeight": "$fontWeight.semibold",
+                          "color": "$color.gray-900"
+                        },
+                        "platformRaw": {
+                          "tag": "h2",
+                          "classes": [
+                            "text-lg",
+                            "font-semibold",
+                            "text-gray-900"
+                          ]
+                        },
+                        "type": "text",
+                        "text": "Starter"
+                      },
+                      {
+                        "id": "n_card_starter_desc",
+                        "origin": "imported",
+                        "name": "Plan description",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 8,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "box": {
+                          "margin": {
+                            "top": "$spacing.2"
+                          }
+                        },
+                        "style": {
+                          "fontSize": "$fontSize.sm",
+                          "color": "$color.gray-600"
+                        },
+                        "platformRaw": {
+                          "tag": "p",
+                          "classes": [
+                            "mt-2",
+                            "text-sm",
+                            "text-gray-600"
+                          ]
+                        },
+                        "type": "text",
+                        "text": "For side projects and trying things out."
+                      },
+                      {
+                        "id": "n_card_starter_price",
+                        "origin": "imported",
+                        "name": "Price",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 9,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "layout": {
+                          "mode": "flex",
+                          "direction": "row",
+                          "align": "baseline",
+                          "gap": "$spacing.1"
+                        },
+                        "box": {
+                          "margin": {
+                            "top": "$spacing.6"
+                          }
+                        },
+                        "platformRaw": {
+                          "tag": "p",
+                          "classes": [
+                            "mt-6",
+                            "flex",
+                            "items-baseline",
+                            "gap-1"
+                          ]
+                        },
+                        "type": "box",
+                        "children": [
+                          {
+                            "id": "n_card_starter_amount",
+                            "origin": "imported",
+                            "name": "Amount",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 10,
+                              "col": 9,
+                              "component": "PricingCard",
+                              "owner": "Pricing"
+                            },
+                            "style": {
+                              "fontSize": "$fontSize.4xl",
+                              "fontWeight": "$fontWeight.bold",
+                              "color": "$color.gray-900"
+                            },
+                            "platformRaw": {
+                              "tag": "span",
+                              "classes": [
+                                "text-4xl",
+                                "font-bold",
+                                "text-gray-900"
+                              ]
+                            },
+                            "type": "text",
+                            "text": "$0"
+                          },
+                          {
+                            "id": "n_card_starter_period",
+                            "origin": "imported",
+                            "name": "Period",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 11,
+                              "col": 9,
+                              "component": "PricingCard",
+                              "owner": "Pricing"
+                            },
+                            "style": {
+                              "fontSize": "$fontSize.sm",
+                              "color": "$color.gray-500"
+                            },
+                            "platformRaw": {
+                              "tag": "span",
+                              "classes": [
+                                "text-sm",
+                                "text-gray-500"
+                              ]
+                            },
+                            "type": "text",
+                            "text": "/month"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "n_card_starter_features",
+                        "origin": "imported",
+                        "name": "Features",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 13,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "layout": {
+                          "mode": "flex",
+                          "direction": "column",
+                          "gap": "$spacing.2"
+                        },
+                        "box": {
+                          "margin": {
+                            "top": "$spacing.6"
+                          },
+                          "grow": 1
+                        },
+                        "style": {
+                          "fontSize": "$fontSize.sm",
+                          "color": "$color.gray-700"
+                        },
+                        "platformRaw": {
+                          "tag": "ul",
+                          "classes": [
+                            "mt-6",
+                            "flex",
+                            "flex-1",
+                            "flex-col",
+                            "gap-2",
+                            "text-sm",
+                            "text-gray-700"
+                          ]
+                        },
+                        "type": "list",
+                        "dataHint": "plan.features",
+                        "children": [
+                          {
+                            "id": "n_card_starter_f1",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 3,
+                                "index": 0,
+                                "key": "1 project"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ 1 project"
+                          },
+                          {
+                            "id": "n_card_starter_f2",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 3,
+                                "index": 1,
+                                "key": "Community support"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ Community support"
+                          },
+                          {
+                            "id": "n_card_starter_f3",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 3,
+                                "index": 2,
+                                "key": "Basic analytics"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ Basic analytics"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "n_card_starter_cta",
+                        "origin": "imported",
+                        "name": "CTA",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 18,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "type": "instance",
+                        "componentId": "cmp_button",
+                        "props": {
+                          "className": "mt-8 w-full",
+                          "children": "Get started"
+                        },
+                        "children": [
+                          {
+                            "id": "n_card_starter_cta_button",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/ui/button.tsx",
+                              "line": 14,
+                              "col": 5,
+                              "component": "Button",
+                              "owner": "PricingCard"
+                            },
+                            "layout": {
+                              "mode": "flex",
+                              "direction": "row",
+                              "align": "center",
+                              "justify": "center",
+                              "padding": {
+                                "top": "$spacing.2",
+                                "bottom": "$spacing.2",
+                                "left": "$spacing.4",
+                                "right": "$spacing.4"
+                              }
+                            },
+                            "box": {
+                              "width": {
+                                "mode": "fill"
+                              },
+                              "margin": {
+                                "top": "$spacing.8"
+                              }
+                            },
+                            "style": {
+                              "radius": "$radius.md",
+                              "fontSize": "$fontSize.sm",
+                              "fontWeight": "$fontWeight.medium",
+                              "background": "$color.primary-600",
+                              "color": "$color.white"
+                            },
+                            "overrides": [
+                              {
+                                "when": {
+                                  "state": "hover"
+                                },
+                                "style": {
+                                  "background": "$color.primary-700"
+                                }
+                              }
+                            ],
+                            "platformRaw": {
+                              "tag": "button",
+                              "classes": [
+                                "inline-flex",
+                                "items-center",
+                                "justify-center",
+                                "rounded-md",
+                                "px-4",
+                                "py-2",
+                                "text-sm",
+                                "font-medium",
+                                "bg-primary-600",
+                                "text-white",
+                                "hover:bg-primary-700",
+                                "mt-8",
+                                "w-full"
+                              ]
+                            },
+                            "type": "button",
+                            "children": [
+                              {
+                                "id": "n_card_starter_cta_label",
+                                "origin": "imported",
+                                "type": "text",
+                                "text": "Get started"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n_card_pro",
+                "origin": "imported",
+                "name": "PricingCard (Pro)",
+                "source": {
+                  "file": "src/pages/Pricing.tsx",
+                  "line": 14,
+                  "col": 11,
+                  "component": "Pricing",
+                  "repeated": {
+                    "count": 3,
+                    "index": 1,
+                    "key": "pro"
+                  }
+                },
+                "type": "instance",
+                "componentId": "cmp_pricing_card",
+                "props": {
+                  "plan": {
+                    "id": "pro",
+                    "name": "Pro",
+                    "price": 19,
+                    "description": "For professionals shipping real products.",
+                    "features": [
+                      "Unlimited projects",
+                      "Email support",
+                      "Advanced analytics",
+                      "Custom domains"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "id": "n_card_pro_root",
+                    "origin": "imported",
+                    "name": "Card",
+                    "source": {
+                      "file": "src/components/PricingCard.tsx",
+                      "line": 6,
+                      "col": 5,
+                      "component": "PricingCard",
+                      "owner": "Pricing"
+                    },
+                    "layout": {
+                      "mode": "flex",
+                      "direction": "column",
+                      "padding": {
+                        "top": "$spacing.6",
+                        "right": "$spacing.6",
+                        "bottom": "$spacing.6",
+                        "left": "$spacing.6"
+                      }
+                    },
+                    "style": {
+                      "radius": "$radius.md",
+                      "borderWidth": 1,
+                      "borderColor": "$color.gray-200",
+                      "background": "$color.white",
+                      "shadow": "$shadow.sm"
+                    },
+                    "platformRaw": {
+                      "tag": "div",
+                      "classes": [
+                        "flex",
+                        "flex-col",
+                        "rounded-md",
+                        "border",
+                        "border-gray-200",
+                        "bg-white",
+                        "p-6",
+                        "shadow-sm"
+                      ]
+                    },
+                    "type": "box",
+                    "children": [
+                      {
+                        "id": "n_card_pro_name",
+                        "origin": "imported",
+                        "name": "Plan name",
+                        "semantic": {
+                          "role": "heading",
+                          "level": 2
+                        },
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 7,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "style": {
+                          "fontSize": "$fontSize.lg",
+                          "fontWeight": "$fontWeight.semibold",
+                          "color": "$color.gray-900"
+                        },
+                        "platformRaw": {
+                          "tag": "h2",
+                          "classes": [
+                            "text-lg",
+                            "font-semibold",
+                            "text-gray-900"
+                          ]
+                        },
+                        "type": "text",
+                        "text": "Pro"
+                      },
+                      {
+                        "id": "n_card_pro_desc",
+                        "origin": "imported",
+                        "name": "Plan description",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 8,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "box": {
+                          "margin": {
+                            "top": "$spacing.2"
+                          }
+                        },
+                        "style": {
+                          "fontSize": "$fontSize.sm",
+                          "color": "$color.gray-600"
+                        },
+                        "platformRaw": {
+                          "tag": "p",
+                          "classes": [
+                            "mt-2",
+                            "text-sm",
+                            "text-gray-600"
+                          ]
+                        },
+                        "type": "text",
+                        "text": "For professionals shipping real products."
+                      },
+                      {
+                        "id": "n_card_pro_price",
+                        "origin": "imported",
+                        "name": "Price",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 9,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "layout": {
+                          "mode": "flex",
+                          "direction": "row",
+                          "align": "baseline",
+                          "gap": "$spacing.1"
+                        },
+                        "box": {
+                          "margin": {
+                            "top": "$spacing.6"
+                          }
+                        },
+                        "platformRaw": {
+                          "tag": "p",
+                          "classes": [
+                            "mt-6",
+                            "flex",
+                            "items-baseline",
+                            "gap-1"
+                          ]
+                        },
+                        "type": "box",
+                        "children": [
+                          {
+                            "id": "n_card_pro_amount",
+                            "origin": "imported",
+                            "name": "Amount",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 10,
+                              "col": 9,
+                              "component": "PricingCard",
+                              "owner": "Pricing"
+                            },
+                            "style": {
+                              "fontSize": "$fontSize.4xl",
+                              "fontWeight": "$fontWeight.bold",
+                              "color": "$color.gray-900"
+                            },
+                            "platformRaw": {
+                              "tag": "span",
+                              "classes": [
+                                "text-4xl",
+                                "font-bold",
+                                "text-gray-900"
+                              ]
+                            },
+                            "type": "text",
+                            "text": "$19"
+                          },
+                          {
+                            "id": "n_card_pro_period",
+                            "origin": "imported",
+                            "name": "Period",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 11,
+                              "col": 9,
+                              "component": "PricingCard",
+                              "owner": "Pricing"
+                            },
+                            "style": {
+                              "fontSize": "$fontSize.sm",
+                              "color": "$color.gray-500"
+                            },
+                            "platformRaw": {
+                              "tag": "span",
+                              "classes": [
+                                "text-sm",
+                                "text-gray-500"
+                              ]
+                            },
+                            "type": "text",
+                            "text": "/month"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "n_card_pro_features",
+                        "origin": "imported",
+                        "name": "Features",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 13,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "layout": {
+                          "mode": "flex",
+                          "direction": "column",
+                          "gap": "$spacing.2"
+                        },
+                        "box": {
+                          "margin": {
+                            "top": "$spacing.6"
+                          },
+                          "grow": 1
+                        },
+                        "style": {
+                          "fontSize": "$fontSize.sm",
+                          "color": "$color.gray-700"
+                        },
+                        "platformRaw": {
+                          "tag": "ul",
+                          "classes": [
+                            "mt-6",
+                            "flex",
+                            "flex-1",
+                            "flex-col",
+                            "gap-2",
+                            "text-sm",
+                            "text-gray-700"
+                          ]
+                        },
+                        "type": "list",
+                        "dataHint": "plan.features",
+                        "children": [
+                          {
+                            "id": "n_card_pro_f1",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 4,
+                                "index": 0,
+                                "key": "Unlimited projects"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ Unlimited projects"
+                          },
+                          {
+                            "id": "n_card_pro_f2",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 4,
+                                "index": 1,
+                                "key": "Email support"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ Email support"
+                          },
+                          {
+                            "id": "n_card_pro_f3",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 4,
+                                "index": 2,
+                                "key": "Advanced analytics"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ Advanced analytics"
+                          },
+                          {
+                            "id": "n_card_pro_f4",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 4,
+                                "index": 3,
+                                "key": "Custom domains"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ Custom domains"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "n_card_pro_cta",
+                        "origin": "imported",
+                        "name": "CTA",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 18,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "type": "instance",
+                        "componentId": "cmp_button",
+                        "props": {
+                          "className": "mt-8 w-full",
+                          "children": "Get started"
+                        },
+                        "children": [
+                          {
+                            "id": "n_card_pro_cta_button",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/ui/button.tsx",
+                              "line": 14,
+                              "col": 5,
+                              "component": "Button",
+                              "owner": "PricingCard"
+                            },
+                            "layout": {
+                              "mode": "flex",
+                              "direction": "row",
+                              "align": "center",
+                              "justify": "center",
+                              "padding": {
+                                "top": "$spacing.2",
+                                "bottom": "$spacing.2",
+                                "left": "$spacing.4",
+                                "right": "$spacing.4"
+                              }
+                            },
+                            "box": {
+                              "width": {
+                                "mode": "fill"
+                              },
+                              "margin": {
+                                "top": "$spacing.8"
+                              }
+                            },
+                            "style": {
+                              "radius": "$radius.md",
+                              "fontSize": "$fontSize.sm",
+                              "fontWeight": "$fontWeight.medium",
+                              "background": "$color.primary-600",
+                              "color": "$color.white"
+                            },
+                            "overrides": [
+                              {
+                                "when": {
+                                  "state": "hover"
+                                },
+                                "style": {
+                                  "background": "$color.primary-700"
+                                }
+                              }
+                            ],
+                            "platformRaw": {
+                              "tag": "button",
+                              "classes": [
+                                "inline-flex",
+                                "items-center",
+                                "justify-center",
+                                "rounded-md",
+                                "px-4",
+                                "py-2",
+                                "text-sm",
+                                "font-medium",
+                                "bg-primary-600",
+                                "text-white",
+                                "hover:bg-primary-700",
+                                "mt-8",
+                                "w-full"
+                              ]
+                            },
+                            "type": "button",
+                            "children": [
+                              {
+                                "id": "n_card_pro_cta_label",
+                                "origin": "imported",
+                                "type": "text",
+                                "text": "Get started"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n_card_team",
+                "origin": "imported",
+                "name": "PricingCard (Team)",
+                "source": {
+                  "file": "src/pages/Pricing.tsx",
+                  "line": 14,
+                  "col": 11,
+                  "component": "Pricing",
+                  "repeated": {
+                    "count": 3,
+                    "index": 2,
+                    "key": "team"
+                  }
+                },
+                "type": "instance",
+                "componentId": "cmp_pricing_card",
+                "props": {
+                  "plan": {
+                    "id": "team",
+                    "name": "Team",
+                    "price": 49,
+                    "description": "For teams that build many apps together.",
+                    "features": [
+                      "Everything in Pro",
+                      "Shared workspaces",
+                      "Role-based access",
+                      "Priority support"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "id": "n_card_team_root",
+                    "origin": "imported",
+                    "name": "Card",
+                    "source": {
+                      "file": "src/components/PricingCard.tsx",
+                      "line": 6,
+                      "col": 5,
+                      "component": "PricingCard",
+                      "owner": "Pricing"
+                    },
+                    "layout": {
+                      "mode": "flex",
+                      "direction": "column",
+                      "padding": {
+                        "top": "$spacing.6",
+                        "right": "$spacing.6",
+                        "bottom": "$spacing.6",
+                        "left": "$spacing.6"
+                      }
+                    },
+                    "style": {
+                      "radius": "$radius.md",
+                      "borderWidth": 1,
+                      "borderColor": "$color.gray-200",
+                      "background": "$color.white",
+                      "shadow": "$shadow.sm"
+                    },
+                    "platformRaw": {
+                      "tag": "div",
+                      "classes": [
+                        "flex",
+                        "flex-col",
+                        "rounded-md",
+                        "border",
+                        "border-gray-200",
+                        "bg-white",
+                        "p-6",
+                        "shadow-sm"
+                      ]
+                    },
+                    "type": "box",
+                    "children": [
+                      {
+                        "id": "n_card_team_name",
+                        "origin": "imported",
+                        "name": "Plan name",
+                        "semantic": {
+                          "role": "heading",
+                          "level": 2
+                        },
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 7,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "style": {
+                          "fontSize": "$fontSize.lg",
+                          "fontWeight": "$fontWeight.semibold",
+                          "color": "$color.gray-900"
+                        },
+                        "platformRaw": {
+                          "tag": "h2",
+                          "classes": [
+                            "text-lg",
+                            "font-semibold",
+                            "text-gray-900"
+                          ]
+                        },
+                        "type": "text",
+                        "text": "Team"
+                      },
+                      {
+                        "id": "n_card_team_desc",
+                        "origin": "imported",
+                        "name": "Plan description",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 8,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "box": {
+                          "margin": {
+                            "top": "$spacing.2"
+                          }
+                        },
+                        "style": {
+                          "fontSize": "$fontSize.sm",
+                          "color": "$color.gray-600"
+                        },
+                        "platformRaw": {
+                          "tag": "p",
+                          "classes": [
+                            "mt-2",
+                            "text-sm",
+                            "text-gray-600"
+                          ]
+                        },
+                        "type": "text",
+                        "text": "For teams that build many apps together."
+                      },
+                      {
+                        "id": "n_card_team_price",
+                        "origin": "imported",
+                        "name": "Price",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 9,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "layout": {
+                          "mode": "flex",
+                          "direction": "row",
+                          "align": "baseline",
+                          "gap": "$spacing.1"
+                        },
+                        "box": {
+                          "margin": {
+                            "top": "$spacing.6"
+                          }
+                        },
+                        "platformRaw": {
+                          "tag": "p",
+                          "classes": [
+                            "mt-6",
+                            "flex",
+                            "items-baseline",
+                            "gap-1"
+                          ]
+                        },
+                        "type": "box",
+                        "children": [
+                          {
+                            "id": "n_card_team_amount",
+                            "origin": "imported",
+                            "name": "Amount",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 10,
+                              "col": 9,
+                              "component": "PricingCard",
+                              "owner": "Pricing"
+                            },
+                            "style": {
+                              "fontSize": "$fontSize.4xl",
+                              "fontWeight": "$fontWeight.bold",
+                              "color": "$color.gray-900"
+                            },
+                            "platformRaw": {
+                              "tag": "span",
+                              "classes": [
+                                "text-4xl",
+                                "font-bold",
+                                "text-gray-900"
+                              ]
+                            },
+                            "type": "text",
+                            "text": "$49"
+                          },
+                          {
+                            "id": "n_card_team_period",
+                            "origin": "imported",
+                            "name": "Period",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 11,
+                              "col": 9,
+                              "component": "PricingCard",
+                              "owner": "Pricing"
+                            },
+                            "style": {
+                              "fontSize": "$fontSize.sm",
+                              "color": "$color.gray-500"
+                            },
+                            "platformRaw": {
+                              "tag": "span",
+                              "classes": [
+                                "text-sm",
+                                "text-gray-500"
+                              ]
+                            },
+                            "type": "text",
+                            "text": "/month"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "n_card_team_features",
+                        "origin": "imported",
+                        "name": "Features",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 13,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "layout": {
+                          "mode": "flex",
+                          "direction": "column",
+                          "gap": "$spacing.2"
+                        },
+                        "box": {
+                          "margin": {
+                            "top": "$spacing.6"
+                          },
+                          "grow": 1
+                        },
+                        "style": {
+                          "fontSize": "$fontSize.sm",
+                          "color": "$color.gray-700"
+                        },
+                        "platformRaw": {
+                          "tag": "ul",
+                          "classes": [
+                            "mt-6",
+                            "flex",
+                            "flex-1",
+                            "flex-col",
+                            "gap-2",
+                            "text-sm",
+                            "text-gray-700"
+                          ]
+                        },
+                        "type": "list",
+                        "dataHint": "plan.features",
+                        "children": [
+                          {
+                            "id": "n_card_team_f1",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 4,
+                                "index": 0,
+                                "key": "Everything in Pro"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ Everything in Pro"
+                          },
+                          {
+                            "id": "n_card_team_f2",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 4,
+                                "index": 1,
+                                "key": "Shared workspaces"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ Shared workspaces"
+                          },
+                          {
+                            "id": "n_card_team_f3",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 4,
+                                "index": 2,
+                                "key": "Role-based access"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ Role-based access"
+                          },
+                          {
+                            "id": "n_card_team_f4",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 4,
+                                "index": 3,
+                                "key": "Priority support"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ Priority support"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "n_card_team_cta",
+                        "origin": "imported",
+                        "name": "CTA",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 18,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "type": "instance",
+                        "componentId": "cmp_button",
+                        "props": {
+                          "className": "mt-8 w-full",
+                          "children": "Get started"
+                        },
+                        "children": [
+                          {
+                            "id": "n_card_team_cta_button",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/ui/button.tsx",
+                              "line": 14,
+                              "col": 5,
+                              "component": "Button",
+                              "owner": "PricingCard"
+                            },
+                            "layout": {
+                              "mode": "flex",
+                              "direction": "row",
+                              "align": "center",
+                              "justify": "center",
+                              "padding": {
+                                "top": "$spacing.2",
+                                "bottom": "$spacing.2",
+                                "left": "$spacing.4",
+                                "right": "$spacing.4"
+                              }
+                            },
+                            "box": {
+                              "width": {
+                                "mode": "fill"
+                              },
+                              "margin": {
+                                "top": "$spacing.8"
+                              }
+                            },
+                            "style": {
+                              "radius": "$radius.md",
+                              "fontSize": "$fontSize.sm",
+                              "fontWeight": "$fontWeight.medium",
+                              "background": "$color.primary-600",
+                              "color": "$color.white"
+                            },
+                            "overrides": [
+                              {
+                                "when": {
+                                  "state": "hover"
+                                },
+                                "style": {
+                                  "background": "$color.primary-700"
+                                }
+                              }
+                            ],
+                            "platformRaw": {
+                              "tag": "button",
+                              "classes": [
+                                "inline-flex",
+                                "items-center",
+                                "justify-center",
+                                "rounded-md",
+                                "px-4",
+                                "py-2",
+                                "text-sm",
+                                "font-medium",
+                                "bg-primary-600",
+                                "text-white",
+                                "hover:bg-primary-700",
+                                "mt-8",
+                                "w-full"
+                              ]
+                            },
+                            "type": "button",
+                            "children": [
+                              {
+                                "id": "n_card_team_cta_label",
+                                "origin": "imported",
+                                "type": "text",
+                                "text": "Get started"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "n_compare",
+            "origin": "imported",
+            "name": "Compare link row",
+            "source": {
+              "file": "src/pages/Pricing.tsx",
+              "line": 17,
+              "col": 7,
+              "component": "Pricing",
+              "owner": "AppRoutes"
+            },
+            "box": {
+              "margin": {
+                "top": "$spacing.10"
+              }
+            },
+            "style": {
+              "textAlign": "center"
+            },
+            "platformRaw": {
+              "tag": "p",
+              "classes": [
+                "mt-10",
+                "text-center"
+              ]
+            },
+            "type": "box",
+            "children": [
+              {
+                "id": "n_compare_link",
+                "origin": "imported",
+                "name": "Compare link",
+                "source": {
+                  "file": "src/pages/Pricing.tsx",
+                  "line": 18,
+                  "col": 9,
+                  "component": "Pricing",
+                  "owner": "AppRoutes"
+                },
+                "style": {
+                  "fontSize": "$fontSize.sm",
+                  "fontWeight": "$fontWeight.medium",
+                  "color": "$color.primary-600"
+                },
+                "overrides": [
+                  {
+                    "when": {
+                      "state": "hover"
+                    },
+                    "style": {
+                      "color": "$color.primary-700"
+                    }
+                  }
+                ],
+                "platformRaw": {
+                  "tag": "a",
+                  "classes": [
+                    "text-sm",
+                    "font-medium",
+                    "text-primary-600",
+                    "hover:text-primary-700"
+                  ]
+                },
+                "type": "link",
+                "href": "/compare",
+                "children": [
+                  {
+                    "id": "n_compare_label",
+                    "origin": "imported",
+                    "type": "text",
+                    "text": "Compare all features →"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "n_footer",
+        "origin": "imported",
+        "name": "Footer",
+        "source": {
+          "file": "src/App.tsx",
+          "line": 15,
+          "col": 7,
+          "component": "AppRoutes"
+        },
+        "type": "instance",
+        "componentId": "cmp_footer",
+        "props": {},
+        "children": [
+          {
+            "id": "n_footer_el",
+            "origin": "imported",
+            "semantic": {
+              "role": "footer"
+            },
+            "source": {
+              "file": "src/components/Footer.tsx",
+              "line": 3,
+              "col": 5,
+              "component": "Footer",
+              "owner": "AppRoutes"
+            },
+            "box": {
+              "margin": {
+                "top": "auto"
+              }
+            },
+            "style": {
+              "borderWidth": {
+                "top": 1
+              },
+              "borderColor": "$color.gray-200",
+              "background": "$color.white"
+            },
+            "platformRaw": {
+              "tag": "footer",
+              "classes": [
+                "mt-auto",
+                "border-t",
+                "border-gray-200",
+                "bg-white"
+              ]
+            },
+            "type": "box",
+            "children": [
+              {
+                "id": "n_footer_text",
+                "origin": "imported",
+                "source": {
+                  "file": "src/components/Footer.tsx",
+                  "line": 4,
+                  "col": 7,
+                  "component": "Footer",
+                  "owner": "AppRoutes"
+                },
+                "layout": {
+                  "mode": "block",
+                  "padding": {
+                    "top": "$spacing.6",
+                    "bottom": "$spacing.6",
+                    "left": "$spacing.6",
+                    "right": "$spacing.6"
+                  }
+                },
+                "box": {
+                  "maxWidth": "$size.6xl",
+                  "margin": {
+                    "left": "auto",
+                    "right": "auto"
+                  }
+                },
+                "style": {
+                  "fontSize": "$fontSize.sm",
+                  "color": "$color.gray-500"
+                },
+                "platformRaw": {
+                  "tag": "p",
+                  "classes": [
+                    "mx-auto",
+                    "max-w-6xl",
+                    "px-6",
+                    "py-6",
+                    "text-sm",
+                    "text-gray-500"
+                  ]
+                },
+                "type": "text",
+                "text": "© 2026 Acme Inc."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "current": {
+    "id": "n_app",
+    "origin": "imported",
+    "name": "App shell",
+    "source": {
+      "file": "src/App.tsx",
+      "line": 9,
+      "col": 5,
+      "component": "AppRoutes"
+    },
+    "layout": {
+      "mode": "flex",
+      "direction": "column"
+    },
+    "box": {
+      "minHeight": "100vh"
+    },
+    "style": {
+      "background": "$color.gray-50",
+      "fontFamily": "$fontFamily.sans"
+    },
+    "platformRaw": {
+      "tag": "div",
+      "classes": [
+        "flex",
+        "min-h-screen",
+        "flex-col",
+        "bg-gray-50",
+        "font-sans"
+      ]
+    },
+    "type": "box",
+    "children": [
+      {
+        "id": "n_navbar",
+        "origin": "imported",
+        "name": "Navbar",
+        "source": {
+          "file": "src/App.tsx",
+          "line": 10,
+          "col": 7,
+          "component": "AppRoutes"
+        },
+        "type": "instance",
+        "componentId": "cmp_navbar",
+        "props": {},
+        "children": [
+          {
+            "id": "n_nav",
+            "origin": "imported",
+            "name": "Nav bar",
+            "semantic": {
+              "role": "nav"
+            },
+            "source": {
+              "file": "src/components/Navbar.tsx",
+              "line": 5,
+              "col": 5,
+              "component": "Navbar",
+              "owner": "AppRoutes"
+            },
+            "style": {
+              "borderWidth": {
+                "bottom": 1
+              },
+              "borderColor": "$color.gray-200",
+              "background": "$color.white"
+            },
+            "platformRaw": {
+              "tag": "nav",
+              "classes": [
+                "border-b",
+                "border-gray-200",
+                "bg-white"
+              ]
+            },
+            "type": "box",
+            "children": [
+              {
+                "id": "n_nav_inner",
+                "origin": "imported",
+                "name": "Nav content",
+                "source": {
+                  "file": "src/components/Navbar.tsx",
+                  "line": 6,
+                  "col": 7,
+                  "component": "Navbar",
+                  "owner": "AppRoutes"
+                },
+                "layout": {
+                  "mode": "flex",
+                  "direction": "row",
+                  "align": "center",
+                  "justify": "between",
+                  "padding": {
+                    "top": "$spacing.4",
+                    "bottom": "$spacing.4",
+                    "left": "$spacing.6",
+                    "right": "$spacing.6"
+                  }
+                },
+                "box": {
+                  "maxWidth": "$size.6xl",
+                  "margin": {
+                    "left": "auto",
+                    "right": "auto"
+                  }
+                },
+                "platformRaw": {
+                  "tag": "div",
+                  "classes": [
+                    "mx-auto",
+                    "flex",
+                    "max-w-6xl",
+                    "items-center",
+                    "justify-between",
+                    "px-6",
+                    "py-4"
+                  ]
+                },
+                "type": "box",
+                "children": [
+                  {
+                    "id": "n_nav_logo",
+                    "origin": "imported",
+                    "name": "Logo",
+                    "source": {
+                      "file": "src/components/Navbar.tsx",
+                      "line": 7,
+                      "col": 9,
+                      "component": "Navbar",
+                      "owner": "AppRoutes"
+                    },
+                    "style": {
+                      "fontSize": "$fontSize.lg",
+                      "fontWeight": "$fontWeight.bold",
+                      "color": "$color.gray-900"
+                    },
+                    "platformRaw": {
+                      "tag": "a",
+                      "classes": [
+                        "text-lg",
+                        "font-bold",
+                        "text-gray-900"
+                      ]
+                    },
+                    "type": "link",
+                    "href": "/",
+                    "children": [
+                      {
+                        "id": "n_nav_logo_label",
+                        "origin": "imported",
+                        "type": "text",
+                        "text": "Acme"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "n_nav_links",
+                    "origin": "imported",
+                    "name": "Nav links",
+                    "source": {
+                      "file": "src/components/Navbar.tsx",
+                      "line": 10,
+                      "col": 9,
+                      "component": "Navbar",
+                      "owner": "AppRoutes"
+                    },
+                    "layout": {
+                      "mode": "flex",
+                      "direction": "row",
+                      "align": "center",
+                      "gap": "$spacing.6"
+                    },
+                    "style": {
+                      "fontSize": "$fontSize.sm",
+                      "fontWeight": "$fontWeight.medium",
+                      "color": "$color.gray-600"
+                    },
+                    "platformRaw": {
+                      "tag": "div",
+                      "classes": [
+                        "flex",
+                        "items-center",
+                        "gap-6",
+                        "text-sm",
+                        "font-medium",
+                        "text-gray-600"
+                      ]
+                    },
+                    "type": "box",
+                    "children": [
+                      {
+                        "id": "n_nav_home",
+                        "origin": "imported",
+                        "name": "Home link",
+                        "source": {
+                          "file": "src/components/Navbar.tsx",
+                          "line": 11,
+                          "col": 11,
+                          "component": "Navbar",
+                          "owner": "AppRoutes"
+                        },
+                        "overrides": [
+                          {
+                            "when": {
+                              "state": "hover"
+                            },
+                            "style": {
+                              "color": "$color.gray-900"
+                            }
+                          }
+                        ],
+                        "platformRaw": {
+                          "tag": "a",
+                          "classes": [
+                            "hover:text-gray-900"
+                          ]
+                        },
+                        "type": "link",
+                        "href": "/",
+                        "children": [
+                          {
+                            "id": "n_nav_home_label",
+                            "origin": "imported",
+                            "type": "text",
+                            "text": "Home"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "n_nav_pricing",
+                        "origin": "imported",
+                        "name": "Pricing link",
+                        "source": {
+                          "file": "src/components/Navbar.tsx",
+                          "line": 14,
+                          "col": 11,
+                          "component": "Navbar",
+                          "owner": "AppRoutes"
+                        },
+                        "overrides": [
+                          {
+                            "when": {
+                              "state": "hover"
+                            },
+                            "style": {
+                              "color": "$color.gray-900"
+                            }
+                          }
+                        ],
+                        "platformRaw": {
+                          "tag": "a",
+                          "classes": [
+                            "hover:text-gray-900"
+                          ]
+                        },
+                        "type": "link",
+                        "href": "/pricing",
+                        "children": [
+                          {
+                            "id": "n_nav_pricing_label",
+                            "origin": "imported",
+                            "type": "text",
+                            "text": "Pricing"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "n_main",
+        "origin": "imported",
+        "name": "Pricing page",
+        "semantic": {
+          "role": "main"
+        },
+        "source": {
+          "file": "src/pages/Pricing.tsx",
+          "line": 7,
+          "col": 5,
+          "component": "Pricing",
+          "owner": "AppRoutes"
+        },
+        "layout": {
+          "mode": "block",
+          "padding": {
+            "top": "$spacing.16",
+            "bottom": "$spacing.16",
+            "left": "$spacing.6",
+            "right": "$spacing.6"
+          }
+        },
+        "box": {
+          "width": {
+            "mode": "fill"
+          },
+          "maxWidth": "$size.6xl",
+          "margin": {
+            "left": "auto",
+            "right": "auto"
+          }
+        },
+        "platformRaw": {
+          "tag": "main",
+          "classes": [
+            "mx-auto",
+            "w-full",
+            "max-w-6xl",
+            "px-6",
+            "py-16"
+          ]
+        },
+        "type": "box",
+        "children": [
+          {
+            "id": "n_header",
+            "origin": "imported",
+            "name": "Header",
+            "semantic": {
+              "role": "header"
+            },
+            "source": {
+              "file": "src/pages/Pricing.tsx",
+              "line": 8,
+              "col": 7,
+              "component": "Pricing",
+              "owner": "AppRoutes"
+            },
+            "box": {
+              "maxWidth": "$size.2xl",
+              "margin": {
+                "left": "auto",
+                "right": "auto"
+              }
+            },
+            "style": {
+              "textAlign": "center"
+            },
+            "platformRaw": {
+              "tag": "header",
+              "classes": [
+                "mx-auto",
+                "max-w-2xl",
+                "text-center"
+              ]
+            },
+            "type": "box",
+            "children": [
+              {
+                "id": "n_title",
+                "origin": "imported",
+                "name": "Title",
+                "semantic": {
+                  "role": "heading",
+                  "level": 1
+                },
+                "source": {
+                  "file": "src/pages/Pricing.tsx",
+                  "line": 9,
+                  "col": 9,
+                  "component": "Pricing",
+                  "owner": "AppRoutes"
+                },
+                "style": {
+                  "fontSize": "$fontSize.4xl",
+                  "fontWeight": "$fontWeight.bold",
+                  "letterSpacing": "$letterSpacing.tight",
+                  "color": "$color.gray-900"
+                },
+                "platformRaw": {
+                  "tag": "h1",
+                  "classes": [
+                    "text-4xl",
+                    "font-bold",
+                    "tracking-tight",
+                    "text-gray-900"
+                  ]
+                },
+                "type": "text",
+                "text": "Pricing"
+              },
+              {
+                "id": "n_subtitle",
+                "origin": "imported",
+                "name": "Subtitle",
+                "source": {
+                  "file": "src/pages/Pricing.tsx",
+                  "line": 10,
+                  "col": 9,
+                  "component": "Pricing",
+                  "owner": "AppRoutes"
+                },
+                "box": {
+                  "margin": {
+                    "top": "$spacing.4"
+                  }
+                },
+                "style": {
+                  "fontSize": "$fontSize.lg",
+                  "color": "$color.gray-600"
+                },
+                "platformRaw": {
+                  "tag": "p",
+                  "classes": [
+                    "mt-4",
+                    "text-lg",
+                    "text-gray-600"
+                  ]
+                },
+                "type": "text",
+                "text": "Start for free and upgrade when your project grows."
+              }
+            ]
+          },
+          {
+            "id": "n_plans",
+            "origin": "imported",
+            "name": "Plans grid",
+            "source": {
+              "file": "src/pages/Pricing.tsx",
+              "line": 12,
+              "col": 7,
+              "component": "Pricing",
+              "owner": "AppRoutes"
+            },
+            "layout": {
+              "mode": "grid",
+              "columns": 1,
+              "gap": "$spacing.6"
+            },
+            "overrides": [
+              {
+                "when": {
+                  "viewport": "md"
+                },
+                "layout": {
+                  "columns": 3
+                }
+              }
+            ],
+            "box": {
+              "margin": {
+                "top": "$spacing.12"
+              }
+            },
+            "platformRaw": {
+              "tag": "div",
+              "classes": [
+                "mt-12",
+                "grid",
+                "gap-6",
+                "md:grid-cols-3"
+              ]
+            },
+            "type": "list",
+            "dataHint": "plans array in src/data/plans.ts",
+            "children": [
+              {
+                "id": "n_card_starter",
+                "origin": "imported",
+                "name": "PricingCard (Starter)",
+                "source": {
+                  "file": "src/pages/Pricing.tsx",
+                  "line": 14,
+                  "col": 11,
+                  "component": "Pricing",
+                  "repeated": {
+                    "count": 3,
+                    "index": 0,
+                    "key": "starter"
+                  }
+                },
+                "type": "instance",
+                "componentId": "cmp_pricing_card",
+                "props": {
+                  "plan": {
+                    "id": "starter",
+                    "name": "Starter",
+                    "price": 0,
+                    "description": "For side projects and trying things out.",
+                    "features": [
+                      "1 project",
+                      "Community support",
+                      "Basic analytics"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "id": "n_card_starter_root",
+                    "origin": "imported",
+                    "name": "Card",
+                    "source": {
+                      "file": "src/components/PricingCard.tsx",
+                      "line": 6,
+                      "col": 5,
+                      "component": "PricingCard",
+                      "owner": "Pricing"
+                    },
+                    "layout": {
+                      "mode": "flex",
+                      "direction": "column",
+                      "padding": {
+                        "top": "$spacing.6",
+                        "right": "$spacing.6",
+                        "bottom": "$spacing.6",
+                        "left": "$spacing.6"
+                      }
+                    },
+                    "style": {
+                      "radius": "$radius.md",
+                      "borderWidth": 1,
+                      "borderColor": "$color.gray-200",
+                      "background": "$color.white",
+                      "shadow": "$shadow.sm"
+                    },
+                    "platformRaw": {
+                      "tag": "div",
+                      "classes": [
+                        "flex",
+                        "flex-col",
+                        "rounded-md",
+                        "border",
+                        "border-gray-200",
+                        "bg-white",
+                        "p-6",
+                        "shadow-sm"
+                      ]
+                    },
+                    "type": "box",
+                    "children": [
+                      {
+                        "id": "n_card_starter_name",
+                        "origin": "imported",
+                        "name": "Plan name",
+                        "semantic": {
+                          "role": "heading",
+                          "level": 2
+                        },
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 7,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "style": {
+                          "fontSize": "$fontSize.lg",
+                          "fontWeight": "$fontWeight.semibold",
+                          "color": "$color.gray-900"
+                        },
+                        "platformRaw": {
+                          "tag": "h2",
+                          "classes": [
+                            "text-lg",
+                            "font-semibold",
+                            "text-gray-900"
+                          ]
+                        },
+                        "type": "text",
+                        "text": "Starter"
+                      },
+                      {
+                        "id": "n_card_starter_desc",
+                        "origin": "imported",
+                        "name": "Plan description",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 8,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "box": {
+                          "margin": {
+                            "top": "$spacing.2"
+                          }
+                        },
+                        "style": {
+                          "fontSize": "$fontSize.sm",
+                          "color": "$color.gray-600"
+                        },
+                        "platformRaw": {
+                          "tag": "p",
+                          "classes": [
+                            "mt-2",
+                            "text-sm",
+                            "text-gray-600"
+                          ]
+                        },
+                        "type": "text",
+                        "text": "For side projects and trying things out."
+                      },
+                      {
+                        "id": "n_card_starter_price",
+                        "origin": "imported",
+                        "name": "Price",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 9,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "layout": {
+                          "mode": "flex",
+                          "direction": "row",
+                          "align": "baseline",
+                          "gap": "$spacing.1"
+                        },
+                        "box": {
+                          "margin": {
+                            "top": "$spacing.6"
+                          }
+                        },
+                        "platformRaw": {
+                          "tag": "p",
+                          "classes": [
+                            "mt-6",
+                            "flex",
+                            "items-baseline",
+                            "gap-1"
+                          ]
+                        },
+                        "type": "box",
+                        "children": [
+                          {
+                            "id": "n_card_starter_amount",
+                            "origin": "imported",
+                            "name": "Amount",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 10,
+                              "col": 9,
+                              "component": "PricingCard",
+                              "owner": "Pricing"
+                            },
+                            "style": {
+                              "fontSize": "$fontSize.4xl",
+                              "fontWeight": "$fontWeight.bold",
+                              "color": "$color.gray-900"
+                            },
+                            "platformRaw": {
+                              "tag": "span",
+                              "classes": [
+                                "text-4xl",
+                                "font-bold",
+                                "text-gray-900"
+                              ]
+                            },
+                            "type": "text",
+                            "text": "$0"
+                          },
+                          {
+                            "id": "n_card_starter_period",
+                            "origin": "imported",
+                            "name": "Period",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 11,
+                              "col": 9,
+                              "component": "PricingCard",
+                              "owner": "Pricing"
+                            },
+                            "style": {
+                              "fontSize": "$fontSize.sm",
+                              "color": "$color.gray-500"
+                            },
+                            "platformRaw": {
+                              "tag": "span",
+                              "classes": [
+                                "text-sm",
+                                "text-gray-500"
+                              ]
+                            },
+                            "type": "text",
+                            "text": "/month"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "n_card_starter_features",
+                        "origin": "imported",
+                        "name": "Features",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 13,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "layout": {
+                          "mode": "flex",
+                          "direction": "column",
+                          "gap": "$spacing.2"
+                        },
+                        "box": {
+                          "margin": {
+                            "top": "$spacing.6"
+                          },
+                          "grow": 1
+                        },
+                        "style": {
+                          "fontSize": "$fontSize.sm",
+                          "color": "$color.gray-700"
+                        },
+                        "platformRaw": {
+                          "tag": "ul",
+                          "classes": [
+                            "mt-6",
+                            "flex",
+                            "flex-1",
+                            "flex-col",
+                            "gap-2",
+                            "text-sm",
+                            "text-gray-700"
+                          ]
+                        },
+                        "type": "list",
+                        "dataHint": "plan.features",
+                        "children": [
+                          {
+                            "id": "n_card_starter_f1",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 3,
+                                "index": 0,
+                                "key": "1 project"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ 1 project"
+                          },
+                          {
+                            "id": "n_card_starter_f2",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 3,
+                                "index": 1,
+                                "key": "Community support"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ Community support"
+                          },
+                          {
+                            "id": "n_card_starter_f3",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 3,
+                                "index": 2,
+                                "key": "Basic analytics"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ Basic analytics"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "n_card_starter_cta",
+                        "origin": "imported",
+                        "name": "CTA",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 18,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "type": "instance",
+                        "componentId": "cmp_button",
+                        "props": {
+                          "className": "mt-8 w-full",
+                          "children": "Get started"
+                        },
+                        "children": [
+                          {
+                            "id": "n_card_starter_cta_button",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/ui/button.tsx",
+                              "line": 14,
+                              "col": 5,
+                              "component": "Button",
+                              "owner": "PricingCard"
+                            },
+                            "layout": {
+                              "mode": "flex",
+                              "direction": "row",
+                              "align": "center",
+                              "justify": "center",
+                              "padding": {
+                                "top": "$spacing.2",
+                                "bottom": "$spacing.2",
+                                "left": "$spacing.4",
+                                "right": "$spacing.4"
+                              }
+                            },
+                            "box": {
+                              "width": {
+                                "mode": "fill"
+                              },
+                              "margin": {
+                                "top": "$spacing.8"
+                              }
+                            },
+                            "style": {
+                              "radius": "$radius.md",
+                              "fontSize": "$fontSize.sm",
+                              "fontWeight": "$fontWeight.medium",
+                              "background": "$color.primary-600",
+                              "color": "$color.white"
+                            },
+                            "overrides": [
+                              {
+                                "when": {
+                                  "state": "hover"
+                                },
+                                "style": {
+                                  "background": "$color.primary-700"
+                                }
+                              }
+                            ],
+                            "platformRaw": {
+                              "tag": "button",
+                              "classes": [
+                                "inline-flex",
+                                "items-center",
+                                "justify-center",
+                                "rounded-md",
+                                "px-4",
+                                "py-2",
+                                "text-sm",
+                                "font-medium",
+                                "bg-primary-600",
+                                "text-white",
+                                "hover:bg-primary-700",
+                                "mt-8",
+                                "w-full"
+                              ]
+                            },
+                            "type": "button",
+                            "children": [
+                              {
+                                "id": "n_card_starter_cta_label",
+                                "origin": "imported",
+                                "type": "text",
+                                "text": "Get started"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n_card_pro",
+                "origin": "imported",
+                "name": "PricingCard (Pro)",
+                "source": {
+                  "file": "src/pages/Pricing.tsx",
+                  "line": 14,
+                  "col": 11,
+                  "component": "Pricing",
+                  "repeated": {
+                    "count": 3,
+                    "index": 1,
+                    "key": "pro"
+                  }
+                },
+                "type": "instance",
+                "componentId": "cmp_pricing_card",
+                "props": {
+                  "plan": {
+                    "id": "pro",
+                    "name": "Pro",
+                    "price": 19,
+                    "description": "For professionals shipping real products.",
+                    "features": [
+                      "Unlimited projects",
+                      "Email support",
+                      "Advanced analytics",
+                      "Custom domains"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "id": "n_card_pro_root",
+                    "origin": "imported",
+                    "name": "Card",
+                    "source": {
+                      "file": "src/components/PricingCard.tsx",
+                      "line": 6,
+                      "col": 5,
+                      "component": "PricingCard",
+                      "owner": "Pricing"
+                    },
+                    "layout": {
+                      "mode": "flex",
+                      "direction": "column",
+                      "padding": {
+                        "top": "$spacing.6",
+                        "right": "$spacing.6",
+                        "bottom": "$spacing.6",
+                        "left": "$spacing.6"
+                      }
+                    },
+                    "style": {
+                      "radius": "$radius.md",
+                      "borderWidth": 1,
+                      "borderColor": "$color.gray-200",
+                      "background": "$color.white",
+                      "shadow": "$shadow.sm"
+                    },
+                    "platformRaw": {
+                      "tag": "div",
+                      "classes": [
+                        "flex",
+                        "flex-col",
+                        "rounded-md",
+                        "border",
+                        "border-gray-200",
+                        "bg-white",
+                        "p-6",
+                        "shadow-sm"
+                      ]
+                    },
+                    "type": "box",
+                    "children": [
+                      {
+                        "id": "n_card_pro_name",
+                        "origin": "imported",
+                        "name": "Plan name",
+                        "semantic": {
+                          "role": "heading",
+                          "level": 2
+                        },
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 7,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "style": {
+                          "fontSize": "$fontSize.lg",
+                          "fontWeight": "$fontWeight.semibold",
+                          "color": "$color.gray-900"
+                        },
+                        "platformRaw": {
+                          "tag": "h2",
+                          "classes": [
+                            "text-lg",
+                            "font-semibold",
+                            "text-gray-900"
+                          ]
+                        },
+                        "type": "text",
+                        "text": "Pro"
+                      },
+                      {
+                        "id": "n_card_pro_desc",
+                        "origin": "imported",
+                        "name": "Plan description",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 8,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "box": {
+                          "margin": {
+                            "top": "$spacing.2"
+                          }
+                        },
+                        "style": {
+                          "fontSize": "$fontSize.sm",
+                          "color": "$color.gray-600"
+                        },
+                        "platformRaw": {
+                          "tag": "p",
+                          "classes": [
+                            "mt-2",
+                            "text-sm",
+                            "text-gray-600"
+                          ]
+                        },
+                        "type": "text",
+                        "text": "For professionals shipping real products."
+                      },
+                      {
+                        "id": "n_card_pro_price",
+                        "origin": "imported",
+                        "name": "Price",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 9,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "layout": {
+                          "mode": "flex",
+                          "direction": "row",
+                          "align": "baseline",
+                          "gap": "$spacing.1"
+                        },
+                        "box": {
+                          "margin": {
+                            "top": "$spacing.6"
+                          }
+                        },
+                        "platformRaw": {
+                          "tag": "p",
+                          "classes": [
+                            "mt-6",
+                            "flex",
+                            "items-baseline",
+                            "gap-1"
+                          ]
+                        },
+                        "type": "box",
+                        "children": [
+                          {
+                            "id": "n_card_pro_amount",
+                            "origin": "imported",
+                            "name": "Amount",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 10,
+                              "col": 9,
+                              "component": "PricingCard",
+                              "owner": "Pricing"
+                            },
+                            "style": {
+                              "fontSize": "$fontSize.4xl",
+                              "fontWeight": "$fontWeight.bold",
+                              "color": "$color.gray-900"
+                            },
+                            "platformRaw": {
+                              "tag": "span",
+                              "classes": [
+                                "text-4xl",
+                                "font-bold",
+                                "text-gray-900"
+                              ]
+                            },
+                            "type": "text",
+                            "text": "$19"
+                          },
+                          {
+                            "id": "n_card_pro_period",
+                            "origin": "imported",
+                            "name": "Period",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 11,
+                              "col": 9,
+                              "component": "PricingCard",
+                              "owner": "Pricing"
+                            },
+                            "style": {
+                              "fontSize": "$fontSize.sm",
+                              "color": "$color.gray-500"
+                            },
+                            "platformRaw": {
+                              "tag": "span",
+                              "classes": [
+                                "text-sm",
+                                "text-gray-500"
+                              ]
+                            },
+                            "type": "text",
+                            "text": "/month"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "n_card_pro_features",
+                        "origin": "imported",
+                        "name": "Features",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 13,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "layout": {
+                          "mode": "flex",
+                          "direction": "column",
+                          "gap": "$spacing.2"
+                        },
+                        "box": {
+                          "margin": {
+                            "top": "$spacing.6"
+                          },
+                          "grow": 1
+                        },
+                        "style": {
+                          "fontSize": "$fontSize.sm",
+                          "color": "$color.gray-700"
+                        },
+                        "platformRaw": {
+                          "tag": "ul",
+                          "classes": [
+                            "mt-6",
+                            "flex",
+                            "flex-1",
+                            "flex-col",
+                            "gap-2",
+                            "text-sm",
+                            "text-gray-700"
+                          ]
+                        },
+                        "type": "list",
+                        "dataHint": "plan.features",
+                        "children": [
+                          {
+                            "id": "n_card_pro_f1",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 4,
+                                "index": 0,
+                                "key": "Unlimited projects"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ Unlimited projects"
+                          },
+                          {
+                            "id": "n_card_pro_f2",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 4,
+                                "index": 1,
+                                "key": "Email support"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ Email support"
+                          },
+                          {
+                            "id": "n_card_pro_f3",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 4,
+                                "index": 2,
+                                "key": "Advanced analytics"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ Advanced analytics"
+                          },
+                          {
+                            "id": "n_card_pro_f4",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 4,
+                                "index": 3,
+                                "key": "Custom domains"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ Custom domains"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "n_card_pro_cta",
+                        "origin": "imported",
+                        "name": "CTA",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 18,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "type": "instance",
+                        "componentId": "cmp_button",
+                        "props": {
+                          "className": "mt-8 w-full",
+                          "children": "Get started"
+                        },
+                        "children": [
+                          {
+                            "id": "n_card_pro_cta_button",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/ui/button.tsx",
+                              "line": 14,
+                              "col": 5,
+                              "component": "Button",
+                              "owner": "PricingCard"
+                            },
+                            "layout": {
+                              "mode": "flex",
+                              "direction": "row",
+                              "align": "center",
+                              "justify": "center",
+                              "padding": {
+                                "top": "$spacing.2",
+                                "bottom": "$spacing.2",
+                                "left": "$spacing.4",
+                                "right": "$spacing.4"
+                              }
+                            },
+                            "box": {
+                              "width": {
+                                "mode": "fill"
+                              },
+                              "margin": {
+                                "top": "$spacing.8"
+                              }
+                            },
+                            "style": {
+                              "radius": "$radius.md",
+                              "fontSize": "$fontSize.sm",
+                              "fontWeight": "$fontWeight.medium",
+                              "background": "$color.primary-600",
+                              "color": "$color.white"
+                            },
+                            "overrides": [
+                              {
+                                "when": {
+                                  "state": "hover"
+                                },
+                                "style": {
+                                  "background": "$color.primary-700"
+                                }
+                              }
+                            ],
+                            "platformRaw": {
+                              "tag": "button",
+                              "classes": [
+                                "inline-flex",
+                                "items-center",
+                                "justify-center",
+                                "rounded-md",
+                                "px-4",
+                                "py-2",
+                                "text-sm",
+                                "font-medium",
+                                "bg-primary-600",
+                                "text-white",
+                                "hover:bg-primary-700",
+                                "mt-8",
+                                "w-full"
+                              ]
+                            },
+                            "type": "button",
+                            "children": [
+                              {
+                                "id": "n_card_pro_cta_label",
+                                "origin": "imported",
+                                "type": "text",
+                                "text": "Get started"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "n_card_team",
+                "origin": "imported",
+                "name": "PricingCard (Team)",
+                "source": {
+                  "file": "src/pages/Pricing.tsx",
+                  "line": 14,
+                  "col": 11,
+                  "component": "Pricing",
+                  "repeated": {
+                    "count": 3,
+                    "index": 2,
+                    "key": "team"
+                  }
+                },
+                "type": "instance",
+                "componentId": "cmp_pricing_card",
+                "props": {
+                  "plan": {
+                    "id": "team",
+                    "name": "Team",
+                    "price": 49,
+                    "description": "For teams that build many apps together.",
+                    "features": [
+                      "Everything in Pro",
+                      "Shared workspaces",
+                      "Role-based access",
+                      "Priority support"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "id": "n_card_team_root",
+                    "origin": "imported",
+                    "name": "Card",
+                    "source": {
+                      "file": "src/components/PricingCard.tsx",
+                      "line": 6,
+                      "col": 5,
+                      "component": "PricingCard",
+                      "owner": "Pricing"
+                    },
+                    "layout": {
+                      "mode": "flex",
+                      "direction": "column",
+                      "padding": {
+                        "top": "$spacing.6",
+                        "right": "$spacing.6",
+                        "bottom": "$spacing.6",
+                        "left": "$spacing.6"
+                      }
+                    },
+                    "style": {
+                      "radius": "$radius.md",
+                      "borderWidth": 1,
+                      "borderColor": "$color.gray-200",
+                      "background": "$color.white",
+                      "shadow": "$shadow.sm"
+                    },
+                    "platformRaw": {
+                      "tag": "div",
+                      "classes": [
+                        "flex",
+                        "flex-col",
+                        "rounded-md",
+                        "border",
+                        "border-gray-200",
+                        "bg-white",
+                        "p-6",
+                        "shadow-sm"
+                      ]
+                    },
+                    "type": "box",
+                    "children": [
+                      {
+                        "id": "n_card_team_name",
+                        "origin": "imported",
+                        "name": "Plan name",
+                        "semantic": {
+                          "role": "heading",
+                          "level": 2
+                        },
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 7,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "style": {
+                          "fontSize": "$fontSize.lg",
+                          "fontWeight": "$fontWeight.semibold",
+                          "color": "$color.gray-900"
+                        },
+                        "platformRaw": {
+                          "tag": "h2",
+                          "classes": [
+                            "text-lg",
+                            "font-semibold",
+                            "text-gray-900"
+                          ]
+                        },
+                        "type": "text",
+                        "text": "Team"
+                      },
+                      {
+                        "id": "n_card_team_desc",
+                        "origin": "imported",
+                        "name": "Plan description",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 8,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "box": {
+                          "margin": {
+                            "top": "$spacing.2"
+                          }
+                        },
+                        "style": {
+                          "fontSize": "$fontSize.sm",
+                          "color": "$color.gray-600"
+                        },
+                        "platformRaw": {
+                          "tag": "p",
+                          "classes": [
+                            "mt-2",
+                            "text-sm",
+                            "text-gray-600"
+                          ]
+                        },
+                        "type": "text",
+                        "text": "For teams that build many apps together."
+                      },
+                      {
+                        "id": "n_card_team_price",
+                        "origin": "imported",
+                        "name": "Price",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 9,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "layout": {
+                          "mode": "flex",
+                          "direction": "row",
+                          "align": "baseline",
+                          "gap": "$spacing.1"
+                        },
+                        "box": {
+                          "margin": {
+                            "top": "$spacing.6"
+                          }
+                        },
+                        "platformRaw": {
+                          "tag": "p",
+                          "classes": [
+                            "mt-6",
+                            "flex",
+                            "items-baseline",
+                            "gap-1"
+                          ]
+                        },
+                        "type": "box",
+                        "children": [
+                          {
+                            "id": "n_card_team_amount",
+                            "origin": "imported",
+                            "name": "Amount",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 10,
+                              "col": 9,
+                              "component": "PricingCard",
+                              "owner": "Pricing"
+                            },
+                            "style": {
+                              "fontSize": "$fontSize.4xl",
+                              "fontWeight": "$fontWeight.bold",
+                              "color": "$color.gray-900"
+                            },
+                            "platformRaw": {
+                              "tag": "span",
+                              "classes": [
+                                "text-4xl",
+                                "font-bold",
+                                "text-gray-900"
+                              ]
+                            },
+                            "type": "text",
+                            "text": "$49"
+                          },
+                          {
+                            "id": "n_card_team_period",
+                            "origin": "imported",
+                            "name": "Period",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 11,
+                              "col": 9,
+                              "component": "PricingCard",
+                              "owner": "Pricing"
+                            },
+                            "style": {
+                              "fontSize": "$fontSize.sm",
+                              "color": "$color.gray-500"
+                            },
+                            "platformRaw": {
+                              "tag": "span",
+                              "classes": [
+                                "text-sm",
+                                "text-gray-500"
+                              ]
+                            },
+                            "type": "text",
+                            "text": "/month"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "n_card_team_features",
+                        "origin": "imported",
+                        "name": "Features",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 13,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "layout": {
+                          "mode": "flex",
+                          "direction": "column",
+                          "gap": "$spacing.2"
+                        },
+                        "box": {
+                          "margin": {
+                            "top": "$spacing.6"
+                          },
+                          "grow": 1
+                        },
+                        "style": {
+                          "fontSize": "$fontSize.sm",
+                          "color": "$color.gray-700"
+                        },
+                        "platformRaw": {
+                          "tag": "ul",
+                          "classes": [
+                            "mt-6",
+                            "flex",
+                            "flex-1",
+                            "flex-col",
+                            "gap-2",
+                            "text-sm",
+                            "text-gray-700"
+                          ]
+                        },
+                        "type": "list",
+                        "dataHint": "plan.features",
+                        "children": [
+                          {
+                            "id": "n_card_team_f1",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 4,
+                                "index": 0,
+                                "key": "Everything in Pro"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ Everything in Pro"
+                          },
+                          {
+                            "id": "n_card_team_f2",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 4,
+                                "index": 1,
+                                "key": "Shared workspaces"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ Shared workspaces"
+                          },
+                          {
+                            "id": "n_card_team_f3",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 4,
+                                "index": 2,
+                                "key": "Role-based access"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ Role-based access"
+                          },
+                          {
+                            "id": "n_card_team_f4",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/PricingCard.tsx",
+                              "line": 15,
+                              "col": 11,
+                              "component": "PricingCard",
+                              "owner": "Pricing",
+                              "repeated": {
+                                "count": 4,
+                                "index": 3,
+                                "key": "Priority support"
+                              }
+                            },
+                            "platformRaw": {
+                              "tag": "li"
+                            },
+                            "type": "text",
+                            "text": "✓ Priority support"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "n_card_team_cta",
+                        "origin": "imported",
+                        "name": "CTA",
+                        "source": {
+                          "file": "src/components/PricingCard.tsx",
+                          "line": 18,
+                          "col": 7,
+                          "component": "PricingCard",
+                          "owner": "Pricing"
+                        },
+                        "type": "instance",
+                        "componentId": "cmp_button",
+                        "props": {
+                          "className": "mt-8 w-full",
+                          "children": "Get started"
+                        },
+                        "children": [
+                          {
+                            "id": "n_card_team_cta_button",
+                            "origin": "imported",
+                            "source": {
+                              "file": "src/components/ui/button.tsx",
+                              "line": 14,
+                              "col": 5,
+                              "component": "Button",
+                              "owner": "PricingCard"
+                            },
+                            "layout": {
+                              "mode": "flex",
+                              "direction": "row",
+                              "align": "center",
+                              "justify": "center",
+                              "padding": {
+                                "top": "$spacing.2",
+                                "bottom": "$spacing.2",
+                                "left": "$spacing.4",
+                                "right": "$spacing.4"
+                              }
+                            },
+                            "box": {
+                              "width": {
+                                "mode": "fill"
+                              },
+                              "margin": {
+                                "top": "$spacing.8"
+                              }
+                            },
+                            "style": {
+                              "radius": "$radius.md",
+                              "fontSize": "$fontSize.sm",
+                              "fontWeight": "$fontWeight.medium",
+                              "background": "$color.primary-600",
+                              "color": "$color.white"
+                            },
+                            "overrides": [
+                              {
+                                "when": {
+                                  "state": "hover"
+                                },
+                                "style": {
+                                  "background": "$color.primary-700"
+                                }
+                              }
+                            ],
+                            "platformRaw": {
+                              "tag": "button",
+                              "classes": [
+                                "inline-flex",
+                                "items-center",
+                                "justify-center",
+                                "rounded-md",
+                                "px-4",
+                                "py-2",
+                                "text-sm",
+                                "font-medium",
+                                "bg-primary-600",
+                                "text-white",
+                                "hover:bg-primary-700",
+                                "mt-8",
+                                "w-full"
+                              ]
+                            },
+                            "type": "button",
+                            "children": [
+                              {
+                                "id": "n_card_team_cta_label",
+                                "origin": "imported",
+                                "type": "text",
+                                "text": "Get started"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "n_compare",
+            "origin": "imported",
+            "name": "Compare link row",
+            "source": {
+              "file": "src/pages/Pricing.tsx",
+              "line": 17,
+              "col": 7,
+              "component": "Pricing",
+              "owner": "AppRoutes"
+            },
+            "box": {
+              "margin": {
+                "top": "$spacing.10"
+              }
+            },
+            "style": {
+              "textAlign": "center"
+            },
+            "platformRaw": {
+              "tag": "p",
+              "classes": [
+                "mt-10",
+                "text-center"
+              ]
+            },
+            "type": "box",
+            "children": [
+              {
+                "id": "n_compare_link",
+                "origin": "imported",
+                "name": "Compare link",
+                "source": {
+                  "file": "src/pages/Pricing.tsx",
+                  "line": 18,
+                  "col": 9,
+                  "component": "Pricing",
+                  "owner": "AppRoutes"
+                },
+                "style": {
+                  "fontSize": "$fontSize.sm",
+                  "fontWeight": "$fontWeight.medium",
+                  "color": "$color.primary-600"
+                },
+                "overrides": [
+                  {
+                    "when": {
+                      "state": "hover"
+                    },
+                    "style": {
+                      "color": "$color.primary-700"
+                    }
+                  }
+                ],
+                "platformRaw": {
+                  "tag": "a",
+                  "classes": [
+                    "text-sm",
+                    "font-medium",
+                    "text-primary-600",
+                    "hover:text-primary-700"
+                  ]
+                },
+                "type": "link",
+                "href": "/compare",
+                "children": [
+                  {
+                    "id": "n_compare_label",
+                    "origin": "imported",
+                    "type": "text",
+                    "text": "Compare all features →"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "n_footer",
+        "origin": "imported",
+        "name": "Footer",
+        "source": {
+          "file": "src/App.tsx",
+          "line": 15,
+          "col": 7,
+          "component": "AppRoutes"
+        },
+        "type": "instance",
+        "componentId": "cmp_footer",
+        "props": {},
+        "children": [
+          {
+            "id": "n_footer_el",
+            "origin": "imported",
+            "semantic": {
+              "role": "footer"
+            },
+            "source": {
+              "file": "src/components/Footer.tsx",
+              "line": 3,
+              "col": 5,
+              "component": "Footer",
+              "owner": "AppRoutes"
+            },
+            "box": {
+              "margin": {
+                "top": "auto"
+              }
+            },
+            "style": {
+              "borderWidth": {
+                "top": 1
+              },
+              "borderColor": "$color.gray-200",
+              "background": "$color.white"
+            },
+            "platformRaw": {
+              "tag": "footer",
+              "classes": [
+                "mt-auto",
+                "border-t",
+                "border-gray-200",
+                "bg-white"
+              ]
+            },
+            "type": "box",
+            "children": [
+              {
+                "id": "n_footer_text",
+                "origin": "imported",
+                "source": {
+                  "file": "src/components/Footer.tsx",
+                  "line": 4,
+                  "col": 7,
+                  "component": "Footer",
+                  "owner": "AppRoutes"
+                },
+                "layout": {
+                  "mode": "block",
+                  "padding": {
+                    "top": "$spacing.6",
+                    "bottom": "$spacing.6",
+                    "left": "$spacing.6",
+                    "right": "$spacing.6"
+                  }
+                },
+                "box": {
+                  "maxWidth": "$size.6xl",
+                  "margin": {
+                    "left": "auto",
+                    "right": "auto"
+                  }
+                },
+                "style": {
+                  "fontSize": "$fontSize.sm",
+                  "color": "$color.gray-500"
+                },
+                "platformRaw": {
+                  "tag": "p",
+                  "classes": [
+                    "mx-auto",
+                    "max-w-6xl",
+                    "px-6",
+                    "py-6",
+                    "text-sm",
+                    "text-gray-500"
+                  ]
+                },
+                "type": "text",
+                "text": "© 2026 Acme Inc."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "capture": {
+    "at": "2026-10-05T10:00:00.000Z",
+    "url": "http://localhost:5173/pricing",
+    "redaction": "strict"
+  }
+}

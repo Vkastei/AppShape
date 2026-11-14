@@ -1,0 +1,25 @@
+{
+  "id": "cmp_accordion",
+  "name": "Accordion",
+  "kind": "ui-kit",
+  "platform": "web",
+  "source": {
+    "file": "src/components/ui/accordion.tsx",
+    "exportName": "Accordion"
+  },
+  "props": [
+    {
+      "name": "items",
+      "type": "array",
+      "required": true
+    },
+    {
+      "name": "className",
+      "type": "string"
+    }
+  ],
+  "usage": {
+    "instances": 0,
+    "frames": []
+  }
+}

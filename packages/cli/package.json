@@ -1,0 +1,35 @@
+{
+  "name": "@appshape/cli",
+  "version": "0.0.0",
+  "description": "The appshape command: init, dev, import, doctor, apply, changesets, spec, status, mcp.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "bin": {
+    "appshape": "./src/main.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "build": "node scripts/build.mjs"
+  },
+  "dependencies": {
+    "@appshape/capture": "workspace:*",
+    "@appshape/codegen": "workspace:*",
+    "@appshape/dialect-tailwind": "workspace:*",
+    "@appshape/ir": "workspace:*",
+    "@appshape/protocol": "workspace:*",
+    "@appshape/server": "workspace:*",
+    "@appshape/store": "workspace:*",
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "lucide-static": "^1.52.0",
+    "playwright-core": "^1.63.0",
+    "tailwindcss": "^4.3.3",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "esbuild": "^0.28.2",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

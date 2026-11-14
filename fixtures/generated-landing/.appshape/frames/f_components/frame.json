@@ -1,0 +1,12 @@
+{
+  "id": "f_components",
+  "name": "Components",
+  "kind": "imported",
+  "platform": "web",
+  "target": { "adapter": "vite-react-router", "route": "/components", "file": "src/pages/Components" },
+  "viewports": [
+    { "id": "desktop", "width": 1280, "breakpoint": "lg" },
+    { "id": "mobile", "width": 390 }
+  ],
+  "capture": { "at": "2026-10-15T07:42:44.570Z", "url": "/components", "redaction": "strict" }
+}

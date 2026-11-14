@@ -1,0 +1,32 @@
+{
+  "name": "@appshape/desktop",
+  "private": true,
+  "version": "0.1.0",
+  "description": "AppShape for people who don't use a terminal: a start window to open or create apps; boards open in the browser.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/build.mjs && node scripts/start.mjs",
+    "dist": "node scripts/build.mjs && electron-builder --config electron-builder.config.cjs --publish never",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@appshape/ai": "workspace:*",
+    "@appshape/capture": "workspace:*",
+    "@appshape/server": "workspace:*",
+    "@appshape/store": "workspace:*"
+  },
+  "devDependencies": {
+    "@appshape/cli": "workspace:*",
+    "@types/node": "catalog:",
+    "electron": "^44.5.1",
+    "electron-builder": "^26.15.3",
+    "electron-updater": "^6.8.9",
+    "esbuild": "^0.28.2",
+    "playwright-core": "^1.63.0",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

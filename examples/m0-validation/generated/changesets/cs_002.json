@@ -1,0 +1,463 @@
+{
+  "id": "cs_002",
+  "title": "Contact page",
+  "description": "Add a contact page with a simple form and link to it from the navigation.",
+  "status": "ready",
+  "ops": [
+    {
+      "id": "op_c1",
+      "frameId": "f_contact",
+      "op": "createFrame",
+      "frame": {
+        "id": "f_contact",
+        "name": "Contact",
+        "kind": "new",
+        "platform": "web",
+        "target": {
+          "adapter": "react-vite",
+          "route": "/contact",
+          "file": "src/pages/Contact.tsx"
+        },
+        "viewports": [
+          {
+            "id": "desktop",
+            "width": 1280,
+            "breakpoint": "lg"
+          },
+          {
+            "id": "mobile",
+            "width": 390
+          }
+        ],
+        "current": {
+          "id": "n_contact",
+          "origin": "added",
+          "name": "Contact page",
+          "semantic": {
+            "role": "main"
+          },
+          "layout": {
+            "mode": "block",
+            "padding": {
+              "top": "$spacing.16",
+              "bottom": "$spacing.16",
+              "left": "$spacing.6",
+              "right": "$spacing.6"
+            }
+          },
+          "box": {
+            "width": {
+              "mode": "fill"
+            },
+            "maxWidth": "$size.6xl",
+            "margin": {
+              "left": "auto",
+              "right": "auto"
+            }
+          },
+          "platformRaw": {
+            "tag": "main"
+          },
+          "type": "box",
+          "children": [
+            {
+              "id": "n_contact_header",
+              "origin": "added",
+              "name": "Header",
+              "box": {
+                "maxWidth": "$size.2xl"
+              },
+              "platformRaw": {
+                "tag": "header"
+              },
+              "type": "box",
+              "children": [
+                {
+                  "id": "n_contact_title",
+                  "origin": "added",
+                  "name": "Title",
+                  "semantic": {
+                    "role": "heading",
+                    "level": 1
+                  },
+                  "style": {
+                    "fontSize": "$fontSize.4xl",
+                    "fontWeight": "$fontWeight.bold",
+                    "letterSpacing": "$letterSpacing.tight",
+                    "color": "$color.gray-900"
+                  },
+                  "platformRaw": {
+                    "tag": "h1"
+                  },
+                  "type": "text",
+                  "text": "Contact us"
+                },
+                {
+                  "id": "n_contact_subtitle",
+                  "origin": "added",
+                  "name": "Subtitle",
+                  "box": {
+                    "margin": {
+                      "top": "$spacing.4"
+                    }
+                  },
+                  "style": {
+                    "fontSize": "$fontSize.lg",
+                    "color": "$color.gray-600"
+                  },
+                  "platformRaw": {
+                    "tag": "p"
+                  },
+                  "type": "text",
+                  "text": "Questions about plans, billing or anything else? We are happy to help."
+                }
+              ]
+            },
+            {
+              "id": "n_contact_grid",
+              "origin": "added",
+              "name": "Content grid",
+              "layout": {
+                "mode": "grid",
+                "columns": 1,
+                "gap": "$spacing.10"
+              },
+              "overrides": [
+                {
+                  "when": {
+                    "viewport": "md"
+                  },
+                  "layout": {
+                    "columns": 3
+                  }
+                }
+              ],
+              "box": {
+                "margin": {
+                  "top": "$spacing.12"
+                }
+              },
+              "type": "box",
+              "children": [
+                {
+                  "id": "n_contact_form",
+                  "origin": "added",
+                  "name": "Contact form",
+                  "layout": {
+                    "mode": "flex",
+                    "direction": "column",
+                    "gap": "$spacing.5",
+                    "padding": {
+                      "top": "$spacing.6",
+                      "right": "$spacing.6",
+                      "bottom": "$spacing.6",
+                      "left": "$spacing.6"
+                    }
+                  },
+                  "overrides": [
+                    {
+                      "when": {
+                        "viewport": "md"
+                      },
+                      "box": {
+                        "colSpan": 2
+                      }
+                    }
+                  ],
+                  "style": {
+                    "radius": "$radius.xl",
+                    "borderWidth": 1,
+                    "borderColor": "$color.gray-200",
+                    "background": "$color.white",
+                    "shadow": "$shadow.md"
+                  },
+                  "annotations": [
+                    {
+                      "id": "a_form_submit",
+                      "kind": "behavior",
+                      "text": "On submit: prevent the page reload, clear the form and show “Thanks! We’ll get back to you soon.” below the button. There is no backend yet."
+                    }
+                  ],
+                  "platformRaw": {
+                    "tag": "form"
+                  },
+                  "type": "box",
+                  "children": [
+                    {
+                      "id": "n_contact_name",
+                      "origin": "added",
+                      "name": "Name field",
+                      "layout": {
+                        "mode": "block",
+                        "padding": {
+                          "top": "$spacing.2",
+                          "bottom": "$spacing.2",
+                          "left": "$spacing.3",
+                          "right": "$spacing.3"
+                        }
+                      },
+                      "style": {
+                        "radius": "$radius.md",
+                        "borderWidth": 1,
+                        "borderColor": "$color.gray-300",
+                        "fontSize": "$fontSize.sm"
+                      },
+                      "type": "input",
+                      "inputType": "text",
+                      "label": "Name",
+                      "placeholder": "Jane Doe"
+                    },
+                    {
+                      "id": "n_contact_email",
+                      "origin": "added",
+                      "name": "Email field",
+                      "layout": {
+                        "mode": "block",
+                        "padding": {
+                          "top": "$spacing.2",
+                          "bottom": "$spacing.2",
+                          "left": "$spacing.3",
+                          "right": "$spacing.3"
+                        }
+                      },
+                      "style": {
+                        "radius": "$radius.md",
+                        "borderWidth": 1,
+                        "borderColor": "$color.gray-300",
+                        "fontSize": "$fontSize.sm"
+                      },
+                      "type": "input",
+                      "inputType": "email",
+                      "label": "Email",
+                      "placeholder": "jane@example.com"
+                    },
+                    {
+                      "id": "n_contact_message",
+                      "origin": "added",
+                      "name": "Message field",
+                      "layout": {
+                        "mode": "block",
+                        "padding": {
+                          "top": "$spacing.2",
+                          "bottom": "$spacing.2",
+                          "left": "$spacing.3",
+                          "right": "$spacing.3"
+                        }
+                      },
+                      "style": {
+                        "radius": "$radius.md",
+                        "borderWidth": 1,
+                        "borderColor": "$color.gray-300",
+                        "fontSize": "$fontSize.sm"
+                      },
+                      "box": {
+                        "minHeight": "8rem"
+                      },
+                      "type": "input",
+                      "inputType": "textarea",
+                      "label": "Message",
+                      "placeholder": "How can we help?"
+                    },
+                    {
+                      "id": "n_contact_submit",
+                      "origin": "added",
+                      "name": "Submit",
+                      "box": {
+                        "alignSelf": "start"
+                      },
+                      "type": "instance",
+                      "componentId": "cmp_button",
+                      "props": {
+                        "type": "submit",
+                        "children": "Send message"
+                      },
+                      "children": [
+                        {
+                          "id": "n_contact_submit_button",
+                          "origin": "added",
+                          "layout": {
+                            "mode": "flex",
+                            "direction": "row",
+                            "align": "center",
+                            "justify": "center",
+                            "padding": {
+                              "top": "$spacing.2",
+                              "bottom": "$spacing.2",
+                              "left": "$spacing.4",
+                              "right": "$spacing.4"
+                            }
+                          },
+                          "style": {
+                            "radius": "$radius.md",
+                            "fontSize": "$fontSize.sm",
+                            "fontWeight": "$fontWeight.medium",
+                            "background": "$color.primary-600",
+                            "color": "$color.white"
+                          },
+                          "overrides": [
+                            {
+                              "when": {
+                                "state": "hover"
+                              },
+                              "style": {
+                                "background": "$color.primary-700"
+                              }
+                            }
+                          ],
+                          "platformRaw": {
+                            "tag": "button"
+                          },
+                          "type": "button",
+                          "children": [
+                            {
+                              "id": "n_contact_submit_label",
+                              "origin": "added",
+                              "type": "text",
+                              "text": "Send message"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "n_contact_aside",
+                  "origin": "added",
+                  "name": "Other channels",
+                  "layout": {
+                    "mode": "flex",
+                    "direction": "column",
+                    "gap": "$spacing.2"
+                  },
+                  "style": {
+                    "fontSize": "$fontSize.sm",
+                    "color": "$color.gray-600"
+                  },
+                  "platformRaw": {
+                    "tag": "aside"
+                  },
+                  "type": "box",
+                  "children": [
+                    {
+                      "id": "n_contact_aside_title",
+                      "origin": "added",
+                      "semantic": {
+                        "role": "heading",
+                        "level": 2
+                      },
+                      "style": {
+                        "fontSize": "$fontSize.base",
+                        "fontWeight": "$fontWeight.semibold",
+                        "color": "$color.gray-900"
+                      },
+                      "platformRaw": {
+                        "tag": "h2"
+                      },
+                      "type": "text",
+                      "text": "Other ways to reach us"
+                    },
+                    {
+                      "id": "n_contact_aside_email",
+                      "origin": "added",
+                      "platformRaw": {
+                        "tag": "p"
+                      },
+                      "type": "text",
+                      "text": "Email: hello@acme.example"
+                    },
+                    {
+                      "id": "n_contact_aside_reply",
+                      "origin": "added",
+                      "platformRaw": {
+                        "tag": "p"
+                      },
+                      "type": "text",
+                      "text": "We reply within one business day."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "annotations": [
+          {
+            "id": "a_contact_layout",
+            "kind": "intent",
+            "text": "Same page shell as Pricing: Navbar and Footer come from the app layout."
+          }
+        ]
+      }
+    },
+    {
+      "id": "op_c2",
+      "frameId": "f_pricing",
+      "op": "insert",
+      "parentId": "n_nav_links",
+      "index": 2,
+      "scope": "component",
+      "node": {
+        "id": "n_nav_contact",
+        "origin": "added",
+        "name": "Contact link",
+        "overrides": [
+          {
+            "when": {
+              "state": "hover"
+            },
+            "style": {
+              "color": "$color.gray-900"
+            }
+          }
+        ],
+        "platformRaw": {
+          "tag": "a"
+        },
+        "type": "link",
+        "href": "/contact",
+        "children": [
+          {
+            "id": "n_nav_contact_label",
+            "origin": "added",
+            "type": "text",
+            "text": "Contact"
+          }
+        ],
+        "targetFrameId": "f_contact"
+      }
+    }
+  ],
+  "changes": [
+    {
+      "id": "c1",
+      "opIds": [
+        "op_c1"
+      ]
+    },
+    {
+      "id": "c2",
+      "opIds": [
+        "op_c2"
+      ]
+    }
+  ],
+  "requirements": [
+    "Register the page as the route `/contact` in `src/App.tsx`.",
+    "Each form field has a visible label (wrap the control in a `<label>`) and a `name` attribute: `name`, `email`, `message`."
+  ],
+  "history": [
+    {
+      "status": "draft",
+      "at": "2026-10-05T10:00:00.000Z",
+      "by": "user"
+    },
+    {
+      "status": "ready",
+      "at": "2026-10-05T10:00:00.000Z",
+      "by": "user"
+    }
+  ],
+  "createdAt": "2026-10-05T10:00:00.000Z",
+  "updatedAt": "2026-10-05T10:00:00.000Z"
+}

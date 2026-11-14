@@ -1,0 +1,36 @@
+{
+  "name": "@appshape/codegen",
+  "version": "0.0.0",
+  "description": "Generates React + Tailwind code from AppShape designs and applies design changes to it.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./classes": "./src/classes.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@appshape/dialect-tailwind": "workspace:*",
+    "@appshape/ir": "workspace:*",
+    "@appshape/protocol": "workspace:*",
+    "@appshape/store": "workspace:*",
+    "typescript": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@appshape/kit": "workspace:*",
+    "@appshape/render": "workspace:*",
+    "@types/node": "catalog:",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "playwright-core": "^1.63.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.20.0",
+    "vitest": "catalog:"
+  }
+}

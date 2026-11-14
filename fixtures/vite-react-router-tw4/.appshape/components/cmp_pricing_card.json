@@ -1,0 +1,23 @@
+{
+  "id": "cmp_pricing_card",
+  "name": "PricingCard",
+  "kind": "project",
+  "platform": "web",
+  "source": {
+    "file": "src/components/PricingCard.tsx",
+    "exportName": "PricingCard"
+  },
+  "props": [
+    {
+      "name": "plan",
+      "type": "object",
+      "required": true
+    }
+  ],
+  "usage": {
+    "instances": 3,
+    "frames": [
+      "f_pricing"
+    ]
+  }
+}

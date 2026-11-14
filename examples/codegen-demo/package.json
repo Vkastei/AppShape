@@ -1,0 +1,34 @@
+{
+  "name": "@appshape/codegen-demo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "generate": "tsx scripts/generate.ts",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json",
+    "live": "tsx scripts/live.ts"
+  },
+  "dependencies": {
+    "@appshape/codegen": "workspace:*",
+    "@appshape/dialect-tailwind": "workspace:*",
+    "@appshape/ir": "workspace:*",
+    "@appshape/kit": "workspace:*"
+  },
+  "devDependencies": {
+    "@appshape/capture": "workspace:*",
+    "@appshape/protocol": "workspace:*",
+    "@appshape/render": "workspace:*",
+    "@appshape/server": "workspace:*",
+    "@appshape/store": "workspace:*",
+    "@types/node": "catalog:",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "playwright-core": "^1.63.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "tsx": "^4.20.0",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

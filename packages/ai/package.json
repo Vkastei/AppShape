@@ -1,0 +1,26 @@
+{
+  "name": "@appshape/ai",
+  "version": "0.0.0",
+  "description": "AppShape's own AI for Draw & describe: designs a drawn request with the user's API key.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.134.0",
+    "@appshape/codegen": "workspace:*",
+    "@appshape/ir": "workspace:*"
+  },
+  "devDependencies": {
+    "@appshape/dialect-tailwind": "workspace:*",
+    "@appshape/kit": "workspace:*",
+    "@types/node": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

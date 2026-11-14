@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+# Template: fill VERSION, the signed installer's URL and its SHA-256 (see README.md).
+PackageIdentifier: AppShape.AppShape
+PackageVersion: VERSION
+InstallerType: nullsoft
+Scope: user
+InstallModes:
+  - silent
+  - silentWithProgress
+UpgradeBehavior: install
+ReleaseDate: YYYY-MM-DD
+Installers:
+  - Architecture: x64
+    InstallerUrl: https://github.com/OWNER/REPO/releases/download/vVERSION/AppShape-Setup-VERSION.exe
+    InstallerSha256: SHA256_FROM_SHA256SUMS_TXT
+ManifestType: installer
+ManifestVersion: 1.9.0

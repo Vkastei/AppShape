@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* appshape:theme (generated from the design system) */
+@theme {
+  --color-brand-600: oklch(0.55 0.2 150);
+  --color-brand-700: oklch(0.48 0.18 150);
+}
+
+/* appshape:motion (entrance animations; off with reduced motion) */
+@keyframes aps-fade { from { opacity: 0; } }
+@keyframes aps-slide-up { from { opacity: 0; translate: 0 24px; } }
+@keyframes aps-slide-down { from { opacity: 0; translate: 0 -24px; } }
+@keyframes aps-slide-left { from { opacity: 0; translate: 24px 0; } }
+@keyframes aps-slide-right { from { opacity: 0; translate: -24px 0; } }
+@keyframes aps-scale { from { opacity: 0; scale: 0.92; } }
+@keyframes aps-blur { from { opacity: 0; filter: blur(8px); } }
+@media (prefers-reduced-motion: no-preference) {
+  :root[data-reveal] :is(.aps-reveal, .aps-reveal-repeat):not(.aps-stagger, [data-revealed]),
+  :root[data-reveal] :is(.aps-reveal, .aps-reveal-repeat).aps-stagger:not([data-revealed]) > * {
+    animation: none;
+    opacity: 0;
+  }
+}
+.aps-stagger > * { --aps-step: 0; }
+.aps-stagger > :nth-child(n) { animation-delay: calc(var(--aps-delay, 0ms) + var(--aps-stagger) * var(--aps-step)); }
+.aps-stagger > :nth-child(2) { --aps-step: 1; }
+.aps-stagger > :nth-child(3) { --aps-step: 2; }
+.aps-stagger > :nth-child(4) { --aps-step: 3; }
+.aps-stagger > :nth-child(5) { --aps-step: 4; }
+.aps-stagger > :nth-child(6) { --aps-step: 5; }
+.aps-stagger > :nth-child(7) { --aps-step: 6; }
+.aps-stagger > :nth-child(8) { --aps-step: 7; }
+.aps-stagger > :nth-child(9) { --aps-step: 8; }
+.aps-stagger > :nth-child(10) { --aps-step: 9; }
+.aps-stagger > :nth-child(11) { --aps-step: 10; }
+.aps-stagger > :nth-child(n + 12) { --aps-step: 11; }
+/* appshape:motion end */
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    color: #111827;
+    -webkit-font-smoothing: antialiased;
+  }
+}

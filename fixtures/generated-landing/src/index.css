@@ -1,0 +1,236 @@
+@import "tailwindcss";
+
+/* appshape:theme (generated from the design system) */
+@theme {
+  --color-accent: #f3f5ff;
+  --color-accent-foreground: #4f46e5;
+  --color-background: #ffffff;
+  --color-border: #e4e4e7;
+  --color-brand: #4f46e5;
+  --color-card: #ffffff;
+  --color-card-foreground: #09090c;
+  --color-foreground: #09090c;
+  --color-input: #d3d4d8;
+  --color-muted: #fafafb;
+  --color-muted-foreground: #70727b;
+  --color-neutral-50: #fafafb;
+  --color-neutral-100: #f3f4f6;
+  --color-neutral-200: #e4e4e7;
+  --color-neutral-300: #d3d4d8;
+  --color-neutral-400: #9e9fa8;
+  --color-neutral-500: #70727b;
+  --color-neutral-600: #51535b;
+  --color-neutral-700: #3e3f47;
+  --color-neutral-800: #26272c;
+  --color-neutral-900: #17181c;
+  --color-neutral-950: #09090c;
+  --color-primary: #4f46e5;
+  --color-primary-50: #f3f5ff;
+  --color-primary-100: #e4e9ff;
+  --color-primary-200: #cfd7ff;
+  --color-primary-300: #b0bbff;
+  --color-primary-400: #8995ff;
+  --color-primary-500: #6d73fd;
+  --color-primary-600: #5752f3;
+  --color-primary-700: #4f46e5;
+  --color-primary-800: #3c35b1;
+  --color-primary-900: #33348a;
+  --color-primary-950: #202353;
+  --color-primary-foreground: #ffffff;
+  --color-ring: #4f46e5;
+  --color-secondary: #f3f4f6;
+  --color-secondary-foreground: #17181c;
+  --font-heading: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --container-content: 72rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-section: 4rem;
+  --spacing-section-lg: 6rem;
+}
+
+/* appshape:dark (design system values in dark mode) */
+:root {
+  --color-accent: #f3f5ff;
+  --color-accent-foreground: #4f46e5;
+  --color-background: #ffffff;
+  --color-border: #e4e4e7;
+  --color-card: #ffffff;
+  --color-card-foreground: #09090c;
+  --color-foreground: #09090c;
+  --color-input: #d3d4d8;
+  --color-muted: #fafafb;
+  --color-muted-foreground: #70727b;
+  --color-secondary: #f3f4f6;
+  --color-secondary-foreground: #17181c;
+  @variant dark {
+    --color-accent: #202353;
+    --color-accent-foreground: #cfd7ff;
+    --color-background: #09090c;
+    --color-border: #26272c;
+    --color-card: #17181c;
+    --color-card-foreground: #fafafb;
+    --color-foreground: #fafafb;
+    --color-input: #3e3f47;
+    --color-muted: #17181c;
+    --color-muted-foreground: #9e9fa8;
+    --color-secondary: #26272c;
+    --color-secondary-foreground: #fafafb;
+  }
+}
+/* appshape:dark end */
+
+/* appshape:styles (text and effect styles) */
+@layer components {
+  /* Body */
+  .type-body {
+    font-size: var(--text-base);
+    line-height: var(--text-base--line-height);
+  }
+  /* Caption */
+  .type-caption {
+    font-size: var(--text-xs);
+    line-height: var(--text-xs--line-height);
+    font-weight: var(--font-weight-medium);
+  }
+  /* Display */
+  .type-display {
+    font-family: var(--font-heading);
+    font-size: var(--text-5xl);
+    line-height: var(--leading-tight);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--tracking-tight);
+  }
+  @media (width >= 48rem) {
+    .type-display {
+      font-size: var(--text-7xl);
+    }
+  }
+  /* H1 */
+  .type-h1 {
+    font-family: var(--font-heading);
+    font-size: var(--text-4xl);
+    line-height: var(--leading-tight);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--tracking-tight);
+  }
+  @media (width >= 48rem) {
+    .type-h1 {
+      font-size: var(--text-6xl);
+    }
+  }
+  /* H2 */
+  .type-h2 {
+    font-family: var(--font-heading);
+    font-size: var(--text-3xl);
+    line-height: var(--leading-tight);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--tracking-tight);
+  }
+  @media (width >= 48rem) {
+    .type-h2 {
+      font-size: var(--text-4xl);
+    }
+  }
+  /* H3 */
+  .type-h3 {
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    line-height: var(--text-lg--line-height);
+    font-weight: var(--font-weight-semibold);
+  }
+  /* H4 */
+  .type-h4 {
+    font-family: var(--font-heading);
+    font-size: var(--text-base);
+    line-height: var(--text-base--line-height);
+    font-weight: var(--font-weight-semibold);
+  }
+  /* Small */
+  .type-small {
+    font-size: var(--text-sm);
+    line-height: var(--text-sm--line-height);
+  }
+  /* Card */
+  .effect-card {
+    --tw-shadow: var(--shadow-sm);
+    box-shadow: var(--tw-inset-shadow, 0 0 #0000), var(--tw-inset-ring-shadow, 0 0 #0000), var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+  /* Glass */
+  .effect-glass {
+    --tw-shadow: 0 20px 25px -5px color-mix(in oklab, var(--color-black) 10%, transparent), 0 8px 10px -6px color-mix(in oklab, var(--color-black) 10%, transparent);
+    box-shadow: var(--tw-inset-shadow, 0 0 #0000), var(--tw-inset-ring-shadow, 0 0 #0000), var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    -webkit-backdrop-filter: blur(var(--blur-md));
+    backdrop-filter: blur(var(--blur-md));
+  }
+  /* Overlay */
+  .effect-overlay {
+    --tw-shadow: 0 25px 50px -12px color-mix(in oklab, var(--color-black) 25%, transparent);
+    box-shadow: var(--tw-inset-shadow, 0 0 #0000), var(--tw-inset-ring-shadow, 0 0 #0000), var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+  /* Raised */
+  .effect-raised {
+    --tw-shadow: var(--shadow-lg);
+    box-shadow: var(--tw-inset-shadow, 0 0 #0000), var(--tw-inset-ring-shadow, 0 0 #0000), var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+}
+/* appshape:styles end */
+
+/* appshape:motion (entrance animations; off with reduced motion) */
+@keyframes aps-fade { from { opacity: 0; } }
+@keyframes aps-slide-up { from { opacity: 0; translate: 0 24px; } }
+@keyframes aps-slide-down { from { opacity: 0; translate: 0 -24px; } }
+@keyframes aps-slide-left { from { opacity: 0; translate: 24px 0; } }
+@keyframes aps-slide-right { from { opacity: 0; translate: -24px 0; } }
+@keyframes aps-scale { from { opacity: 0; scale: 0.92; } }
+@keyframes aps-blur { from { opacity: 0; filter: blur(8px); } }
+@media (prefers-reduced-motion: no-preference) {
+  :root[data-reveal] :is(.aps-reveal, .aps-reveal-repeat):not(.aps-stagger, [data-revealed]),
+  :root[data-reveal] :is(.aps-reveal, .aps-reveal-repeat).aps-stagger:not([data-revealed]) > * {
+    animation: none;
+    opacity: 0;
+  }
+}
+.aps-stagger > * { --aps-step: 0; }
+.aps-stagger > :nth-child(n) { animation-delay: calc(var(--aps-delay, 0ms) + var(--aps-stagger) * var(--aps-step)); }
+.aps-stagger > :nth-child(2) { --aps-step: 1; }
+.aps-stagger > :nth-child(3) { --aps-step: 2; }
+.aps-stagger > :nth-child(4) { --aps-step: 3; }
+.aps-stagger > :nth-child(5) { --aps-step: 4; }
+.aps-stagger > :nth-child(6) { --aps-step: 5; }
+.aps-stagger > :nth-child(7) { --aps-step: 6; }
+.aps-stagger > :nth-child(8) { --aps-step: 7; }
+.aps-stagger > :nth-child(9) { --aps-step: 8; }
+.aps-stagger > :nth-child(10) { --aps-step: 9; }
+.aps-stagger > :nth-child(11) { --aps-step: 10; }
+.aps-stagger > :nth-child(n + 12) { --aps-step: 11; }
+/* appshape:motion end */
+
+/* appshape:overlays (menus, drawers and dialogs: native popovers) */
+.aps-overlay { margin: 0; padding: 0; border: 0; color: inherit; background: transparent; max-width: calc(100vw - 2rem); overflow: auto; }
+.aps-overlay::backdrop { background: rgb(0 0 0 / 0.4); }
+.aps-modal { margin: auto; max-height: calc(100dvh - 2rem); }
+.aps-drawer { inset: 0 0 0 auto; height: 100dvh; max-height: none; max-width: 90vw; }
+.aps-drawer > * { min-height: 100%; }
+.aps-drawer-left { inset: 0 auto 0 0; }
+.aps-dropdown { inset: auto; position-area: bottom span-right; position-try-fallbacks: flip-block, flip-inline; margin-top: 0.5rem; }
+.aps-dropdown::backdrop { background: transparent; }
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+  .aps-overlay { transition: opacity 0.2s, translate 0.25s ease-out, display 0.25s allow-discrete, overlay 0.25s allow-discrete; }
+  @starting-style {
+    .aps-modal:popover-open, .aps-dropdown:popover-open { opacity: 0; }
+    .aps-drawer:popover-open { translate: 100% 0; }
+    .aps-drawer-left:popover-open { translate: -100% 0; }
+  }
+}
+/* appshape:overlays end */
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    color: var(--color-foreground);
+    background-color: var(--color-background);
+    -webkit-font-smoothing: antialiased;
+  }
+}

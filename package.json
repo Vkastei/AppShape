@@ -1,0 +1,29 @@
+{
+  "name": "appshape-monorepo",
+  "private": true,
+  "packageManager": "pnpm@10.34.6",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "appshape": "tsx packages/cli/src/main.ts",
+    "dev": "tsx packages/cli/src/main.ts dev fixtures/vite-react-router-tw4 --editor-dev",
+    "typecheck": "pnpm -r run typecheck",
+    "test": "pnpm -r run test",
+    "m0:generate": "pnpm --filter @appshape/m0-validation generate",
+    "m0:check": "pnpm --filter @appshape/m0-validation check",
+    "m0:run": "pnpm --filter @appshape/m0-validation run-agent",
+    "draw:eval": "pnpm --filter @appshape/draw-eval eval",
+    "build": "pnpm --filter @appshape/cli build",
+    "desktop": "pnpm --filter @appshape/desktop start",
+    "desktop:dist": "pnpm --filter @appshape/desktop dist",
+    "check:public": "node scripts/check-public.mjs",
+    "agent:loop": "pnpm --filter @appshape/e2e exec playwright test --config loop.config.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.4.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.8"
+  }
+}
