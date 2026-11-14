@@ -1,0 +1,28 @@
+{
+  "id": "n_br4unrbc0n",
+  "name": "Checkbox",
+  "layout": { "mode": "flex", "direction": "row", "gap": "$spacing.2", "align": "center" },
+  "origin": "added",
+  "type": "box",
+  "children": [
+    {
+      "id": "n_ct7ma4jkv3",
+      "box": {
+        "width": { "mode": "fixed", "value": "$spacing.4" },
+        "height": { "mode": "fixed", "value": "$spacing.4" }
+      },
+      "style": { "radius": "$radius.sm" },
+      "origin": "added",
+      "type": "input",
+      "inputType": "checkbox"
+    },
+    {
+      "id": "n_heoqhm2etw",
+      "name": "Label",
+      "style": { "fontSize": "$fontSize.sm" },
+      "origin": "added",
+      "type": "text",
+      "text": "I agree to the terms"
+    }
+  ]
+}

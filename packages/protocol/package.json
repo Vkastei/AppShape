@@ -1,0 +1,23 @@
+{
+  "name": "@appshape/protocol",
+  "version": "0.0.0",
+  "description": "AppShape agent protocol: spec document, MCP tool contract, verify report, Markdown rendering.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@appshape/ir": "workspace:*",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

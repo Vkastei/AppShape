@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "paths": {
+      "@fixture/*": ["../../fixtures/vite-react-router-tw4/*"]
+    }
+  },
+  "include": ["src", "scripts", "test", "checks"]
+}

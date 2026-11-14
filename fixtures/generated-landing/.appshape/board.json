@@ -1,0 +1,15 @@
+{
+  "items": [
+    {
+      "type": "section",
+      "id": "b_a8wcoyqye5",
+      "name": "Imported pages",
+      "x": 0,
+      "y": 0,
+      "w": 3000,
+      "h": 3556
+    },
+    { "type": "frame", "id": "b_xx0twxn13i", "frameId": "f_home", "x": 120, "y": 120 },
+    { "type": "frame", "id": "b_4mu8azpuyn", "frameId": "f_components", "x": 1600, "y": 120 }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "f_h2pe14zaa9",
+  "name": "Textarea",
+  "kind": "component",
+  "platform": "web",
+  "target": { "adapter": "react-vite" },
+  "viewports": [
+    { "id": "component", "width": 320 }
+  ],
+  "component": {
+    "description": "A field for longer text.",
+    "props": [
+      {
+        "name": "label",
+        "type": "string",
+        "bindings": [
+          { "nodeId": "n_nlp0gnx2fu", "field": "label" }
+        ]
+      },
+      {
+        "name": "placeholder",
+        "type": "string",
+        "bindings": [
+          { "nodeId": "n_nlp0gnx2fu", "field": "placeholder" }
+        ]
+      }
+    ],
+    "kit": "textarea"
+  }
+}

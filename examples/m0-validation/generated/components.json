@@ -1,0 +1,138 @@
+[
+  {
+    "id": "cmp_navbar",
+    "name": "Navbar",
+    "kind": "project",
+    "platform": "web",
+    "source": {
+      "file": "src/components/Navbar.tsx",
+      "exportName": "Navbar"
+    },
+    "usage": {
+      "instances": 1,
+      "frames": [
+        "f_pricing"
+      ]
+    }
+  },
+  {
+    "id": "cmp_footer",
+    "name": "Footer",
+    "kind": "project",
+    "platform": "web",
+    "source": {
+      "file": "src/components/Footer.tsx",
+      "exportName": "Footer"
+    },
+    "usage": {
+      "instances": 1,
+      "frames": [
+        "f_pricing"
+      ]
+    }
+  },
+  {
+    "id": "cmp_pricing_card",
+    "name": "PricingCard",
+    "kind": "project",
+    "platform": "web",
+    "source": {
+      "file": "src/components/PricingCard.tsx",
+      "exportName": "PricingCard"
+    },
+    "props": [
+      {
+        "name": "plan",
+        "type": "object",
+        "required": true
+      }
+    ],
+    "usage": {
+      "instances": 3,
+      "frames": [
+        "f_pricing"
+      ]
+    }
+  },
+  {
+    "id": "cmp_button",
+    "name": "Button",
+    "kind": "ui-kit",
+    "platform": "web",
+    "source": {
+      "file": "src/components/ui/button.tsx",
+      "exportName": "Button"
+    },
+    "props": [
+      {
+        "name": "variant",
+        "type": "enum",
+        "options": [
+          "primary",
+          "secondary"
+        ],
+        "default": "primary"
+      },
+      {
+        "name": "className",
+        "type": "string"
+      }
+    ],
+    "usage": {
+      "instances": 3,
+      "frames": [
+        "f_pricing"
+      ]
+    }
+  },
+  {
+    "id": "cmp_badge",
+    "name": "Badge",
+    "kind": "ui-kit",
+    "platform": "web",
+    "source": {
+      "file": "src/components/ui/badge.tsx",
+      "exportName": "Badge"
+    },
+    "props": [
+      {
+        "name": "children",
+        "type": "node",
+        "required": true
+      },
+      {
+        "name": "className",
+        "type": "string"
+      }
+    ],
+    "usage": {
+      "instances": 0,
+      "frames": []
+    }
+  },
+  {
+    "id": "cmp_accordion",
+    "name": "Accordion",
+    "kind": "ui-kit",
+    "platform": "web",
+    "source": {
+      "file": "src/components/ui/accordion.tsx",
+      "exportName": "Accordion"
+    },
+    "props": [
+      {
+        "name": "items",
+        "type": "array",
+        "required": true
+      },
+      {
+        "name": "className",
+        "type": "string"
+      }
+    ],
+    "usage": {
+      "instances": 0,
+      "frames": []
+    }
+  }
+]

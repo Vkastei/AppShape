@@ -1,0 +1,27 @@
+{
+  "id": "f_pricing",
+  "name": "Pricing",
+  "kind": "imported",
+  "platform": "web",
+  "target": {
+    "adapter": "react-vite",
+    "route": "/pricing",
+    "file": "src/pages/Pricing.tsx"
+  },
+  "viewports": [
+    {
+      "id": "desktop",
+      "width": 1280,
+      "breakpoint": "lg"
+    },
+    {
+      "id": "mobile",
+      "width": 390
+    }
+  ],
+  "capture": {
+    "at": "2026-10-05T10:00:00.000Z",
+    "url": "http://localhost:5173/pricing",
+    "redaction": "strict"
+  }
+}

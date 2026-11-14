@@ -1,0 +1,12 @@
+{
+  "id": "f_home",
+  "name": "Home",
+  "kind": "imported",
+  "platform": "web",
+  "target": { "adapter": "vite-react-router", "route": "/", "file": "src/pages/Home.tsx" },
+  "viewports": [
+    { "id": "desktop", "width": 1280, "breakpoint": "lg" },
+    { "id": "mobile", "width": 390 }
+  ],
+  "capture": { "at": "2026-10-14T10:38:20.902Z", "url": "/", "redaction": "strict" }
+}

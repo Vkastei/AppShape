@@ -1,0 +1,3485 @@
+{
+  "id": "n_home_0",
+  "platformRaw": { "tag": "body" },
+  "origin": "imported",
+  "type": "box",
+  "children": [
+    {
+      "id": "n_home_1",
+      "platformRaw": { "tag": "div" },
+      "origin": "imported",
+      "type": "box",
+      "children": [
+        {
+          "id": "n_home_2",
+          "layout": { "mode": "flex", "direction": "column" },
+          "box": { "minHeight": "100vh" },
+          "style": { "background": "$color.background", "color": "$color.foreground" },
+          "source": { "file": "src/pages/Home.tsx", "line": 17, "col": 7, "component": "Home" },
+          "platformRaw": {
+            "tag": "div",
+            "classes": ["flex", "flex-col", "min-h-screen", "bg-background", "text-foreground"]
+          },
+          "origin": "imported",
+          "type": "box",
+          "children": [
+            {
+              "id": "n_home_3",
+              "layout": {
+                "mode": "flex",
+                "align": "center",
+                "justify": "center",
+                "padding": { "top": "$spacing.4", "bottom": "$spacing.4" }
+              },
+              "style": {
+                "background": "$color.background",
+                "borderWidth": { "bottom": 1 },
+                "borderColor": "$color.border"
+              },
+              "source": { "file": "src/pages/Home.tsx", "line": 18, "col": 9, "component": "Home" },
+              "platformRaw": {
+                "tag": "header",
+                "classes": ["flex", "items-center", "justify-center", "px-gutter", "py-4", "bg-background", "border-b", "border-border"],
+                "unmapped": ["px-gutter"]
+              },
+              "origin": "imported",
+              "type": "box",
+              "children": [
+                {
+                  "id": "n_home_4",
+                  "layout": { "mode": "flex", "gap": "$spacing.6", "align": "center", "justify": "between" },
+                  "box": {
+                    "width": { "mode": "fill" },
+                    "minWidth": "$spacing.0",
+                    "maxWidth": "$size.content"
+                  },
+                  "source": { "file": "src/pages/Home.tsx", "line": 19, "col": 11, "component": "Home" },
+                  "platformRaw": {
+                    "tag": "div",
+                    "classes": ["flex", "gap-6", "items-center", "justify-between", "flex-1", "min-w-0", "max-w-content"]
+                  },
+                  "origin": "imported",
+                  "type": "box",
+                  "children": [
+                    {
+                      "id": "n_home_5",
+                      "layout": { "mode": "flex", "gap": "$spacing.2", "align": "center" },
+                      "source": { "file": "src/pages/Home.tsx", "line": 20, "col": 13, "component": "Home" },
+                      "platformRaw": {
+                        "tag": "div",
+                        "classes": ["flex", "gap-2", "items-center"]
+                      },
+                      "origin": "imported",
+                      "type": "box",
+                      "children": [
+                        {
+                          "id": "n_home_6",
+                          "layout": { "mode": "flex" },
+                          "box": {
+                            "width": { "mode": "fixed", "value": "$spacing.7" },
+                            "height": { "mode": "fixed", "value": "$spacing.7" }
+                          },
+                          "style": { "background": "$color.primary", "radius": "$radius.lg" },
+                          "source": { "file": "src/pages/Home.tsx", "line": 21, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "div",
+                            "classes": ["flex", "w-7", "h-7", "bg-primary", "rounded-lg"]
+                          },
+                          "origin": "imported",
+                          "type": "box",
+                          "children": []
+                        },
+                        {
+                          "id": "n_home_7",
+                          "style": {
+                            "fontFamily": "$fontFamily.heading",
+                            "fontSize": "$fontSize.lg",
+                            "fontWeight": "$fontWeight.bold"
+                          },
+                          "source": { "file": "src/pages/Home.tsx", "line": 22, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "p",
+                            "classes": ["font-heading", "text-lg", "font-bold"]
+                          },
+                          "origin": "imported",
+                          "type": "text",
+                          "text": "Acme"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "n_home_8",
+                      "layout": { "mode": "flex", "gap": "$spacing.1", "align": "center" },
+                      "overrides": [
+                        {
+                          "when": { "viewport": "md" },
+                          "hidden": false
+                        }
+                      ],
+                      "hidden": true,
+                      "source": { "file": "src/pages/Home.tsx", "line": 24, "col": 13, "component": "Home" },
+                      "platformRaw": {
+                        "tag": "nav",
+                        "classes": ["gap-1", "items-center", "hidden", "md:flex"]
+                      },
+                      "origin": "imported",
+                      "type": "box",
+                      "children": [
+                        {
+                          "id": "n_home_9",
+                          "layout": {
+                            "padding": { "top": "$spacing.1.5", "right": "$spacing.3", "bottom": "$spacing.1.5", "left": "$spacing.3" }
+                          },
+                          "style": {
+                            "background": "$color.secondary",
+                            "color": "$color.foreground",
+                            "radius": "$radius.md",
+                            "fontSize": "$fontSize.sm",
+                            "fontWeight": "$fontWeight.medium"
+                          },
+                          "overrides": [
+                            {
+                              "when": { "state": "hover" },
+                              "style": { "color": "$color.foreground" }
+                            }
+                          ],
+                          "source": {
+                            "file": "src/components/NavLink.tsx",
+                            "line": 25,
+                            "col": 5,
+                            "component": "NavLink",
+                            "owner": "Link",
+                            "repeated": { "count": 4, "index": 0 }
+                          },
+                          "platformRaw": {
+                            "tag": "a",
+                            "element": "Link",
+                            "classes": ["px-3", "py-1.5", "rounded-md", "text-sm", "font-medium", "hover:text-foreground", "bg-secondary", "text-foreground"]
+                          },
+                          "origin": "imported",
+                          "type": "link",
+                          "href": "/",
+                          "children": [
+                            {
+                              "id": "n_home_a",
+                              "source": {
+                                "file": "src/components/NavLink.tsx",
+                                "line": 26,
+                                "col": 7,
+                                "component": "NavLink",
+                                "repeated": { "count": 4, "index": 0 }
+                              },
+                              "platformRaw": { "tag": "span" },
+                              "origin": "imported",
+                              "type": "text",
+                              "text": "Product"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "n_home_b",
+                          "layout": {
+                            "padding": { "top": "$spacing.1.5", "right": "$spacing.3", "bottom": "$spacing.1.5", "left": "$spacing.3" }
+                          },
+                          "style": {
+                            "color": "$color.muted-foreground",
+                            "radius": "$radius.md",
+                            "fontSize": "$fontSize.sm",
+                            "fontWeight": "$fontWeight.medium"
+                          },
+                          "overrides": [
+                            {
+                              "when": { "state": "hover" },
+                              "style": { "color": "$color.foreground" }
+                            }
+                          ],
+                          "source": {
+                            "file": "src/components/NavLink.tsx",
+                            "line": 25,
+                            "col": 5,
+                            "component": "NavLink",
+                            "owner": "Link",
+                            "repeated": { "count": 4, "index": 1 }
+                          },
+                          "platformRaw": {
+                            "tag": "a",
+                            "element": "Link",
+                            "classes": ["px-3", "py-1.5", "text-muted-foreground", "rounded-md", "text-sm", "font-medium", "hover:text-foreground"]
+                          },
+                          "origin": "imported",
+                          "type": "link",
+                          "href": "/",
+                          "children": [
+                            {
+                              "id": "n_home_c",
+                              "source": {
+                                "file": "src/components/NavLink.tsx",
+                                "line": 26,
+                                "col": 7,
+                                "component": "NavLink",
+                                "repeated": { "count": 4, "index": 1 }
+                              },
+                              "platformRaw": { "tag": "span" },
+                              "origin": "imported",
+                              "type": "text",
+                              "text": "Pricing"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "n_home_d",
+                          "layout": {
+                            "padding": { "top": "$spacing.1.5", "right": "$spacing.3", "bottom": "$spacing.1.5", "left": "$spacing.3" }
+                          },
+                          "style": {
+                            "color": "$color.muted-foreground",
+                            "radius": "$radius.md",
+                            "fontSize": "$fontSize.sm",
+                            "fontWeight": "$fontWeight.medium"
+                          },
+                          "overrides": [
+                            {
+                              "when": { "state": "hover" },
+                              "style": { "color": "$color.foreground" }
+                            }
+                          ],
+                          "source": {
+                            "file": "src/components/NavLink.tsx",
+                            "line": 25,
+                            "col": 5,
+                            "component": "NavLink",
+                            "owner": "Link",
+                            "repeated": { "count": 4, "index": 2 }
+                          },
+                          "platformRaw": {
+                            "tag": "a",
+                            "element": "Link",
+                            "classes": ["px-3", "py-1.5", "text-muted-foreground", "rounded-md", "text-sm", "font-medium", "hover:text-foreground"]
+                          },
+                          "origin": "imported",
+                          "type": "link",
+                          "href": "/",
+                          "children": [
+                            {
+                              "id": "n_home_e",
+                              "source": {
+                                "file": "src/components/NavLink.tsx",
+                                "line": 26,
+                                "col": 7,
+                                "component": "NavLink",
+                                "repeated": { "count": 4, "index": 2 }
+                              },
+                              "platformRaw": { "tag": "span" },
+                              "origin": "imported",
+                              "type": "text",
+                              "text": "About"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "n_home_f",
+                          "layout": {
+                            "padding": { "top": "$spacing.1.5", "right": "$spacing.3", "bottom": "$spacing.1.5", "left": "$spacing.3" }
+                          },
+                          "style": {
+                            "color": "$color.muted-foreground",
+                            "radius": "$radius.md",
+                            "fontSize": "$fontSize.sm",
+                            "fontWeight": "$fontWeight.medium"
+                          },
+                          "overrides": [
+                            {
+                              "when": { "state": "hover" },
+                              "style": { "color": "$color.foreground" }
+                            }
+                          ],
+                          "source": {
+                            "file": "src/components/NavLink.tsx",
+                            "line": 25,
+                            "col": 5,
+                            "component": "NavLink",
+                            "owner": "Link",
+                            "repeated": { "count": 4, "index": 3 }
+                          },
+                          "platformRaw": {
+                            "tag": "a",
+                            "element": "Link",
+                            "classes": ["px-3", "py-1.5", "text-muted-foreground", "rounded-md", "text-sm", "font-medium", "hover:text-foreground"]
+                          },
+                          "origin": "imported",
+                          "type": "link",
+                          "href": "/",
+                          "children": [
+                            {
+                              "id": "n_home_g",
+                              "source": {
+                                "file": "src/components/NavLink.tsx",
+                                "line": 26,
+                                "col": 7,
+                                "component": "NavLink",
+                                "repeated": { "count": 4, "index": 3 }
+                              },
+                              "platformRaw": { "tag": "span" },
+                              "origin": "imported",
+                              "type": "text",
+                              "text": "Blog"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "n_home_h",
+                      "layout": { "mode": "flex", "gap": "$spacing.2", "align": "center" },
+                      "source": { "file": "src/pages/Home.tsx", "line": 30, "col": 13, "component": "Home" },
+                      "platformRaw": {
+                        "tag": "div",
+                        "classes": ["flex", "gap-2", "items-center"]
+                      },
+                      "origin": "imported",
+                      "type": "box",
+                      "children": [
+                        {
+                          "id": "n_home_i",
+                          "layout": {
+                            "mode": "block",
+                            "gap": "$spacing.1.5",
+                            "align": "center",
+                            "justify": "center",
+                            "padding": { "top": "$spacing.1.5", "right": "$spacing.3", "bottom": "$spacing.1.5", "left": "$spacing.3" }
+                          },
+                          "box": { "alignSelf": "start" },
+                          "style": {
+                            "background": "$color.primary",
+                            "color": "$color.primary-foreground",
+                            "radius": "$radius.md",
+                            "fontSize": "$fontSize.xs",
+                            "fontWeight": "$fontWeight.semibold",
+                            "textAlign": "center",
+                            "cursor": "pointer"
+                          },
+                          "overrides": [
+                            {
+                              "when": { "state": "hover" },
+                              "style": { "background": "$color.primary/90" }
+                            },
+                            {
+                              "when": { "viewport": "md" },
+                              "layout": {
+                                "padding": { "top": "$spacing.1.5", "right": "$spacing.3", "bottom": "$spacing.1.5", "left": "$spacing.3" }
+                              },
+                              "hidden": false
+                            }
+                          ],
+                          "hidden": true,
+                          "source": {
+                            "file": "src/components/Button.tsx",
+                            "line": 43,
+                            "col": 5,
+                            "component": "Button",
+                            "owner": "Link",
+                            "repeated": { "count": 5, "index": 0 }
+                          },
+                          "platformRaw": {
+                            "tag": "a",
+                            "element": "Link",
+                            "classes": ["items-center", "justify-center", "self-start", "bg-primary", "text-primary-foreground", "rounded-md", "font-semibold", "cursor-pointer", "hover:bg-primary/90", "gap-1.5", "px-3", "py-1.5", "text-xs", "md:px-3", "md:py-1.5", "text-center", "hidden", "md:block"]
+                          },
+                          "origin": "imported",
+                          "type": "link",
+                          "href": "/",
+                          "children": [
+                            {
+                              "id": "n_home_j",
+                              "source": {
+                                "file": "src/components/Button.tsx",
+                                "line": 44,
+                                "col": 7,
+                                "component": "Button",
+                                "repeated": { "count": 5, "index": 0 }
+                              },
+                              "platformRaw": { "tag": "span" },
+                              "origin": "imported",
+                              "type": "text",
+                              "text": "Get started"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "n_home_k",
+                          "layout": { "mode": "flex", "align": "center", "justify": "center" },
+                          "box": {
+                            "width": { "mode": "fixed", "value": "$spacing.10" },
+                            "height": { "mode": "fixed", "value": "$spacing.10" }
+                          },
+                          "style": { "radius": "$radius.md", "textAlign": "left", "cursor": "pointer" },
+                          "overrides": [
+                            {
+                              "when": { "state": "hover" },
+                              "style": { "background": "$color.accent" }
+                            },
+                            {
+                              "when": { "viewport": "md" },
+                              "hidden": true
+                            }
+                          ],
+                          "source": { "file": "src/pages/Home.tsx", "line": 32, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "button",
+                            "classes": ["flex", "items-center", "justify-center", "w-10", "h-10", "rounded-md", "cursor-pointer", "hover:bg-accent", "md:hidden", "text-left"]
+                          },
+                          "origin": "imported",
+                          "type": "button",
+                          "children": [
+                            {
+                              "id": "n_home_l",
+                              "box": {
+                                "width": { "mode": "fixed", "value": "1em" },
+                                "height": { "mode": "fixed", "value": "1em" }
+                              },
+                              "style": { "fontSize": "$fontSize.xl" },
+                              "source": { "file": "src/pages/Home.tsx", "line": 33, "col": 17, "component": "Home", "owner": "Anonymous" },
+                              "platformRaw": {
+                                "tag": "svg",
+                                "element": "Menu",
+                                "classes": ["lucide", "lucide-menu", "text-xl", "size-[1em]"]
+                              },
+                              "origin": "imported",
+                              "type": "icon",
+                              "icon": "menu",
+                              "set": "lucide"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "n_home_m",
+                          "box": {
+                            "width": { "mode": "fixed", "value": "320px" }
+                          },
+                          "hidden": true,
+                          "source": { "file": "src/pages/Home.tsx", "line": 35, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "div",
+                            "classes": ["aps-overlay", "aps-drawer", "w-[320px]"],
+                            "unmapped": ["aps-overlay", "aps-drawer"]
+                          },
+                          "origin": "imported",
+                          "type": "box",
+                          "children": [
+                            {
+                              "id": "n_home_n",
+                              "layout": {
+                                "mode": "flex",
+                                "direction": "column",
+                                "gap": "$spacing.6",
+                                "padding": { "top": "$spacing.4", "right": "$spacing.6", "bottom": "$spacing.4", "left": "$spacing.6" }
+                              },
+                              "style": { "background": "$color.background", "color": "$color.foreground" },
+                              "source": { "file": "src/components/MobileMenu.tsx", "line": 12, "col": 5, "component": "MobileMenu" },
+                              "platformRaw": {
+                                "tag": "div",
+                                "classes": ["flex", "flex-col", "gap-6", "px-6", "py-4", "bg-background", "text-foreground"]
+                              },
+                              "origin": "imported",
+                              "type": "box",
+                              "children": [
+                                {
+                                  "id": "n_home_o",
+                                  "layout": { "mode": "flex", "gap": "$spacing.4", "align": "center", "justify": "between" },
+                                  "source": { "file": "src/components/MobileMenu.tsx", "line": 13, "col": 7, "component": "MobileMenu" },
+                                  "platformRaw": {
+                                    "tag": "div",
+                                    "classes": ["flex", "gap-4", "items-center", "justify-between"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "box",
+                                  "children": [
+                                    {
+                                      "id": "n_home_p",
+                                      "layout": { "mode": "flex", "gap": "$spacing.2", "align": "center" },
+                                      "source": { "file": "src/components/MobileMenu.tsx", "line": 14, "col": 9, "component": "MobileMenu" },
+                                      "platformRaw": {
+                                        "tag": "div",
+                                        "classes": ["flex", "gap-2", "items-center"]
+                                      },
+                                      "origin": "imported",
+                                      "type": "box",
+                                      "children": [
+                                        {
+                                          "id": "n_home_q",
+                                          "layout": { "mode": "flex" },
+                                          "box": {
+                                            "width": { "mode": "fixed", "value": "$spacing.7" },
+                                            "height": { "mode": "fixed", "value": "$spacing.7" }
+                                          },
+                                          "style": { "background": "$color.primary", "radius": "$radius.lg" },
+                                          "source": { "file": "src/components/MobileMenu.tsx", "line": 15, "col": 11, "component": "MobileMenu" },
+                                          "platformRaw": {
+                                            "tag": "div",
+                                            "classes": ["flex", "w-7", "h-7", "bg-primary", "rounded-lg"]
+                                          },
+                                          "origin": "imported",
+                                          "type": "box",
+                                          "children": []
+                                        },
+                                        {
+                                          "id": "n_home_r",
+                                          "style": {
+                                            "fontFamily": "$fontFamily.heading",
+                                            "fontSize": "$fontSize.lg",
+                                            "fontWeight": "$fontWeight.bold"
+                                          },
+                                          "source": { "file": "src/components/MobileMenu.tsx", "line": 16, "col": 11, "component": "MobileMenu" },
+                                          "platformRaw": {
+                                            "tag": "p",
+                                            "classes": ["font-heading", "text-lg", "font-bold"]
+                                          },
+                                          "origin": "imported",
+                                          "type": "text",
+                                          "text": "Acme"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "n_home_s",
+                                      "layout": { "mode": "flex", "align": "center", "justify": "center" },
+                                      "box": {
+                                        "width": { "mode": "fixed", "value": "$spacing.10" },
+                                        "height": { "mode": "fixed", "value": "$spacing.10" }
+                                      },
+                                      "style": { "radius": "$radius.md", "textAlign": "left", "cursor": "pointer" },
+                                      "overrides": [
+                                        {
+                                          "when": { "state": "hover" },
+                                          "style": { "background": "$color.accent" }
+                                        }
+                                      ],
+                                      "source": { "file": "src/components/MobileMenu.tsx", "line": 18, "col": 9, "component": "MobileMenu" },
+                                      "platformRaw": {
+                                        "tag": "button",
+                                        "classes": ["flex", "items-center", "justify-center", "w-10", "h-10", "rounded-md", "cursor-pointer", "hover:bg-accent", "text-left"]
+                                      },
+                                      "origin": "imported",
+                                      "type": "button",
+                                      "children": [
+                                        {
+                                          "id": "n_home_t",
+                                          "box": {
+                                            "width": { "mode": "fixed", "value": "1em" },
+                                            "height": { "mode": "fixed", "value": "1em" }
+                                          },
+                                          "style": { "fontSize": "$fontSize.xl" },
+                                          "source": {
+                                            "file": "src/components/MobileMenu.tsx",
+                                            "line": 19,
+                                            "col": 11,
+                                            "component": "MobileMenu",
+                                            "owner": "Anonymous"
+                                          },
+                                          "platformRaw": {
+                                            "tag": "svg",
+                                            "element": "X",
+                                            "classes": ["lucide", "lucide-x", "text-xl", "size-[1em]"]
+                                          },
+                                          "origin": "imported",
+                                          "type": "icon",
+                                          "icon": "x",
+                                          "set": "lucide"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "n_home_u",
+                                  "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.1" },
+                                  "source": { "file": "src/components/MobileMenu.tsx", "line": 22, "col": 7, "component": "MobileMenu" },
+                                  "platformRaw": {
+                                    "tag": "nav",
+                                    "classes": ["flex", "flex-col", "gap-1"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "box",
+                                  "children": [
+                                    {
+                                      "id": "n_home_v",
+                                      "layout": {
+                                        "padding": { "top": "$spacing.2", "right": "$spacing.3", "bottom": "$spacing.2", "left": "$spacing.3" }
+                                      },
+                                      "style": {
+                                        "color": "$color.foreground",
+                                        "radius": "$radius.md",
+                                        "fontSize": "$fontSize.lg",
+                                        "fontWeight": "$fontWeight.medium"
+                                      },
+                                      "overrides": [
+                                        {
+                                          "when": { "state": "hover" },
+                                          "style": { "background": "$color.accent", "color": "$color.accent-foreground" }
+                                        }
+                                      ],
+                                      "source": { "file": "src/components/MobileMenu.tsx", "line": 23, "col": 9, "component": "MobileMenu" },
+                                      "platformRaw": {
+                                        "tag": "a",
+                                        "classes": ["px-3", "py-2", "text-foreground", "rounded-md", "text-lg", "font-medium", "hover:bg-accent", "hover:text-accent-foreground"]
+                                      },
+                                      "origin": "imported",
+                                      "type": "link",
+                                      "href": "#",
+                                      "children": [
+                                        {
+                                          "id": "n_home_w",
+                                          "source": { "file": "src/components/MobileMenu.tsx", "line": 24, "col": 11, "component": "MobileMenu" },
+                                          "platformRaw": { "tag": "span" },
+                                          "origin": "imported",
+                                          "type": "text",
+                                          "text": "Product"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "n_home_x",
+                                      "layout": {
+                                        "padding": { "top": "$spacing.2", "right": "$spacing.3", "bottom": "$spacing.2", "left": "$spacing.3" }
+                                      },
+                                      "style": {
+                                        "color": "$color.foreground",
+                                        "radius": "$radius.md",
+                                        "fontSize": "$fontSize.lg",
+                                        "fontWeight": "$fontWeight.medium"
+                                      },
+                                      "overrides": [
+                                        {
+                                          "when": { "state": "hover" },
+                                          "style": { "background": "$color.accent", "color": "$color.accent-foreground" }
+                                        }
+                                      ],
+                                      "source": { "file": "src/components/MobileMenu.tsx", "line": 26, "col": 9, "component": "MobileMenu" },
+                                      "platformRaw": {
+                                        "tag": "a",
+                                        "classes": ["px-3", "py-2", "text-foreground", "rounded-md", "text-lg", "font-medium", "hover:bg-accent", "hover:text-accent-foreground"]
+                                      },
+                                      "origin": "imported",
+                                      "type": "link",
+                                      "href": "#",
+                                      "children": [
+                                        {
+                                          "id": "n_home_y",
+                                          "source": { "file": "src/components/MobileMenu.tsx", "line": 27, "col": 11, "component": "MobileMenu" },
+                                          "platformRaw": { "tag": "span" },
+                                          "origin": "imported",
+                                          "type": "text",
+                                          "text": "Pricing"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "n_home_z",
+                                      "layout": {
+                                        "padding": { "top": "$spacing.2", "right": "$spacing.3", "bottom": "$spacing.2", "left": "$spacing.3" }
+                                      },
+                                      "style": {
+                                        "color": "$color.foreground",
+                                        "radius": "$radius.md",
+                                        "fontSize": "$fontSize.lg",
+                                        "fontWeight": "$fontWeight.medium"
+                                      },
+                                      "overrides": [
+                                        {
+                                          "when": { "state": "hover" },
+                                          "style": { "background": "$color.accent", "color": "$color.accent-foreground" }
+                                        }
+                                      ],
+                                      "source": { "file": "src/components/MobileMenu.tsx", "line": 29, "col": 9, "component": "MobileMenu" },
+                                      "platformRaw": {
+                                        "tag": "a",
+                                        "classes": ["px-3", "py-2", "text-foreground", "rounded-md", "text-lg", "font-medium", "hover:bg-accent", "hover:text-accent-foreground"]
+                                      },
+                                      "origin": "imported",
+                                      "type": "link",
+                                      "href": "#",
+                                      "children": [
+                                        {
+                                          "id": "n_home_10",
+                                          "source": { "file": "src/components/MobileMenu.tsx", "line": 30, "col": 11, "component": "MobileMenu" },
+                                          "platformRaw": { "tag": "span" },
+                                          "origin": "imported",
+                                          "type": "text",
+                                          "text": "About"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "n_home_11",
+                                      "layout": {
+                                        "padding": { "top": "$spacing.2", "right": "$spacing.3", "bottom": "$spacing.2", "left": "$spacing.3" }
+                                      },
+                                      "style": {
+                                        "color": "$color.foreground",
+                                        "radius": "$radius.md",
+                                        "fontSize": "$fontSize.lg",
+                                        "fontWeight": "$fontWeight.medium"
+                                      },
+                                      "overrides": [
+                                        {
+                                          "when": { "state": "hover" },
+                                          "style": { "background": "$color.accent", "color": "$color.accent-foreground" }
+                                        }
+                                      ],
+                                      "source": { "file": "src/components/MobileMenu.tsx", "line": 32, "col": 9, "component": "MobileMenu" },
+                                      "platformRaw": {
+                                        "tag": "a",
+                                        "classes": ["px-3", "py-2", "text-foreground", "rounded-md", "text-lg", "font-medium", "hover:bg-accent", "hover:text-accent-foreground"]
+                                      },
+                                      "origin": "imported",
+                                      "type": "link",
+                                      "href": "#",
+                                      "children": [
+                                        {
+                                          "id": "n_home_12",
+                                          "source": { "file": "src/components/MobileMenu.tsx", "line": 33, "col": 11, "component": "MobileMenu" },
+                                          "platformRaw": { "tag": "span" },
+                                          "origin": "imported",
+                                          "type": "text",
+                                          "text": "Blog"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "n_home_13",
+                                  "layout": {
+                                    "mode": "flex",
+                                    "gap": "$spacing.2",
+                                    "align": "center",
+                                    "justify": "center",
+                                    "padding": { "top": "$spacing.3", "right": "$spacing.4", "bottom": "$spacing.3", "left": "$spacing.4" }
+                                  },
+                                  "box": {
+                                    "width": { "mode": "fill" },
+                                    "alignSelf": "start"
+                                  },
+                                  "style": {
+                                    "background": "$color.primary",
+                                    "color": "$color.primary-foreground",
+                                    "radius": "$radius.md",
+                                    "fontSize": "$fontSize.sm",
+                                    "fontWeight": "$fontWeight.semibold",
+                                    "textAlign": "center",
+                                    "cursor": "pointer"
+                                  },
+                                  "overrides": [
+                                    {
+                                      "when": { "state": "hover" },
+                                      "style": { "background": "$color.primary/90" }
+                                    },
+                                    {
+                                      "when": { "viewport": "md" },
+                                      "layout": {
+                                        "padding": { "top": "$spacing.2", "right": "$spacing.4", "bottom": "$spacing.2", "left": "$spacing.4" }
+                                      }
+                                    }
+                                  ],
+                                  "source": {
+                                    "file": "src/components/Button.tsx",
+                                    "line": 43,
+                                    "col": 5,
+                                    "component": "Button",
+                                    "owner": "Link",
+                                    "repeated": { "count": 5, "index": 1 }
+                                  },
+                                  "platformRaw": {
+                                    "tag": "a",
+                                    "element": "Link",
+                                    "classes": ["flex", "gap-2", "items-center", "justify-center", "px-4", "py-3", "self-start", "bg-primary", "text-primary-foreground", "rounded-md", "text-sm", "font-semibold", "cursor-pointer", "hover:bg-primary/90", "md:px-4", "md:py-2", "text-center", "w-full"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "link",
+                                  "href": "/",
+                                  "children": [
+                                    {
+                                      "id": "n_home_14",
+                                      "source": {
+                                        "file": "src/components/Button.tsx",
+                                        "line": 44,
+                                        "col": 7,
+                                        "component": "Button",
+                                        "repeated": { "count": 5, "index": 1 }
+                                      },
+                                      "platformRaw": { "tag": "span" },
+                                      "origin": "imported",
+                                      "type": "text",
+                                      "text": "Get started"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "n_home_15",
+              "layout": { "mode": "flex", "direction": "column", "align": "center" },
+              "source": { "file": "src/pages/Home.tsx", "line": 41, "col": 9, "component": "Home" },
+              "platformRaw": {
+                "tag": "section",
+                "classes": ["flex", "flex-col", "items-center", "px-gutter", "py-section", "md:px-gutter", "md:py-section-lg"],
+                "unmapped": ["px-gutter", "py-section", "md:px-gutter", "md:py-section-lg"]
+              },
+              "origin": "imported",
+              "type": "box",
+              "children": [
+                {
+                  "id": "n_home_16",
+                  "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.16" },
+                  "box": {
+                    "width": { "mode": "fill" },
+                    "maxWidth": "$size.content"
+                  },
+                  "source": { "file": "src/pages/Home.tsx", "line": 42, "col": 11, "component": "Home" },
+                  "platformRaw": {
+                    "tag": "div",
+                    "classes": ["flex", "flex-col", "gap-16", "w-full", "max-w-content"]
+                  },
+                  "origin": "imported",
+                  "type": "box",
+                  "children": [
+                    {
+                      "id": "n_home_17",
+                      "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.6", "align": "center" },
+                      "box": { "maxWidth": "$size.3xl", "alignSelf": "center" },
+                      "source": { "file": "src/pages/Home.tsx", "line": 43, "col": 13, "component": "Home" },
+                      "platformRaw": {
+                        "tag": "div",
+                        "classes": ["flex", "flex-col", "gap-6", "items-center", "max-w-3xl", "self-center"]
+                      },
+                      "origin": "imported",
+                      "type": "box",
+                      "children": [
+                        {
+                          "id": "n_home_18",
+                          "layout": {
+                            "mode": "flex",
+                            "gap": "$spacing.1",
+                            "align": "center",
+                            "padding": { "top": "$spacing.0.5", "right": "$spacing.2.5", "bottom": "$spacing.0.5", "left": "$spacing.2.5" }
+                          },
+                          "box": { "alignSelf": "start" },
+                          "style": {
+                            "background": "$color.accent",
+                            "color": "$color.accent-foreground",
+                            "radius": "$radius.full",
+                            "fontSize": "$fontSize.xs",
+                            "fontWeight": "$fontWeight.medium"
+                          },
+                          "source": { "file": "src/components/Badge.tsx", "line": 23, "col": 5, "component": "Badge" },
+                          "platformRaw": {
+                            "tag": "div",
+                            "classes": ["flex", "gap-1", "items-center", "px-2.5", "py-0.5", "self-start", "bg-accent", "text-accent-foreground", "rounded-full", "text-xs", "font-medium"]
+                          },
+                          "origin": "imported",
+                          "type": "box",
+                          "children": [
+                            {
+                              "id": "n_home_19",
+                              "source": { "file": "src/components/Badge.tsx", "line": 24, "col": 7, "component": "Badge" },
+                              "platformRaw": { "tag": "p" },
+                              "origin": "imported",
+                              "type": "text",
+                              "text": "New: version 2.0 is here"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "n_home_1a",
+                          "style": {
+                            "textAlign": "center",
+                            "motion": { "preset": "fade", "trigger": "load", "duration": 800 }
+                          },
+                          "semantic": { "role": "heading", "level": 1 },
+                          "source": { "file": "src/pages/Home.tsx", "line": 45, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "h1",
+                            "classes": ["type-h1", "text-center", "motion-safe:animate-[aps-fade_800ms_ease-out_both]"],
+                            "unmapped": ["type-h1"]
+                          },
+                          "origin": "imported",
+                          "type": "text",
+                          "text": "Ship a better product, faster"
+                        },
+                        {
+                          "id": "n_home_1b",
+                          "style": {
+                            "color": "$color.muted-foreground",
+                            "fontSize": "$fontSize.lg",
+                            "lineHeight": "$lineHeight.relaxed",
+                            "textAlign": "center"
+                          },
+                          "source": { "file": "src/pages/Home.tsx", "line": 46, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "p",
+                            "classes": ["text-muted-foreground", "text-lg", "leading-relaxed", "text-center"]
+                          },
+                          "origin": "imported",
+                          "type": "text",
+                          "text": "Everything your team needs to plan, build and launch, in one calm place."
+                        },
+                        {
+                          "id": "n_home_1c",
+                          "layout": { "mode": "flex", "wrap": true, "gap": "$spacing.3", "justify": "center" },
+                          "source": { "file": "src/pages/Home.tsx", "line": 47, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "div",
+                            "classes": ["flex", "flex-wrap", "gap-3", "justify-center"]
+                          },
+                          "origin": "imported",
+                          "type": "box",
+                          "children": [
+                            {
+                              "id": "n_home_1d",
+                              "layout": {
+                                "mode": "flex",
+                                "gap": "$spacing.2",
+                                "align": "center",
+                                "justify": "center",
+                                "padding": { "top": "$spacing.3", "right": "$spacing.6", "bottom": "$spacing.3", "left": "$spacing.6" }
+                              },
+                              "box": { "alignSelf": "start" },
+                              "style": {
+                                "background": "$color.primary",
+                                "color": "$color.primary-foreground",
+                                "radius": "$radius.md",
+                                "fontSize": "$fontSize.base",
+                                "fontWeight": "$fontWeight.semibold",
+                                "textAlign": "center",
+                                "cursor": "pointer"
+                              },
+                              "overrides": [
+                                {
+                                  "when": { "state": "hover" },
+                                  "style": { "background": "$color.primary/90" }
+                                },
+                                {
+                                  "when": { "viewport": "md" },
+                                  "layout": {
+                                    "padding": { "top": "$spacing.3", "right": "$spacing.6", "bottom": "$spacing.3", "left": "$spacing.6" }
+                                  }
+                                }
+                              ],
+                              "source": {
+                                "file": "src/components/Button.tsx",
+                                "line": 43,
+                                "col": 5,
+                                "component": "Button",
+                                "owner": "Link",
+                                "repeated": { "count": 5, "index": 2 }
+                              },
+                              "platformRaw": {
+                                "tag": "a",
+                                "element": "Link",
+                                "classes": ["flex", "gap-2", "items-center", "justify-center", "self-start", "bg-primary", "text-primary-foreground", "rounded-md", "font-semibold", "cursor-pointer", "hover:bg-primary/90", "px-6", "py-3", "text-base", "md:px-6", "md:py-3", "text-center"]
+                              },
+                              "origin": "imported",
+                              "type": "link",
+                              "href": "/",
+                              "children": [
+                                {
+                                  "id": "n_home_1e",
+                                  "source": {
+                                    "file": "src/components/Button.tsx",
+                                    "line": 44,
+                                    "col": 7,
+                                    "component": "Button",
+                                    "repeated": { "count": 5, "index": 2 }
+                                  },
+                                  "platformRaw": { "tag": "span" },
+                                  "origin": "imported",
+                                  "type": "text",
+                                  "text": "Get started"
+                                }
+                              ]
+                            },
+                            {
+                              "id": "n_home_1f",
+                              "layout": {
+                                "mode": "flex",
+                                "gap": "$spacing.2",
+                                "align": "center",
+                                "justify": "center",
+                                "padding": { "top": "$spacing.3", "right": "$spacing.6", "bottom": "$spacing.3", "left": "$spacing.6" }
+                              },
+                              "box": { "alignSelf": "start" },
+                              "style": {
+                                "background": "$color.background",
+                                "color": "$color.foreground",
+                                "borderWidth": 1,
+                                "borderColor": "$color.input",
+                                "radius": "$radius.md",
+                                "fontSize": "$fontSize.base",
+                                "fontWeight": "$fontWeight.semibold",
+                                "textAlign": "center",
+                                "cursor": "pointer"
+                              },
+                              "overrides": [
+                                {
+                                  "when": { "state": "hover" },
+                                  "style": { "background": "$color.accent", "color": "$color.accent-foreground" }
+                                },
+                                {
+                                  "when": { "viewport": "md" },
+                                  "layout": {
+                                    "padding": { "top": "$spacing.3", "right": "$spacing.6", "bottom": "$spacing.3", "left": "$spacing.6" }
+                                  }
+                                }
+                              ],
+                              "source": {
+                                "file": "src/components/Button.tsx",
+                                "line": 43,
+                                "col": 5,
+                                "component": "Button",
+                                "owner": "Link",
+                                "repeated": { "count": 5, "index": 3 }
+                              },
+                              "platformRaw": {
+                                "tag": "a",
+                                "element": "Link",
+                                "classes": ["flex", "gap-2", "items-center", "justify-center", "self-start", "rounded-md", "font-semibold", "cursor-pointer", "bg-background", "text-foreground", "border", "border-input", "hover:bg-accent", "hover:text-accent-foreground", "px-6", "py-3", "text-base", "md:px-6", "md:py-3", "text-center"]
+                              },
+                              "origin": "imported",
+                              "type": "link",
+                              "href": "/",
+                              "children": [
+                                {
+                                  "id": "n_home_1g",
+                                  "source": {
+                                    "file": "src/components/Button.tsx",
+                                    "line": 44,
+                                    "col": 7,
+                                    "component": "Button",
+                                    "repeated": { "count": 5, "index": 3 }
+                                  },
+                                  "platformRaw": { "tag": "span" },
+                                  "origin": "imported",
+                                  "type": "text",
+                                  "text": "Book a demo"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "n_home_1h",
+                      "box": {
+                        "width": { "mode": "fill" },
+                        "aspectRatio": "16 / 9"
+                      },
+                      "style": { "borderWidth": 1, "borderColor": "$color.border", "radius": "$radius.2xl" },
+                      "source": { "file": "src/pages/Home.tsx", "line": 52, "col": 13, "component": "Home" },
+                      "platformRaw": {
+                        "tag": "img",
+                        "classes": ["w-full", "aspect-video", "border", "border-border", "rounded-2xl", "object-cover"]
+                      },
+                      "origin": "imported",
+                      "type": "image",
+                      "src": "/images/91e626e826a7b0c6.svg",
+                      "alt": "",
+                      "fit": "cover"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "n_home_1i",
+              "layout": { "mode": "flex", "direction": "column", "align": "center" },
+              "style": { "background": "$color.muted" },
+              "source": { "file": "src/pages/Home.tsx", "line": 55, "col": 9, "component": "Home" },
+              "platformRaw": {
+                "tag": "section",
+                "classes": ["flex", "flex-col", "items-center", "px-gutter", "py-section", "bg-muted", "md:px-gutter", "md:py-section-lg"],
+                "unmapped": ["px-gutter", "py-section", "md:px-gutter", "md:py-section-lg"]
+              },
+              "origin": "imported",
+              "type": "box",
+              "children": [
+                {
+                  "id": "n_home_1j",
+                  "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.12" },
+                  "box": {
+                    "width": { "mode": "fill" },
+                    "maxWidth": "$size.content"
+                  },
+                  "source": { "file": "src/pages/Home.tsx", "line": 56, "col": 11, "component": "Home" },
+                  "platformRaw": {
+                    "tag": "div",
+                    "classes": ["flex", "flex-col", "gap-12", "w-full", "max-w-content"]
+                  },
+                  "origin": "imported",
+                  "type": "box",
+                  "children": [
+                    {
+                      "id": "n_home_1k",
+                      "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.4", "align": "center" },
+                      "box": { "maxWidth": "$size.2xl", "alignSelf": "center" },
+                      "source": { "file": "src/pages/Home.tsx", "line": 57, "col": 13, "component": "Home" },
+                      "platformRaw": {
+                        "tag": "div",
+                        "classes": ["flex", "flex-col", "gap-4", "items-center", "max-w-2xl", "self-center"]
+                      },
+                      "origin": "imported",
+                      "type": "box",
+                      "children": [
+                        {
+                          "id": "n_home_1l",
+                          "style": {
+                            "color": "$color.accent-foreground",
+                            "fontSize": "$fontSize.sm",
+                            "fontWeight": "$fontWeight.semibold",
+                            "textAlign": "center"
+                          },
+                          "source": { "file": "src/pages/Home.tsx", "line": 58, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "p",
+                            "classes": ["text-accent-foreground", "text-sm", "font-semibold", "text-center"]
+                          },
+                          "origin": "imported",
+                          "type": "text",
+                          "text": "Features"
+                        },
+                        {
+                          "id": "n_home_1m",
+                          "style": { "textAlign": "center" },
+                          "semantic": { "role": "heading", "level": 2 },
+                          "source": { "file": "src/pages/Home.tsx", "line": 59, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "h2",
+                            "classes": ["type-h2", "text-center"],
+                            "unmapped": ["type-h2"]
+                          },
+                          "origin": "imported",
+                          "type": "text",
+                          "text": "Everything you need, nothing you don't"
+                        },
+                        {
+                          "id": "n_home_1n",
+                          "style": {
+                            "color": "$color.muted-foreground",
+                            "fontSize": "$fontSize.lg",
+                            "lineHeight": "$lineHeight.relaxed",
+                            "textAlign": "center"
+                          },
+                          "source": { "file": "src/pages/Home.tsx", "line": 60, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "p",
+                            "classes": ["text-muted-foreground", "text-lg", "leading-relaxed", "text-center"]
+                          },
+                          "origin": "imported",
+                          "type": "text",
+                          "text": "Simple tools that work together, so you can focus on the work."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "n_home_1o",
+                      "layout": { "mode": "grid", "gap": "$spacing.6", "columns": 1 },
+                      "style": {
+                        "motion": { "preset": "slide-up", "trigger": "scroll", "stagger": 120 }
+                      },
+                      "overrides": [
+                        {
+                          "when": { "viewport": "md" },
+                          "layout": { "columns": 3 }
+                        }
+                      ],
+                      "source": { "file": "src/pages/Home.tsx", "line": 62, "col": 13, "component": "Home" },
+                      "platformRaw": {
+                        "tag": "div",
+                        "classes": ["grid", "grid-cols-1", "gap-6", "aps-reveal", "aps-stagger", "[--aps-stagger:120ms]", "*:motion-safe:animate-[aps-slide-up_600ms_ease-out_both]", "md:grid-cols-3"]
+                      },
+                      "origin": "imported",
+                      "type": "box",
+                      "children": [
+                        {
+                          "id": "n_home_1p",
+                          "layout": {
+                            "mode": "flex",
+                            "direction": "column",
+                            "padding": { "top": "$spacing.6", "right": "$spacing.6", "bottom": "$spacing.6", "left": "$spacing.6" }
+                          },
+                          "style": {
+                            "background": "$color.card",
+                            "color": "$color.card-foreground",
+                            "borderWidth": 1,
+                            "borderColor": "$color.border",
+                            "radius": "$radius.xl",
+                            "shadow": "$shadow.sm"
+                          },
+                          "source": {
+                            "file": "src/components/Card.tsx",
+                            "line": 14,
+                            "col": 5,
+                            "component": "Card",
+                            "repeated": { "count": 6, "index": 0 }
+                          },
+                          "platformRaw": {
+                            "tag": "div",
+                            "classes": ["flex", "flex-col", "p-6", "bg-card", "text-card-foreground", "border", "border-border", "rounded-xl", "shadow-sm"]
+                          },
+                          "origin": "imported",
+                          "type": "box",
+                          "children": [
+                            {
+                              "id": "n_home_1q",
+                              "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.3" },
+                              "source": {
+                                "file": "src/components/Card.tsx",
+                                "line": 15,
+                                "col": 7,
+                                "component": "Card",
+                                "repeated": { "count": 6, "index": 0 }
+                              },
+                              "platformRaw": {
+                                "tag": "div",
+                                "classes": ["flex", "flex-col", "gap-3"]
+                              },
+                              "origin": "imported",
+                              "type": "box",
+                              "children": [
+                                {
+                                  "id": "n_home_1r",
+                                  "layout": { "mode": "flex", "align": "center", "justify": "center" },
+                                  "box": {
+                                    "width": { "mode": "fixed", "value": "$spacing.10" },
+                                    "height": { "mode": "fixed", "value": "$spacing.10" }
+                                  },
+                                  "style": { "background": "$color.accent", "color": "$color.accent-foreground", "radius": "$radius.lg" },
+                                  "source": { "file": "src/pages/Home.tsx", "line": 64, "col": 17, "component": "Home" },
+                                  "platformRaw": {
+                                    "tag": "div",
+                                    "classes": ["flex", "items-center", "justify-center", "w-10", "h-10", "bg-accent", "text-accent-foreground", "rounded-lg"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "box",
+                                  "children": [
+                                    {
+                                      "id": "n_home_1s",
+                                      "box": {
+                                        "width": { "mode": "fixed", "value": "1em" },
+                                        "height": { "mode": "fixed", "value": "1em" }
+                                      },
+                                      "style": { "fontSize": "$fontSize.xl" },
+                                      "source": { "file": "src/pages/Home.tsx", "line": 65, "col": 19, "component": "Home", "owner": "Anonymous" },
+                                      "platformRaw": {
+                                        "tag": "svg",
+                                        "element": "Zap",
+                                        "classes": ["lucide", "lucide-zap", "text-xl", "size-[1em]"]
+                                      },
+                                      "origin": "imported",
+                                      "type": "icon",
+                                      "icon": "zap",
+                                      "set": "lucide"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "n_home_1t",
+                                  "semantic": { "role": "heading", "level": 3 },
+                                  "source": { "file": "src/pages/Home.tsx", "line": 67, "col": 17, "component": "Home" },
+                                  "platformRaw": {
+                                    "tag": "h3",
+                                    "classes": ["type-h3"],
+                                    "unmapped": ["type-h3"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "text",
+                                  "text": "Fast by default"
+                                },
+                                {
+                                  "id": "n_home_1u",
+                                  "style": { "color": "$color.muted-foreground", "fontSize": "$fontSize.sm" },
+                                  "source": { "file": "src/pages/Home.tsx", "line": 68, "col": 17, "component": "Home" },
+                                  "platformRaw": {
+                                    "tag": "p",
+                                    "classes": ["text-muted-foreground", "text-sm"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "text",
+                                  "text": "Pages load in a blink on every device, without tuning."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "n_home_1v",
+                          "layout": {
+                            "mode": "flex",
+                            "direction": "column",
+                            "padding": { "top": "$spacing.6", "right": "$spacing.6", "bottom": "$spacing.6", "left": "$spacing.6" }
+                          },
+                          "style": {
+                            "background": "$color.card",
+                            "color": "$color.card-foreground",
+                            "borderWidth": 1,
+                            "borderColor": "$color.border",
+                            "radius": "$radius.xl",
+                            "shadow": "$shadow.sm"
+                          },
+                          "source": {
+                            "file": "src/components/Card.tsx",
+                            "line": 14,
+                            "col": 5,
+                            "component": "Card",
+                            "repeated": { "count": 6, "index": 1 }
+                          },
+                          "platformRaw": {
+                            "tag": "div",
+                            "classes": ["flex", "flex-col", "p-6", "bg-card", "text-card-foreground", "border", "border-border", "rounded-xl", "shadow-sm"]
+                          },
+                          "origin": "imported",
+                          "type": "box",
+                          "children": [
+                            {
+                              "id": "n_home_1w",
+                              "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.3" },
+                              "source": {
+                                "file": "src/components/Card.tsx",
+                                "line": 15,
+                                "col": 7,
+                                "component": "Card",
+                                "repeated": { "count": 6, "index": 1 }
+                              },
+                              "platformRaw": {
+                                "tag": "div",
+                                "classes": ["flex", "flex-col", "gap-3"]
+                              },
+                              "origin": "imported",
+                              "type": "box",
+                              "children": [
+                                {
+                                  "id": "n_home_1x",
+                                  "layout": { "mode": "flex", "align": "center", "justify": "center" },
+                                  "box": {
+                                    "width": { "mode": "fixed", "value": "$spacing.10" },
+                                    "height": { "mode": "fixed", "value": "$spacing.10" }
+                                  },
+                                  "style": { "background": "$color.accent", "color": "$color.accent-foreground", "radius": "$radius.lg" },
+                                  "source": { "file": "src/pages/Home.tsx", "line": 71, "col": 17, "component": "Home" },
+                                  "platformRaw": {
+                                    "tag": "div",
+                                    "classes": ["flex", "items-center", "justify-center", "w-10", "h-10", "bg-accent", "text-accent-foreground", "rounded-lg"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "box",
+                                  "children": [
+                                    {
+                                      "id": "n_home_1y",
+                                      "box": {
+                                        "width": { "mode": "fixed", "value": "1em" },
+                                        "height": { "mode": "fixed", "value": "1em" }
+                                      },
+                                      "style": { "fontSize": "$fontSize.xl" },
+                                      "source": { "file": "src/pages/Home.tsx", "line": 72, "col": 19, "component": "Home", "owner": "Anonymous" },
+                                      "platformRaw": {
+                                        "tag": "svg",
+                                        "element": "ShieldCheck",
+                                        "classes": ["lucide", "lucide-shield-check", "text-xl", "size-[1em]"]
+                                      },
+                                      "origin": "imported",
+                                      "type": "icon",
+                                      "icon": "shield-check",
+                                      "set": "lucide"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "n_home_1z",
+                                  "semantic": { "role": "heading", "level": 3 },
+                                  "source": { "file": "src/pages/Home.tsx", "line": 74, "col": 17, "component": "Home" },
+                                  "platformRaw": {
+                                    "tag": "h3",
+                                    "classes": ["type-h3"],
+                                    "unmapped": ["type-h3"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "text",
+                                  "text": "Secure"
+                                },
+                                {
+                                  "id": "n_home_20",
+                                  "style": { "color": "$color.muted-foreground", "fontSize": "$fontSize.sm" },
+                                  "source": { "file": "src/pages/Home.tsx", "line": 75, "col": 17, "component": "Home" },
+                                  "platformRaw": {
+                                    "tag": "p",
+                                    "classes": ["text-muted-foreground", "text-sm"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "text",
+                                  "text": "Your data is encrypted at rest and in transit."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "n_home_21",
+                          "layout": {
+                            "mode": "flex",
+                            "direction": "column",
+                            "padding": { "top": "$spacing.6", "right": "$spacing.6", "bottom": "$spacing.6", "left": "$spacing.6" }
+                          },
+                          "style": {
+                            "background": "$color.card",
+                            "color": "$color.card-foreground",
+                            "borderWidth": 1,
+                            "borderColor": "$color.border",
+                            "radius": "$radius.xl",
+                            "shadow": "$shadow.sm"
+                          },
+                          "source": {
+                            "file": "src/components/Card.tsx",
+                            "line": 14,
+                            "col": 5,
+                            "component": "Card",
+                            "repeated": { "count": 6, "index": 2 }
+                          },
+                          "platformRaw": {
+                            "tag": "div",
+                            "classes": ["flex", "flex-col", "p-6", "bg-card", "text-card-foreground", "border", "border-border", "rounded-xl", "shadow-sm"]
+                          },
+                          "origin": "imported",
+                          "type": "box",
+                          "children": [
+                            {
+                              "id": "n_home_22",
+                              "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.3" },
+                              "source": {
+                                "file": "src/components/Card.tsx",
+                                "line": 15,
+                                "col": 7,
+                                "component": "Card",
+                                "repeated": { "count": 6, "index": 2 }
+                              },
+                              "platformRaw": {
+                                "tag": "div",
+                                "classes": ["flex", "flex-col", "gap-3"]
+                              },
+                              "origin": "imported",
+                              "type": "box",
+                              "children": [
+                                {
+                                  "id": "n_home_23",
+                                  "layout": { "mode": "flex", "align": "center", "justify": "center" },
+                                  "box": {
+                                    "width": { "mode": "fixed", "value": "$spacing.10" },
+                                    "height": { "mode": "fixed", "value": "$spacing.10" }
+                                  },
+                                  "style": { "background": "$color.accent", "color": "$color.accent-foreground", "radius": "$radius.lg" },
+                                  "source": { "file": "src/pages/Home.tsx", "line": 78, "col": 17, "component": "Home" },
+                                  "platformRaw": {
+                                    "tag": "div",
+                                    "classes": ["flex", "items-center", "justify-center", "w-10", "h-10", "bg-accent", "text-accent-foreground", "rounded-lg"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "box",
+                                  "children": [
+                                    {
+                                      "id": "n_home_24",
+                                      "box": {
+                                        "width": { "mode": "fixed", "value": "1em" },
+                                        "height": { "mode": "fixed", "value": "1em" }
+                                      },
+                                      "style": { "fontSize": "$fontSize.xl" },
+                                      "source": { "file": "src/pages/Home.tsx", "line": 79, "col": 19, "component": "Home", "owner": "Anonymous" },
+                                      "platformRaw": {
+                                        "tag": "svg",
+                                        "element": "Sparkles",
+                                        "classes": ["lucide", "lucide-sparkles", "lucide-stars", "text-xl", "size-[1em]"]
+                                      },
+                                      "origin": "imported",
+                                      "type": "icon",
+                                      "icon": "sparkles",
+                                      "set": "lucide"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "n_home_25",
+                                  "semantic": { "role": "heading", "level": 3 },
+                                  "source": { "file": "src/pages/Home.tsx", "line": 81, "col": 17, "component": "Home" },
+                                  "platformRaw": {
+                                    "tag": "h3",
+                                    "classes": ["type-h3"],
+                                    "unmapped": ["type-h3"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "text",
+                                  "text": "Delightful"
+                                },
+                                {
+                                  "id": "n_home_26",
+                                  "style": { "color": "$color.muted-foreground", "fontSize": "$fontSize.sm" },
+                                  "source": { "file": "src/pages/Home.tsx", "line": 82, "col": 17, "component": "Home" },
+                                  "platformRaw": {
+                                    "tag": "p",
+                                    "classes": ["text-muted-foreground", "text-sm"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "text",
+                                  "text": "Thoughtful details that make everyday work lighter."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "n_home_27",
+              "layout": { "mode": "flex", "direction": "column", "align": "center" },
+              "source": { "file": "src/pages/Home.tsx", "line": 87, "col": 9, "component": "Home" },
+              "platformRaw": {
+                "tag": "section",
+                "classes": ["flex", "flex-col", "items-center", "px-gutter", "py-section", "md:px-gutter", "md:py-section-lg"],
+                "unmapped": ["px-gutter", "py-section", "md:px-gutter", "md:py-section-lg"]
+              },
+              "origin": "imported",
+              "type": "box",
+              "children": [
+                {
+                  "id": "n_home_28",
+                  "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.12" },
+                  "box": {
+                    "width": { "mode": "fill" },
+                    "maxWidth": "$size.content"
+                  },
+                  "source": { "file": "src/pages/Home.tsx", "line": 88, "col": 11, "component": "Home" },
+                  "platformRaw": {
+                    "tag": "div",
+                    "classes": ["flex", "flex-col", "gap-12", "w-full", "max-w-content"]
+                  },
+                  "origin": "imported",
+                  "type": "box",
+                  "children": [
+                    {
+                      "id": "n_home_29",
+                      "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.4", "align": "center" },
+                      "box": { "maxWidth": "$size.2xl", "alignSelf": "center" },
+                      "source": { "file": "src/pages/Home.tsx", "line": 89, "col": 13, "component": "Home" },
+                      "platformRaw": {
+                        "tag": "div",
+                        "classes": ["flex", "flex-col", "gap-4", "items-center", "max-w-2xl", "self-center"]
+                      },
+                      "origin": "imported",
+                      "type": "box",
+                      "children": [
+                        {
+                          "id": "n_home_2a",
+                          "style": {
+                            "color": "$color.accent-foreground",
+                            "fontSize": "$fontSize.sm",
+                            "fontWeight": "$fontWeight.semibold",
+                            "textAlign": "center"
+                          },
+                          "source": { "file": "src/pages/Home.tsx", "line": 90, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "p",
+                            "classes": ["text-accent-foreground", "text-sm", "font-semibold", "text-center"]
+                          },
+                          "origin": "imported",
+                          "type": "text",
+                          "text": "Testimonials"
+                        },
+                        {
+                          "id": "n_home_2b",
+                          "style": { "textAlign": "center" },
+                          "semantic": { "role": "heading", "level": 2 },
+                          "source": { "file": "src/pages/Home.tsx", "line": 91, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "h2",
+                            "classes": ["type-h2", "text-center"],
+                            "unmapped": ["type-h2"]
+                          },
+                          "origin": "imported",
+                          "type": "text",
+                          "text": "Loved by teams everywhere"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "n_home_2c",
+                      "layout": { "mode": "grid", "gap": "$spacing.6", "columns": 1 },
+                      "style": {
+                        "motion": { "preset": "slide-up", "trigger": "scroll", "stagger": 120 }
+                      },
+                      "overrides": [
+                        {
+                          "when": { "viewport": "md" },
+                          "layout": { "columns": 3 }
+                        }
+                      ],
+                      "source": { "file": "src/pages/Home.tsx", "line": 93, "col": 13, "component": "Home" },
+                      "platformRaw": {
+                        "tag": "div",
+                        "classes": ["grid", "grid-cols-1", "gap-6", "aps-reveal", "aps-stagger", "[--aps-stagger:120ms]", "*:motion-safe:animate-[aps-slide-up_600ms_ease-out_both]", "md:grid-cols-3"]
+                      },
+                      "origin": "imported",
+                      "type": "box",
+                      "children": [
+                        {
+                          "id": "n_home_2d",
+                          "layout": {
+                            "mode": "flex",
+                            "direction": "column",
+                            "padding": { "top": "$spacing.6", "right": "$spacing.6", "bottom": "$spacing.6", "left": "$spacing.6" }
+                          },
+                          "style": {
+                            "background": "$color.card",
+                            "color": "$color.card-foreground",
+                            "borderWidth": 1,
+                            "borderColor": "$color.border",
+                            "radius": "$radius.xl",
+                            "shadow": "$shadow.sm"
+                          },
+                          "source": {
+                            "file": "src/components/Card.tsx",
+                            "line": 14,
+                            "col": 5,
+                            "component": "Card",
+                            "repeated": { "count": 6, "index": 3 }
+                          },
+                          "platformRaw": {
+                            "tag": "div",
+                            "classes": ["flex", "flex-col", "p-6", "bg-card", "text-card-foreground", "border", "border-border", "rounded-xl", "shadow-sm"]
+                          },
+                          "origin": "imported",
+                          "type": "box",
+                          "children": [
+                            {
+                              "id": "n_home_2e",
+                              "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.6" },
+                              "source": {
+                                "file": "src/components/Card.tsx",
+                                "line": 15,
+                                "col": 7,
+                                "component": "Card",
+                                "repeated": { "count": 6, "index": 3 }
+                              },
+                              "platformRaw": {
+                                "tag": "div",
+                                "classes": ["flex", "flex-col", "gap-6"]
+                              },
+                              "origin": "imported",
+                              "type": "box",
+                              "children": [
+                                {
+                                  "id": "n_home_2f",
+                                  "style": { "fontSize": "$fontSize.base", "lineHeight": "$lineHeight.relaxed" },
+                                  "source": {
+                                    "file": "src/pages/Home.tsx",
+                                    "line": 96,
+                                    "col": 19,
+                                    "component": "Home",
+                                    "repeated": { "count": 3, "index": 0 }
+                                  },
+                                  "platformRaw": {
+                                    "tag": "p",
+                                    "classes": ["text-base", "leading-relaxed"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "text",
+                                  "text": "“We moved our whole team over in a week. Planning finally feels calm.”"
+                                },
+                                {
+                                  "id": "n_home_2g",
+                                  "layout": { "mode": "flex", "gap": "$spacing.3", "align": "center" },
+                                  "source": {
+                                    "file": "src/pages/Home.tsx",
+                                    "line": 97,
+                                    "col": 19,
+                                    "component": "Home",
+                                    "repeated": { "count": 3, "index": 0 }
+                                  },
+                                  "platformRaw": {
+                                    "tag": "div",
+                                    "classes": ["flex", "gap-3", "items-center"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "box",
+                                  "children": [
+                                    {
+                                      "id": "n_home_2h",
+                                      "box": {
+                                        "width": { "mode": "fixed", "value": "$spacing.8" },
+                                        "height": { "mode": "fixed", "value": "$spacing.8" }
+                                      },
+                                      "style": { "radius": "$radius.full" },
+                                      "source": {
+                                        "file": "src/components/Avatar.tsx",
+                                        "line": 23,
+                                        "col": 5,
+                                        "component": "Avatar",
+                                        "repeated": { "count": 3, "index": 0 }
+                                      },
+                                      "platformRaw": {
+                                        "tag": "img",
+                                        "classes": ["rounded-full", "w-8", "h-8", "object-cover"]
+                                      },
+                                      "origin": "imported",
+                                      "type": "image",
+                                      "src": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%3E%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22%2371717a%22%20fill-opacity%3D%220.16%22%2F%3E%3Ccircle%20cx%3D%22200%22%20cy%3D%22160%22%20r%3D%2276%22%20fill%3D%22%2371717a%22%20fill-opacity%3D%220.34%22%2F%3E%3Cpath%20d%3D%22M60%20400%20C60%20300%20120%20255%20200%20255%20C280%20255%20340%20300%20340%20400Z%22%20fill%3D%22%2371717a%22%20fill-opacity%3D%220.34%22%2F%3E%3C%2Fsvg%3E",
+                                      "alt": "",
+                                      "fit": "cover"
+                                    },
+                                    {
+                                      "id": "n_home_2i",
+                                      "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.0" },
+                                      "source": {
+                                        "file": "src/pages/Home.tsx",
+                                        "line": 99,
+                                        "col": 21,
+                                        "component": "Home",
+                                        "repeated": { "count": 3, "index": 0 }
+                                      },
+                                      "platformRaw": {
+                                        "tag": "div",
+                                        "classes": ["flex", "flex-col", "gap-0"]
+                                      },
+                                      "origin": "imported",
+                                      "type": "box",
+                                      "children": [
+                                        {
+                                          "id": "n_home_2j",
+                                          "style": { "fontSize": "$fontSize.sm", "fontWeight": "$fontWeight.semibold" },
+                                          "source": {
+                                            "file": "src/pages/Home.tsx",
+                                            "line": 100,
+                                            "col": 23,
+                                            "component": "Home",
+                                            "repeated": { "count": 3, "index": 0 }
+                                          },
+                                          "platformRaw": {
+                                            "tag": "p",
+                                            "classes": ["text-sm", "font-semibold"]
+                                          },
+                                          "origin": "imported",
+                                          "type": "text",
+                                          "text": "Maya Patel"
+                                        },
+                                        {
+                                          "id": "n_home_2k",
+                                          "style": { "color": "$color.muted-foreground", "fontSize": "$fontSize.sm" },
+                                          "source": {
+                                            "file": "src/pages/Home.tsx",
+                                            "line": 101,
+                                            "col": 23,
+                                            "component": "Home",
+                                            "repeated": { "count": 3, "index": 0 }
+                                          },
+                                          "platformRaw": {
+                                            "tag": "p",
+                                            "classes": ["text-muted-foreground", "text-sm"]
+                                          },
+                                          "origin": "imported",
+                                          "type": "text",
+                                          "text": "Head of Product, Lumen"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "n_home_2l",
+                          "layout": {
+                            "mode": "flex",
+                            "direction": "column",
+                            "padding": { "top": "$spacing.6", "right": "$spacing.6", "bottom": "$spacing.6", "left": "$spacing.6" }
+                          },
+                          "style": {
+                            "background": "$color.card",
+                            "color": "$color.card-foreground",
+                            "borderWidth": 1,
+                            "borderColor": "$color.border",
+                            "radius": "$radius.xl",
+                            "shadow": "$shadow.sm"
+                          },
+                          "source": {
+                            "file": "src/components/Card.tsx",
+                            "line": 14,
+                            "col": 5,
+                            "component": "Card",
+                            "repeated": { "count": 6, "index": 4 }
+                          },
+                          "platformRaw": {
+                            "tag": "div",
+                            "classes": ["flex", "flex-col", "p-6", "bg-card", "text-card-foreground", "border", "border-border", "rounded-xl", "shadow-sm"]
+                          },
+                          "origin": "imported",
+                          "type": "box",
+                          "children": [
+                            {
+                              "id": "n_home_2m",
+                              "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.6" },
+                              "source": {
+                                "file": "src/components/Card.tsx",
+                                "line": 15,
+                                "col": 7,
+                                "component": "Card",
+                                "repeated": { "count": 6, "index": 4 }
+                              },
+                              "platformRaw": {
+                                "tag": "div",
+                                "classes": ["flex", "flex-col", "gap-6"]
+                              },
+                              "origin": "imported",
+                              "type": "box",
+                              "children": [
+                                {
+                                  "id": "n_home_2n",
+                                  "style": { "fontSize": "$fontSize.base", "lineHeight": "$lineHeight.relaxed" },
+                                  "source": {
+                                    "file": "src/pages/Home.tsx",
+                                    "line": 96,
+                                    "col": 19,
+                                    "component": "Home",
+                                    "repeated": { "count": 3, "index": 1 }
+                                  },
+                                  "platformRaw": {
+                                    "tag": "p",
+                                    "classes": ["text-base", "leading-relaxed"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "text",
+                                  "text": "“The best tool we've adopted this year. Everyone actually uses it.”"
+                                },
+                                {
+                                  "id": "n_home_2o",
+                                  "layout": { "mode": "flex", "gap": "$spacing.3", "align": "center" },
+                                  "source": {
+                                    "file": "src/pages/Home.tsx",
+                                    "line": 97,
+                                    "col": 19,
+                                    "component": "Home",
+                                    "repeated": { "count": 3, "index": 1 }
+                                  },
+                                  "platformRaw": {
+                                    "tag": "div",
+                                    "classes": ["flex", "gap-3", "items-center"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "box",
+                                  "children": [
+                                    {
+                                      "id": "n_home_2p",
+                                      "box": {
+                                        "width": { "mode": "fixed", "value": "$spacing.8" },
+                                        "height": { "mode": "fixed", "value": "$spacing.8" }
+                                      },
+                                      "style": { "radius": "$radius.full" },
+                                      "source": {
+                                        "file": "src/components/Avatar.tsx",
+                                        "line": 23,
+                                        "col": 5,
+                                        "component": "Avatar",
+                                        "repeated": { "count": 3, "index": 1 }
+                                      },
+                                      "platformRaw": {
+                                        "tag": "img",
+                                        "classes": ["rounded-full", "w-8", "h-8", "object-cover"]
+                                      },
+                                      "origin": "imported",
+                                      "type": "image",
+                                      "src": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%3E%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22%2371717a%22%20fill-opacity%3D%220.16%22%2F%3E%3Ccircle%20cx%3D%22200%22%20cy%3D%22160%22%20r%3D%2276%22%20fill%3D%22%2371717a%22%20fill-opacity%3D%220.34%22%2F%3E%3Cpath%20d%3D%22M60%20400%20C60%20300%20120%20255%20200%20255%20C280%20255%20340%20300%20340%20400Z%22%20fill%3D%22%2371717a%22%20fill-opacity%3D%220.34%22%2F%3E%3C%2Fsvg%3E",
+                                      "alt": "",
+                                      "fit": "cover"
+                                    },
+                                    {
+                                      "id": "n_home_2q",
+                                      "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.0" },
+                                      "source": {
+                                        "file": "src/pages/Home.tsx",
+                                        "line": 99,
+                                        "col": 21,
+                                        "component": "Home",
+                                        "repeated": { "count": 3, "index": 1 }
+                                      },
+                                      "platformRaw": {
+                                        "tag": "div",
+                                        "classes": ["flex", "flex-col", "gap-0"]
+                                      },
+                                      "origin": "imported",
+                                      "type": "box",
+                                      "children": [
+                                        {
+                                          "id": "n_home_2r",
+                                          "style": { "fontSize": "$fontSize.sm", "fontWeight": "$fontWeight.semibold" },
+                                          "source": {
+                                            "file": "src/pages/Home.tsx",
+                                            "line": 100,
+                                            "col": 23,
+                                            "component": "Home",
+                                            "repeated": { "count": 3, "index": 1 }
+                                          },
+                                          "platformRaw": {
+                                            "tag": "p",
+                                            "classes": ["text-sm", "font-semibold"]
+                                          },
+                                          "origin": "imported",
+                                          "type": "text",
+                                          "text": "Jonas Weber"
+                                        },
+                                        {
+                                          "id": "n_home_2s",
+                                          "style": { "color": "$color.muted-foreground", "fontSize": "$fontSize.sm" },
+                                          "source": {
+                                            "file": "src/pages/Home.tsx",
+                                            "line": 101,
+                                            "col": 23,
+                                            "component": "Home",
+                                            "repeated": { "count": 3, "index": 1 }
+                                          },
+                                          "platformRaw": {
+                                            "tag": "p",
+                                            "classes": ["text-muted-foreground", "text-sm"]
+                                          },
+                                          "origin": "imported",
+                                          "type": "text",
+                                          "text": "CTO, Northwind"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "n_home_2t",
+                          "layout": {
+                            "mode": "flex",
+                            "direction": "column",
+                            "padding": { "top": "$spacing.6", "right": "$spacing.6", "bottom": "$spacing.6", "left": "$spacing.6" }
+                          },
+                          "style": {
+                            "background": "$color.card",
+                            "color": "$color.card-foreground",
+                            "borderWidth": 1,
+                            "borderColor": "$color.border",
+                            "radius": "$radius.xl",
+                            "shadow": "$shadow.sm"
+                          },
+                          "source": {
+                            "file": "src/components/Card.tsx",
+                            "line": 14,
+                            "col": 5,
+                            "component": "Card",
+                            "repeated": { "count": 6, "index": 5 }
+                          },
+                          "platformRaw": {
+                            "tag": "div",
+                            "classes": ["flex", "flex-col", "p-6", "bg-card", "text-card-foreground", "border", "border-border", "rounded-xl", "shadow-sm"]
+                          },
+                          "origin": "imported",
+                          "type": "box",
+                          "children": [
+                            {
+                              "id": "n_home_2u",
+                              "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.6" },
+                              "source": {
+                                "file": "src/components/Card.tsx",
+                                "line": 15,
+                                "col": 7,
+                                "component": "Card",
+                                "repeated": { "count": 6, "index": 5 }
+                              },
+                              "platformRaw": {
+                                "tag": "div",
+                                "classes": ["flex", "flex-col", "gap-6"]
+                              },
+                              "origin": "imported",
+                              "type": "box",
+                              "children": [
+                                {
+                                  "id": "n_home_2v",
+                                  "style": { "fontSize": "$fontSize.base", "lineHeight": "$lineHeight.relaxed" },
+                                  "source": {
+                                    "file": "src/pages/Home.tsx",
+                                    "line": 96,
+                                    "col": 19,
+                                    "component": "Home",
+                                    "repeated": { "count": 3, "index": 2 }
+                                  },
+                                  "platformRaw": {
+                                    "tag": "p",
+                                    "classes": ["text-base", "leading-relaxed"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "text",
+                                  "text": "“Clear, fast and pleasant. Our launches are on time again.”"
+                                },
+                                {
+                                  "id": "n_home_2w",
+                                  "layout": { "mode": "flex", "gap": "$spacing.3", "align": "center" },
+                                  "source": {
+                                    "file": "src/pages/Home.tsx",
+                                    "line": 97,
+                                    "col": 19,
+                                    "component": "Home",
+                                    "repeated": { "count": 3, "index": 2 }
+                                  },
+                                  "platformRaw": {
+                                    "tag": "div",
+                                    "classes": ["flex", "gap-3", "items-center"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "box",
+                                  "children": [
+                                    {
+                                      "id": "n_home_2x",
+                                      "box": {
+                                        "width": { "mode": "fixed", "value": "$spacing.8" },
+                                        "height": { "mode": "fixed", "value": "$spacing.8" }
+                                      },
+                                      "style": { "radius": "$radius.full" },
+                                      "source": {
+                                        "file": "src/components/Avatar.tsx",
+                                        "line": 23,
+                                        "col": 5,
+                                        "component": "Avatar",
+                                        "repeated": { "count": 3, "index": 2 }
+                                      },
+                                      "platformRaw": {
+                                        "tag": "img",
+                                        "classes": ["rounded-full", "w-8", "h-8", "object-cover"]
+                                      },
+                                      "origin": "imported",
+                                      "type": "image",
+                                      "src": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%3E%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22%2371717a%22%20fill-opacity%3D%220.16%22%2F%3E%3Ccircle%20cx%3D%22200%22%20cy%3D%22160%22%20r%3D%2276%22%20fill%3D%22%2371717a%22%20fill-opacity%3D%220.34%22%2F%3E%3Cpath%20d%3D%22M60%20400%20C60%20300%20120%20255%20200%20255%20C280%20255%20340%20300%20340%20400Z%22%20fill%3D%22%2371717a%22%20fill-opacity%3D%220.34%22%2F%3E%3C%2Fsvg%3E",
+                                      "alt": "",
+                                      "fit": "cover"
+                                    },
+                                    {
+                                      "id": "n_home_2y",
+                                      "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.0" },
+                                      "source": {
+                                        "file": "src/pages/Home.tsx",
+                                        "line": 99,
+                                        "col": 21,
+                                        "component": "Home",
+                                        "repeated": { "count": 3, "index": 2 }
+                                      },
+                                      "platformRaw": {
+                                        "tag": "div",
+                                        "classes": ["flex", "flex-col", "gap-0"]
+                                      },
+                                      "origin": "imported",
+                                      "type": "box",
+                                      "children": [
+                                        {
+                                          "id": "n_home_2z",
+                                          "style": { "fontSize": "$fontSize.sm", "fontWeight": "$fontWeight.semibold" },
+                                          "source": {
+                                            "file": "src/pages/Home.tsx",
+                                            "line": 100,
+                                            "col": 23,
+                                            "component": "Home",
+                                            "repeated": { "count": 3, "index": 2 }
+                                          },
+                                          "platformRaw": {
+                                            "tag": "p",
+                                            "classes": ["text-sm", "font-semibold"]
+                                          },
+                                          "origin": "imported",
+                                          "type": "text",
+                                          "text": "Sara Lind"
+                                        },
+                                        {
+                                          "id": "n_home_30",
+                                          "style": { "color": "$color.muted-foreground", "fontSize": "$fontSize.sm" },
+                                          "source": {
+                                            "file": "src/pages/Home.tsx",
+                                            "line": 101,
+                                            "col": 23,
+                                            "component": "Home",
+                                            "repeated": { "count": 3, "index": 2 }
+                                          },
+                                          "platformRaw": {
+                                            "tag": "p",
+                                            "classes": ["text-muted-foreground", "text-sm"]
+                                          },
+                                          "origin": "imported",
+                                          "type": "text",
+                                          "text": "Founder, Fjord"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "n_home_31",
+              "layout": { "mode": "flex", "direction": "column", "align": "center" },
+              "source": { "file": "src/pages/Home.tsx", "line": 109, "col": 9, "component": "Home" },
+              "platformRaw": {
+                "tag": "section",
+                "classes": ["flex", "flex-col", "items-center", "px-gutter", "py-section", "md:px-gutter", "md:py-section-lg"],
+                "unmapped": ["px-gutter", "py-section", "md:px-gutter", "md:py-section-lg"]
+              },
+              "origin": "imported",
+              "type": "box",
+              "children": [
+                {
+                  "id": "n_home_32",
+                  "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.12" },
+                  "box": {
+                    "width": { "mode": "fill" },
+                    "maxWidth": "$size.content"
+                  },
+                  "source": { "file": "src/pages/Home.tsx", "line": 110, "col": 11, "component": "Home" },
+                  "platformRaw": {
+                    "tag": "div",
+                    "classes": ["flex", "flex-col", "gap-12", "w-full", "max-w-content"]
+                  },
+                  "origin": "imported",
+                  "type": "box",
+                  "children": [
+                    {
+                      "id": "n_home_33",
+                      "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.4", "align": "center" },
+                      "box": { "maxWidth": "$size.2xl", "alignSelf": "center" },
+                      "source": { "file": "src/pages/Home.tsx", "line": 111, "col": 13, "component": "Home" },
+                      "platformRaw": {
+                        "tag": "div",
+                        "classes": ["flex", "flex-col", "gap-4", "items-center", "max-w-2xl", "self-center"]
+                      },
+                      "origin": "imported",
+                      "type": "box",
+                      "children": [
+                        {
+                          "id": "n_home_34",
+                          "style": { "textAlign": "center" },
+                          "semantic": { "role": "heading", "level": 2 },
+                          "source": { "file": "src/pages/Home.tsx", "line": 112, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "h2",
+                            "classes": ["type-h2", "text-center"],
+                            "unmapped": ["type-h2"]
+                          },
+                          "origin": "imported",
+                          "type": "text",
+                          "text": "Frequently asked questions"
+                        },
+                        {
+                          "id": "n_home_35",
+                          "style": {
+                            "color": "$color.muted-foreground",
+                            "fontSize": "$fontSize.lg",
+                            "lineHeight": "$lineHeight.relaxed",
+                            "textAlign": "center"
+                          },
+                          "source": { "file": "src/pages/Home.tsx", "line": 113, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "p",
+                            "classes": ["text-muted-foreground", "text-lg", "leading-relaxed", "text-center"]
+                          },
+                          "origin": "imported",
+                          "type": "text",
+                          "text": "Can't find what you're looking for? Write to us."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "n_home_36",
+                      "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.0" },
+                      "box": {
+                        "width": { "mode": "fill" },
+                        "maxWidth": "$size.3xl",
+                        "alignSelf": "center"
+                      },
+                      "source": { "file": "src/pages/Home.tsx", "line": 115, "col": 13, "component": "Home" },
+                      "platformRaw": {
+                        "tag": "div",
+                        "classes": ["flex", "flex-col", "gap-0", "w-full", "max-w-3xl", "self-center"]
+                      },
+                      "origin": "imported",
+                      "type": "box",
+                      "children": [
+                        {
+                          "id": "n_home_37",
+                          "layout": { "mode": "flex", "direction": "column" },
+                          "style": {
+                            "borderWidth": { "bottom": 1 },
+                            "borderColor": "$color.border"
+                          },
+                          "source": {
+                            "file": "src/components/AccordionItem.tsx",
+                            "line": 45,
+                            "col": 5,
+                            "component": "AccordionItem",
+                            "repeated": { "count": 4, "index": 0 }
+                          },
+                          "platformRaw": {
+                            "tag": "div",
+                            "classes": ["flex", "flex-col", "border-b", "border-border"]
+                          },
+                          "origin": "imported",
+                          "type": "box",
+                          "children": [
+                            {
+                              "id": "n_home_38",
+                              "layout": {
+                                "mode": "flex",
+                                "gap": "$spacing.4",
+                                "align": "center",
+                                "justify": "between",
+                                "padding": { "top": "$spacing.4", "bottom": "$spacing.4" }
+                              },
+                              "style": { "textAlign": "left", "cursor": "pointer" },
+                              "source": {
+                                "file": "src/components/AccordionItem.tsx",
+                                "line": 46,
+                                "col": 7,
+                                "component": "AccordionItem",
+                                "repeated": { "count": 4, "index": 0 }
+                              },
+                              "platformRaw": {
+                                "tag": "button",
+                                "classes": ["flex", "gap-4", "items-center", "justify-between", "py-4", "text-left", "cursor-pointer"]
+                              },
+                              "origin": "imported",
+                              "type": "button",
+                              "children": [
+                                {
+                                  "id": "n_home_39",
+                                  "style": { "fontWeight": "$fontWeight.medium" },
+                                  "source": {
+                                    "file": "src/components/AccordionItem.tsx",
+                                    "line": 47,
+                                    "col": 9,
+                                    "component": "AccordionItem",
+                                    "repeated": { "count": 4, "index": 0 }
+                                  },
+                                  "platformRaw": {
+                                    "tag": "span",
+                                    "classes": ["font-medium"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "text",
+                                  "text": "Is there a free plan?"
+                                },
+                                {
+                                  "id": "n_home_3a",
+                                  "box": {
+                                    "width": { "mode": "fixed", "value": "1em" },
+                                    "height": { "mode": "fixed", "value": "1em" }
+                                  },
+                                  "style": { "color": "$color.muted-foreground" },
+                                  "hidden": true,
+                                  "source": {
+                                    "file": "src/components/AccordionItem.tsx",
+                                    "line": 48,
+                                    "col": 9,
+                                    "component": "AccordionItem",
+                                    "owner": "Anonymous",
+                                    "repeated": { "count": 4, "index": 0 }
+                                  },
+                                  "platformRaw": {
+                                    "tag": "svg",
+                                    "element": "ChevronDown",
+                                    "classes": ["lucide", "lucide-chevron-down", "text-muted-foreground", "hidden", "size-[1em]"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "icon",
+                                  "icon": "chevron-down",
+                                  "set": "lucide"
+                                },
+                                {
+                                  "id": "n_home_3b",
+                                  "layout": { "mode": "block" },
+                                  "box": {
+                                    "width": { "mode": "fixed", "value": "1em" },
+                                    "height": { "mode": "fixed", "value": "1em" }
+                                  },
+                                  "style": { "color": "$color.muted-foreground" },
+                                  "source": {
+                                    "file": "src/components/AccordionItem.tsx",
+                                    "line": 49,
+                                    "col": 9,
+                                    "component": "AccordionItem",
+                                    "owner": "Anonymous",
+                                    "repeated": { "count": 4, "index": 0 }
+                                  },
+                                  "platformRaw": {
+                                    "tag": "svg",
+                                    "element": "ChevronUp",
+                                    "classes": ["lucide", "lucide-chevron-up", "text-muted-foreground", "block", "size-[1em]"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "icon",
+                                  "icon": "chevron-up",
+                                  "set": "lucide"
+                                }
+                              ]
+                            },
+                            {
+                              "id": "n_home_3c",
+                              "layout": {
+                                "mode": "block",
+                                "padding": { "bottom": "$spacing.4" }
+                              },
+                              "style": { "color": "$color.muted-foreground", "fontSize": "$fontSize.sm" },
+                              "source": {
+                                "file": "src/components/AccordionItem.tsx",
+                                "line": 51,
+                                "col": 7,
+                                "component": "AccordionItem",
+                                "repeated": { "count": 4, "index": 0 }
+                              },
+                              "platformRaw": {
+                                "tag": "p",
+                                "classes": ["pb-4", "text-muted-foreground", "text-sm", "block"]
+                              },
+                              "origin": "imported",
+                              "type": "text",
+                              "text": "Yes. Start for free and upgrade when your team grows."
+                            }
+                          ]
+                        },
+                        {
+                          "id": "n_home_3d",
+                          "layout": { "mode": "flex", "direction": "column" },
+                          "style": {
+                            "borderWidth": { "bottom": 1 },
+                            "borderColor": "$color.border"
+                          },
+                          "source": {
+                            "file": "src/components/AccordionItem.tsx",
+                            "line": 45,
+                            "col": 5,
+                            "component": "AccordionItem",
+                            "repeated": { "count": 4, "index": 1 }
+                          },
+                          "platformRaw": {
+                            "tag": "div",
+                            "classes": ["flex", "flex-col", "border-b", "border-border"]
+                          },
+                          "origin": "imported",
+                          "type": "box",
+                          "children": [
+                            {
+                              "id": "n_home_3e",
+                              "layout": {
+                                "mode": "flex",
+                                "gap": "$spacing.4",
+                                "align": "center",
+                                "justify": "between",
+                                "padding": { "top": "$spacing.4", "bottom": "$spacing.4" }
+                              },
+                              "style": { "textAlign": "left", "cursor": "pointer" },
+                              "source": {
+                                "file": "src/components/AccordionItem.tsx",
+                                "line": 46,
+                                "col": 7,
+                                "component": "AccordionItem",
+                                "repeated": { "count": 4, "index": 1 }
+                              },
+                              "platformRaw": {
+                                "tag": "button",
+                                "classes": ["flex", "gap-4", "items-center", "justify-between", "py-4", "text-left", "cursor-pointer"]
+                              },
+                              "origin": "imported",
+                              "type": "button",
+                              "children": [
+                                {
+                                  "id": "n_home_3f",
+                                  "style": { "fontWeight": "$fontWeight.medium" },
+                                  "source": {
+                                    "file": "src/components/AccordionItem.tsx",
+                                    "line": 47,
+                                    "col": 9,
+                                    "component": "AccordionItem",
+                                    "repeated": { "count": 4, "index": 1 }
+                                  },
+                                  "platformRaw": {
+                                    "tag": "span",
+                                    "classes": ["font-medium"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "text",
+                                  "text": "Can I cancel anytime?"
+                                },
+                                {
+                                  "id": "n_home_3g",
+                                  "box": {
+                                    "width": { "mode": "fixed", "value": "1em" },
+                                    "height": { "mode": "fixed", "value": "1em" }
+                                  },
+                                  "style": { "color": "$color.muted-foreground" },
+                                  "source": {
+                                    "file": "src/components/AccordionItem.tsx",
+                                    "line": 48,
+                                    "col": 9,
+                                    "component": "AccordionItem",
+                                    "owner": "Anonymous",
+                                    "repeated": { "count": 4, "index": 1 }
+                                  },
+                                  "platformRaw": {
+                                    "tag": "svg",
+                                    "element": "ChevronDown",
+                                    "classes": ["lucide", "lucide-chevron-down", "text-muted-foreground", "size-[1em]"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "icon",
+                                  "icon": "chevron-down",
+                                  "set": "lucide"
+                                },
+                                {
+                                  "id": "n_home_3h",
+                                  "box": {
+                                    "width": { "mode": "fixed", "value": "1em" },
+                                    "height": { "mode": "fixed", "value": "1em" }
+                                  },
+                                  "style": { "color": "$color.muted-foreground" },
+                                  "hidden": true,
+                                  "source": {
+                                    "file": "src/components/AccordionItem.tsx",
+                                    "line": 49,
+                                    "col": 9,
+                                    "component": "AccordionItem",
+                                    "owner": "Anonymous",
+                                    "repeated": { "count": 4, "index": 1 }
+                                  },
+                                  "platformRaw": {
+                                    "tag": "svg",
+                                    "element": "ChevronUp",
+                                    "classes": ["lucide", "lucide-chevron-up", "text-muted-foreground", "hidden", "size-[1em]"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "icon",
+                                  "icon": "chevron-up",
+                                  "set": "lucide"
+                                }
+                              ]
+                            },
+                            {
+                              "id": "n_home_3i",
+                              "layout": {
+                                "padding": { "bottom": "$spacing.4" }
+                              },
+                              "style": { "color": "$color.muted-foreground", "fontSize": "$fontSize.sm" },
+                              "hidden": true,
+                              "source": {
+                                "file": "src/components/AccordionItem.tsx",
+                                "line": 51,
+                                "col": 7,
+                                "component": "AccordionItem",
+                                "repeated": { "count": 4, "index": 1 }
+                              },
+                              "platformRaw": {
+                                "tag": "p",
+                                "classes": ["pb-4", "text-muted-foreground", "text-sm", "hidden"]
+                              },
+                              "origin": "imported",
+                              "type": "text",
+                              "text": "Of course. Cancel with one click, no questions asked."
+                            }
+                          ]
+                        },
+                        {
+                          "id": "n_home_3j",
+                          "layout": { "mode": "flex", "direction": "column" },
+                          "style": {
+                            "borderWidth": { "bottom": 1 },
+                            "borderColor": "$color.border"
+                          },
+                          "source": {
+                            "file": "src/components/AccordionItem.tsx",
+                            "line": 45,
+                            "col": 5,
+                            "component": "AccordionItem",
+                            "repeated": { "count": 4, "index": 2 }
+                          },
+                          "platformRaw": {
+                            "tag": "div",
+                            "classes": ["flex", "flex-col", "border-b", "border-border"]
+                          },
+                          "origin": "imported",
+                          "type": "box",
+                          "children": [
+                            {
+                              "id": "n_home_3k",
+                              "layout": {
+                                "mode": "flex",
+                                "gap": "$spacing.4",
+                                "align": "center",
+                                "justify": "between",
+                                "padding": { "top": "$spacing.4", "bottom": "$spacing.4" }
+                              },
+                              "style": { "textAlign": "left", "cursor": "pointer" },
+                              "source": {
+                                "file": "src/components/AccordionItem.tsx",
+                                "line": 46,
+                                "col": 7,
+                                "component": "AccordionItem",
+                                "repeated": { "count": 4, "index": 2 }
+                              },
+                              "platformRaw": {
+                                "tag": "button",
+                                "classes": ["flex", "gap-4", "items-center", "justify-between", "py-4", "text-left", "cursor-pointer"]
+                              },
+                              "origin": "imported",
+                              "type": "button",
+                              "children": [
+                                {
+                                  "id": "n_home_3l",
+                                  "style": { "fontWeight": "$fontWeight.medium" },
+                                  "source": {
+                                    "file": "src/components/AccordionItem.tsx",
+                                    "line": 47,
+                                    "col": 9,
+                                    "component": "AccordionItem",
+                                    "repeated": { "count": 4, "index": 2 }
+                                  },
+                                  "platformRaw": {
+                                    "tag": "span",
+                                    "classes": ["font-medium"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "text",
+                                  "text": "Do you offer discounts for nonprofits?"
+                                },
+                                {
+                                  "id": "n_home_3m",
+                                  "box": {
+                                    "width": { "mode": "fixed", "value": "1em" },
+                                    "height": { "mode": "fixed", "value": "1em" }
+                                  },
+                                  "style": { "color": "$color.muted-foreground" },
+                                  "source": {
+                                    "file": "src/components/AccordionItem.tsx",
+                                    "line": 48,
+                                    "col": 9,
+                                    "component": "AccordionItem",
+                                    "owner": "Anonymous",
+                                    "repeated": { "count": 4, "index": 2 }
+                                  },
+                                  "platformRaw": {
+                                    "tag": "svg",
+                                    "element": "ChevronDown",
+                                    "classes": ["lucide", "lucide-chevron-down", "text-muted-foreground", "size-[1em]"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "icon",
+                                  "icon": "chevron-down",
+                                  "set": "lucide"
+                                },
+                                {
+                                  "id": "n_home_3n",
+                                  "box": {
+                                    "width": { "mode": "fixed", "value": "1em" },
+                                    "height": { "mode": "fixed", "value": "1em" }
+                                  },
+                                  "style": { "color": "$color.muted-foreground" },
+                                  "hidden": true,
+                                  "source": {
+                                    "file": "src/components/AccordionItem.tsx",
+                                    "line": 49,
+                                    "col": 9,
+                                    "component": "AccordionItem",
+                                    "owner": "Anonymous",
+                                    "repeated": { "count": 4, "index": 2 }
+                                  },
+                                  "platformRaw": {
+                                    "tag": "svg",
+                                    "element": "ChevronUp",
+                                    "classes": ["lucide", "lucide-chevron-up", "text-muted-foreground", "hidden", "size-[1em]"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "icon",
+                                  "icon": "chevron-up",
+                                  "set": "lucide"
+                                }
+                              ]
+                            },
+                            {
+                              "id": "n_home_3o",
+                              "layout": {
+                                "padding": { "bottom": "$spacing.4" }
+                              },
+                              "style": { "color": "$color.muted-foreground", "fontSize": "$fontSize.sm" },
+                              "hidden": true,
+                              "source": {
+                                "file": "src/components/AccordionItem.tsx",
+                                "line": 51,
+                                "col": 7,
+                                "component": "AccordionItem",
+                                "repeated": { "count": 4, "index": 2 }
+                              },
+                              "platformRaw": {
+                                "tag": "p",
+                                "classes": ["pb-4", "text-muted-foreground", "text-sm", "hidden"]
+                              },
+                              "origin": "imported",
+                              "type": "text",
+                              "text": "Yes, nonprofits and schools get 50% off every plan."
+                            }
+                          ]
+                        },
+                        {
+                          "id": "n_home_3p",
+                          "layout": { "mode": "flex", "direction": "column" },
+                          "style": {
+                            "borderWidth": { "bottom": 1 },
+                            "borderColor": "$color.border"
+                          },
+                          "source": {
+                            "file": "src/components/AccordionItem.tsx",
+                            "line": 45,
+                            "col": 5,
+                            "component": "AccordionItem",
+                            "repeated": { "count": 4, "index": 3 }
+                          },
+                          "platformRaw": {
+                            "tag": "div",
+                            "classes": ["flex", "flex-col", "border-b", "border-border"]
+                          },
+                          "origin": "imported",
+                          "type": "box",
+                          "children": [
+                            {
+                              "id": "n_home_3q",
+                              "layout": {
+                                "mode": "flex",
+                                "gap": "$spacing.4",
+                                "align": "center",
+                                "justify": "between",
+                                "padding": { "top": "$spacing.4", "bottom": "$spacing.4" }
+                              },
+                              "style": { "textAlign": "left", "cursor": "pointer" },
+                              "source": {
+                                "file": "src/components/AccordionItem.tsx",
+                                "line": 46,
+                                "col": 7,
+                                "component": "AccordionItem",
+                                "repeated": { "count": 4, "index": 3 }
+                              },
+                              "platformRaw": {
+                                "tag": "button",
+                                "classes": ["flex", "gap-4", "items-center", "justify-between", "py-4", "text-left", "cursor-pointer"]
+                              },
+                              "origin": "imported",
+                              "type": "button",
+                              "children": [
+                                {
+                                  "id": "n_home_3r",
+                                  "style": { "fontWeight": "$fontWeight.medium" },
+                                  "source": {
+                                    "file": "src/components/AccordionItem.tsx",
+                                    "line": 47,
+                                    "col": 9,
+                                    "component": "AccordionItem",
+                                    "repeated": { "count": 4, "index": 3 }
+                                  },
+                                  "platformRaw": {
+                                    "tag": "span",
+                                    "classes": ["font-medium"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "text",
+                                  "text": "Where is my data stored?"
+                                },
+                                {
+                                  "id": "n_home_3s",
+                                  "box": {
+                                    "width": { "mode": "fixed", "value": "1em" },
+                                    "height": { "mode": "fixed", "value": "1em" }
+                                  },
+                                  "style": { "color": "$color.muted-foreground" },
+                                  "source": {
+                                    "file": "src/components/AccordionItem.tsx",
+                                    "line": 48,
+                                    "col": 9,
+                                    "component": "AccordionItem",
+                                    "owner": "Anonymous",
+                                    "repeated": { "count": 4, "index": 3 }
+                                  },
+                                  "platformRaw": {
+                                    "tag": "svg",
+                                    "element": "ChevronDown",
+                                    "classes": ["lucide", "lucide-chevron-down", "text-muted-foreground", "size-[1em]"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "icon",
+                                  "icon": "chevron-down",
+                                  "set": "lucide"
+                                },
+                                {
+                                  "id": "n_home_3t",
+                                  "box": {
+                                    "width": { "mode": "fixed", "value": "1em" },
+                                    "height": { "mode": "fixed", "value": "1em" }
+                                  },
+                                  "style": { "color": "$color.muted-foreground" },
+                                  "hidden": true,
+                                  "source": {
+                                    "file": "src/components/AccordionItem.tsx",
+                                    "line": 49,
+                                    "col": 9,
+                                    "component": "AccordionItem",
+                                    "owner": "Anonymous",
+                                    "repeated": { "count": 4, "index": 3 }
+                                  },
+                                  "platformRaw": {
+                                    "tag": "svg",
+                                    "element": "ChevronUp",
+                                    "classes": ["lucide", "lucide-chevron-up", "text-muted-foreground", "hidden", "size-[1em]"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "icon",
+                                  "icon": "chevron-up",
+                                  "set": "lucide"
+                                }
+                              ]
+                            },
+                            {
+                              "id": "n_home_3u",
+                              "layout": {
+                                "padding": { "bottom": "$spacing.4" }
+                              },
+                              "style": { "color": "$color.muted-foreground", "fontSize": "$fontSize.sm" },
+                              "hidden": true,
+                              "source": {
+                                "file": "src/components/AccordionItem.tsx",
+                                "line": 51,
+                                "col": 7,
+                                "component": "AccordionItem",
+                                "repeated": { "count": 4, "index": 3 }
+                              },
+                              "platformRaw": {
+                                "tag": "p",
+                                "classes": ["pb-4", "text-muted-foreground", "text-sm", "hidden"]
+                              },
+                              "origin": "imported",
+                              "type": "text",
+                              "text": "In data centers in the EU, encrypted at rest and in transit."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "n_home_3v",
+              "layout": { "mode": "flex", "direction": "column", "align": "center" },
+              "style": { "background": "$color.primary", "color": "$color.primary-foreground" },
+              "source": { "file": "src/pages/Home.tsx", "line": 123, "col": 9, "component": "Home" },
+              "platformRaw": {
+                "tag": "section",
+                "classes": ["flex", "flex-col", "items-center", "px-gutter", "py-section", "bg-primary", "text-primary-foreground", "md:px-gutter", "md:py-section-lg"],
+                "unmapped": ["px-gutter", "py-section", "md:px-gutter", "md:py-section-lg"]
+              },
+              "origin": "imported",
+              "type": "box",
+              "children": [
+                {
+                  "id": "n_home_3w",
+                  "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.12" },
+                  "box": {
+                    "width": { "mode": "fill" },
+                    "maxWidth": "$size.content"
+                  },
+                  "source": { "file": "src/pages/Home.tsx", "line": 124, "col": 11, "component": "Home" },
+                  "platformRaw": {
+                    "tag": "div",
+                    "classes": ["flex", "flex-col", "gap-12", "w-full", "max-w-content"]
+                  },
+                  "origin": "imported",
+                  "type": "box",
+                  "children": [
+                    {
+                      "id": "n_home_3x",
+                      "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.6", "align": "center" },
+                      "source": { "file": "src/pages/Home.tsx", "line": 125, "col": 13, "component": "Home" },
+                      "platformRaw": {
+                        "tag": "div",
+                        "classes": ["flex", "flex-col", "gap-6", "items-center"]
+                      },
+                      "origin": "imported",
+                      "type": "box",
+                      "children": [
+                        {
+                          "id": "n_home_3y",
+                          "style": { "color": "$color.primary-foreground", "textAlign": "center" },
+                          "semantic": { "role": "heading", "level": 2 },
+                          "source": { "file": "src/pages/Home.tsx", "line": 126, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "h2",
+                            "classes": ["type-h2", "text-primary-foreground", "text-center"],
+                            "unmapped": ["type-h2"]
+                          },
+                          "origin": "imported",
+                          "type": "text",
+                          "text": "Ready to get started?"
+                        },
+                        {
+                          "id": "n_home_3z",
+                          "style": {
+                            "color": "$color.primary-foreground/80",
+                            "fontSize": "$fontSize.lg",
+                            "lineHeight": "$lineHeight.relaxed",
+                            "textAlign": "center"
+                          },
+                          "source": { "file": "src/pages/Home.tsx", "line": 127, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "p",
+                            "classes": ["text-primary-foreground/80", "text-lg", "leading-relaxed", "text-center"]
+                          },
+                          "origin": "imported",
+                          "type": "text",
+                          "text": "Join thousands of teams that ship calmly. Free for 14 days."
+                        },
+                        {
+                          "id": "n_home_40",
+                          "layout": { "mode": "flex", "wrap": true, "gap": "$spacing.3", "justify": "center" },
+                          "source": { "file": "src/pages/Home.tsx", "line": 128, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "div",
+                            "classes": ["flex", "flex-wrap", "gap-3", "justify-center"]
+                          },
+                          "origin": "imported",
+                          "type": "box",
+                          "children": [
+                            {
+                              "id": "n_home_41",
+                              "layout": {
+                                "mode": "flex",
+                                "gap": "$spacing.2",
+                                "align": "center",
+                                "justify": "center",
+                                "padding": { "top": "$spacing.3", "right": "$spacing.6", "bottom": "$spacing.3", "left": "$spacing.6" }
+                              },
+                              "box": { "alignSelf": "start" },
+                              "style": {
+                                "background": "$color.secondary",
+                                "color": "$color.secondary-foreground",
+                                "radius": "$radius.md",
+                                "fontSize": "$fontSize.base",
+                                "fontWeight": "$fontWeight.semibold",
+                                "cursor": "pointer"
+                              },
+                              "overrides": [
+                                {
+                                  "when": { "state": "hover" },
+                                  "style": { "background": "$color.secondary/80" }
+                                },
+                                {
+                                  "when": { "viewport": "md" },
+                                  "layout": {
+                                    "padding": { "top": "$spacing.3", "right": "$spacing.6", "bottom": "$spacing.3", "left": "$spacing.6" }
+                                  }
+                                }
+                              ],
+                              "source": { "file": "src/components/Button.tsx", "line": 37, "col": 7, "component": "Button" },
+                              "platformRaw": {
+                                "tag": "button",
+                                "classes": ["flex", "gap-2", "items-center", "justify-center", "self-start", "rounded-md", "font-semibold", "cursor-pointer", "bg-secondary", "text-secondary-foreground", "hover:bg-secondary/80", "px-6", "py-3", "text-base", "md:px-6", "md:py-3"]
+                              },
+                              "origin": "imported",
+                              "type": "button",
+                              "children": [
+                                {
+                                  "id": "n_home_42",
+                                  "source": { "file": "src/components/Button.tsx", "line": 38, "col": 9, "component": "Button" },
+                                  "platformRaw": { "tag": "span" },
+                                  "origin": "imported",
+                                  "type": "text",
+                                  "text": "Start for free"
+                                }
+                              ]
+                            },
+                            {
+                              "id": "n_home_43",
+                              "box": {
+                                "width": { "mode": "fixed", "value": "480px" }
+                              },
+                              "hidden": true,
+                              "source": { "file": "src/pages/Home.tsx", "line": 130, "col": 17, "component": "Home" },
+                              "platformRaw": {
+                                "tag": "div",
+                                "classes": ["aps-overlay", "aps-modal", "w-[480px]"],
+                                "unmapped": ["aps-overlay", "aps-modal"]
+                              },
+                              "origin": "imported",
+                              "type": "box",
+                              "children": [
+                                {
+                                  "id": "n_home_44",
+                                  "layout": {
+                                    "mode": "flex",
+                                    "direction": "column",
+                                    "gap": "$spacing.6",
+                                    "padding": { "top": "$spacing.6", "right": "$spacing.6", "bottom": "$spacing.6", "left": "$spacing.6" }
+                                  },
+                                  "style": {
+                                    "background": "$color.background",
+                                    "color": "$color.foreground",
+                                    "radius": "$radius.xl",
+                                    "shadow": "$shadow.xl"
+                                  },
+                                  "source": { "file": "src/components/Dialog.tsx", "line": 13, "col": 5, "component": "Dialog" },
+                                  "platformRaw": {
+                                    "tag": "div",
+                                    "classes": ["flex", "flex-col", "gap-6", "p-6", "bg-background", "text-foreground", "rounded-xl", "shadow-xl"]
+                                  },
+                                  "origin": "imported",
+                                  "type": "box",
+                                  "children": [
+                                    {
+                                      "id": "n_home_45",
+                                      "layout": { "mode": "flex", "gap": "$spacing.4", "align": "center", "justify": "between" },
+                                      "source": { "file": "src/components/Dialog.tsx", "line": 14, "col": 7, "component": "Dialog" },
+                                      "platformRaw": {
+                                        "tag": "div",
+                                        "classes": ["flex", "gap-4", "items-center", "justify-between"]
+                                      },
+                                      "origin": "imported",
+                                      "type": "box",
+                                      "children": [
+                                        {
+                                          "id": "n_home_46",
+                                          "semantic": { "role": "heading", "level": 3 },
+                                          "source": { "file": "src/components/Dialog.tsx", "line": 15, "col": 9, "component": "Dialog" },
+                                          "platformRaw": {
+                                            "tag": "h3",
+                                            "classes": ["type-h3"],
+                                            "unmapped": ["type-h3"]
+                                          },
+                                          "origin": "imported",
+                                          "type": "text",
+                                          "text": "Talk to our team"
+                                        },
+                                        {
+                                          "id": "n_home_47",
+                                          "layout": { "mode": "flex", "align": "center", "justify": "center" },
+                                          "box": {
+                                            "width": { "mode": "fixed", "value": "$spacing.10" },
+                                            "height": { "mode": "fixed", "value": "$spacing.10" }
+                                          },
+                                          "style": { "radius": "$radius.md", "textAlign": "left", "cursor": "pointer" },
+                                          "overrides": [
+                                            {
+                                              "when": { "state": "hover" },
+                                              "style": { "background": "$color.accent" }
+                                            }
+                                          ],
+                                          "source": { "file": "src/components/Dialog.tsx", "line": 16, "col": 9, "component": "Dialog" },
+                                          "platformRaw": {
+                                            "tag": "button",
+                                            "classes": ["flex", "items-center", "justify-center", "w-10", "h-10", "rounded-md", "cursor-pointer", "hover:bg-accent", "text-left"]
+                                          },
+                                          "origin": "imported",
+                                          "type": "button",
+                                          "children": [
+                                            {
+                                              "id": "n_home_48",
+                                              "box": {
+                                                "width": { "mode": "fixed", "value": "1em" },
+                                                "height": { "mode": "fixed", "value": "1em" }
+                                              },
+                                              "style": { "fontSize": "$fontSize.xl" },
+                                              "source": {
+                                                "file": "src/components/Dialog.tsx",
+                                                "line": 17,
+                                                "col": 11,
+                                                "component": "Dialog",
+                                                "owner": "Anonymous"
+                                              },
+                                              "platformRaw": {
+                                                "tag": "svg",
+                                                "element": "X",
+                                                "classes": ["lucide", "lucide-x", "text-xl", "size-[1em]"]
+                                              },
+                                              "origin": "imported",
+                                              "type": "icon",
+                                              "icon": "x",
+                                              "set": "lucide"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "n_home_49",
+                                      "style": {
+                                        "color": "$color.muted-foreground",
+                                        "fontSize": "$fontSize.lg",
+                                        "lineHeight": "$lineHeight.relaxed"
+                                      },
+                                      "source": { "file": "src/components/Dialog.tsx", "line": 20, "col": 7, "component": "Dialog" },
+                                      "platformRaw": {
+                                        "tag": "p",
+                                        "classes": ["text-muted-foreground", "text-lg", "leading-relaxed"]
+                                      },
+                                      "origin": "imported",
+                                      "type": "text",
+                                      "text": "Tell us a little about your team and we will get back to you within a day."
+                                    },
+                                    {
+                                      "id": "n_home_4a",
+                                      "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.1.5" },
+                                      "style": { "fontSize": "$fontSize.sm", "fontWeight": "$fontWeight.medium" },
+                                      "source": { "file": "src/components/Input.tsx", "line": 12, "col": 5, "component": "Input" },
+                                      "platformRaw": {
+                                        "tag": "label",
+                                        "classes": ["flex", "flex-col", "gap-1.5", "text-sm", "font-medium"]
+                                      },
+                                      "origin": "imported",
+                                      "type": "box",
+                                      "children": [
+                                        {
+                                          "id": "n_home_4b",
+                                          "platformRaw": { "tag": "span", "element": "#text" },
+                                          "origin": "imported",
+                                          "type": "text",
+                                          "text": "Work email"
+                                        },
+                                        {
+                                          "id": "n_home_4c",
+                                          "layout": {
+                                            "padding": { "top": "$spacing.3", "right": "$spacing.3", "bottom": "$spacing.3", "left": "$spacing.3" }
+                                          },
+                                          "box": {
+                                            "width": { "mode": "fill" }
+                                          },
+                                          "style": {
+                                            "background": "$color.background",
+                                            "color": "$color.foreground",
+                                            "borderWidth": 1,
+                                            "borderColor": "$color.input",
+                                            "radius": "$radius.md",
+                                            "fontSize": "$fontSize.sm"
+                                          },
+                                          "overrides": [
+                                            {
+                                              "when": { "state": "focus" },
+                                              "style": {
+                                                "borderColor": "$color.ring",
+                                                "ring": { "width": 2, "color": "$color.ring/30" }
+                                              }
+                                            },
+                                            {
+                                              "when": { "viewport": "md" },
+                                              "layout": {
+                                                "padding": { "top": "$spacing.2", "right": "$spacing.3", "bottom": "$spacing.2", "left": "$spacing.3" }
+                                              }
+                                            }
+                                          ],
+                                          "source": { "file": "src/components/Input.tsx", "line": 14, "col": 7, "component": "Input" },
+                                          "platformRaw": {
+                                            "tag": "input",
+                                            "classes": ["p-3", "w-full", "bg-background", "text-foreground", "border", "border-input", "rounded-md", "text-sm", "focus:border-ring", "focus:ring-2", "focus:ring-ring/30", "md:px-3", "md:py-2"]
+                                          },
+                                          "origin": "imported",
+                                          "type": "input",
+                                          "inputType": "email",
+                                          "placeholder": "you@company.com"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "n_home_4d",
+                                      "layout": { "mode": "flex", "gap": "$spacing.3", "align": "center", "justify": "end" },
+                                      "source": { "file": "src/components/Dialog.tsx", "line": 22, "col": 7, "component": "Dialog" },
+                                      "platformRaw": {
+                                        "tag": "div",
+                                        "classes": ["flex", "gap-3", "items-center", "justify-end"]
+                                      },
+                                      "origin": "imported",
+                                      "type": "box",
+                                      "children": [
+                                        {
+                                          "id": "n_home_4e",
+                                          "layout": {
+                                            "mode": "flex",
+                                            "align": "center",
+                                            "justify": "center",
+                                            "padding": { "top": "$spacing.2", "right": "$spacing.4", "bottom": "$spacing.2", "left": "$spacing.4" }
+                                          },
+                                          "style": {
+                                            "borderWidth": 1,
+                                            "borderColor": "$color.input",
+                                            "radius": "$radius.md",
+                                            "textAlign": "left",
+                                            "cursor": "pointer"
+                                          },
+                                          "overrides": [
+                                            {
+                                              "when": { "state": "hover" },
+                                              "style": { "background": "$color.accent" }
+                                            }
+                                          ],
+                                          "source": { "file": "src/components/Dialog.tsx", "line": 23, "col": 9, "component": "Dialog" },
+                                          "platformRaw": {
+                                            "tag": "button",
+                                            "classes": ["flex", "items-center", "justify-center", "px-4", "py-2", "border", "border-input", "rounded-md", "cursor-pointer", "hover:bg-accent", "text-left"]
+                                          },
+                                          "origin": "imported",
+                                          "type": "button",
+                                          "children": [
+                                            {
+                                              "id": "n_home_4f",
+                                              "style": { "fontSize": "$fontSize.sm", "fontWeight": "$fontWeight.semibold" },
+                                              "source": { "file": "src/components/Dialog.tsx", "line": 24, "col": 11, "component": "Dialog" },
+                                              "platformRaw": {
+                                                "tag": "span",
+                                                "classes": ["text-sm", "font-semibold"]
+                                              },
+                                              "origin": "imported",
+                                              "type": "text",
+                                              "text": "Cancel"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "id": "n_home_4g",
+                                          "layout": {
+                                            "mode": "flex",
+                                            "gap": "$spacing.2",
+                                            "align": "center",
+                                            "justify": "center",
+                                            "padding": { "top": "$spacing.3", "right": "$spacing.4", "bottom": "$spacing.3", "left": "$spacing.4" }
+                                          },
+                                          "box": { "alignSelf": "start" },
+                                          "style": {
+                                            "background": "$color.primary",
+                                            "color": "$color.primary-foreground",
+                                            "radius": "$radius.md",
+                                            "fontSize": "$fontSize.sm",
+                                            "fontWeight": "$fontWeight.semibold",
+                                            "textAlign": "center",
+                                            "cursor": "pointer"
+                                          },
+                                          "overrides": [
+                                            {
+                                              "when": { "state": "hover" },
+                                              "style": { "background": "$color.primary/90" }
+                                            },
+                                            {
+                                              "when": { "viewport": "md" },
+                                              "layout": {
+                                                "padding": { "top": "$spacing.2", "right": "$spacing.4", "bottom": "$spacing.2", "left": "$spacing.4" }
+                                              }
+                                            }
+                                          ],
+                                          "source": {
+                                            "file": "src/components/Button.tsx",
+                                            "line": 43,
+                                            "col": 5,
+                                            "component": "Button",
+                                            "owner": "Link",
+                                            "repeated": { "count": 5, "index": 4 }
+                                          },
+                                          "platformRaw": {
+                                            "tag": "a",
+                                            "element": "Link",
+                                            "classes": ["flex", "gap-2", "items-center", "justify-center", "px-4", "py-3", "self-start", "bg-primary", "text-primary-foreground", "rounded-md", "text-sm", "font-semibold", "cursor-pointer", "hover:bg-primary/90", "md:px-4", "md:py-2", "text-center"]
+                                          },
+                                          "origin": "imported",
+                                          "type": "link",
+                                          "href": "/",
+                                          "children": [
+                                            {
+                                              "id": "n_home_4h",
+                                              "source": {
+                                                "file": "src/components/Button.tsx",
+                                                "line": 44,
+                                                "col": 7,
+                                                "component": "Button",
+                                                "repeated": { "count": 5, "index": 4 }
+                                              },
+                                              "platformRaw": { "tag": "span" },
+                                              "origin": "imported",
+                                              "type": "text",
+                                              "text": "Send"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "n_home_4i",
+              "layout": {
+                "mode": "flex",
+                "direction": "column",
+                "align": "center",
+                "padding": { "top": "$spacing.10", "bottom": "$spacing.10" }
+              },
+              "style": {
+                "borderWidth": { "top": 1 },
+                "borderColor": "$color.border"
+              },
+              "source": { "file": "src/pages/Home.tsx", "line": 137, "col": 9, "component": "Home" },
+              "platformRaw": {
+                "tag": "footer",
+                "classes": ["flex", "flex-col", "items-center", "px-gutter", "py-10", "border-t", "border-border"],
+                "unmapped": ["px-gutter"]
+              },
+              "origin": "imported",
+              "type": "box",
+              "children": [
+                {
+                  "id": "n_home_4j",
+                  "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.6", "align": "center" },
+                  "box": {
+                    "width": { "mode": "fill" },
+                    "maxWidth": "$size.content"
+                  },
+                  "overrides": [
+                    {
+                      "when": { "viewport": "md" },
+                      "layout": { "direction": "row", "justify": "between" }
+                    }
+                  ],
+                  "source": { "file": "src/pages/Home.tsx", "line": 138, "col": 11, "component": "Home" },
+                  "platformRaw": {
+                    "tag": "div",
+                    "classes": ["flex", "flex-col", "gap-6", "items-center", "w-full", "max-w-content", "md:flex-row", "md:justify-between"]
+                  },
+                  "origin": "imported",
+                  "type": "box",
+                  "children": [
+                    {
+                      "id": "n_home_4k",
+                      "layout": { "mode": "flex", "gap": "$spacing.2", "align": "center" },
+                      "source": { "file": "src/pages/Home.tsx", "line": 139, "col": 13, "component": "Home" },
+                      "platformRaw": {
+                        "tag": "div",
+                        "classes": ["flex", "gap-2", "items-center"]
+                      },
+                      "origin": "imported",
+                      "type": "box",
+                      "children": [
+                        {
+                          "id": "n_home_4l",
+                          "layout": { "mode": "flex" },
+                          "box": {
+                            "width": { "mode": "fixed", "value": "$spacing.7" },
+                            "height": { "mode": "fixed", "value": "$spacing.7" }
+                          },
+                          "style": { "background": "$color.primary", "radius": "$radius.lg" },
+                          "source": { "file": "src/pages/Home.tsx", "line": 140, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "div",
+                            "classes": ["flex", "w-7", "h-7", "bg-primary", "rounded-lg"]
+                          },
+                          "origin": "imported",
+                          "type": "box",
+                          "children": []
+                        },
+                        {
+                          "id": "n_home_4m",
+                          "style": {
+                            "fontFamily": "$fontFamily.heading",
+                            "fontSize": "$fontSize.lg",
+                            "fontWeight": "$fontWeight.bold"
+                          },
+                          "source": { "file": "src/pages/Home.tsx", "line": 141, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "p",
+                            "classes": ["font-heading", "text-lg", "font-bold"]
+                          },
+                          "origin": "imported",
+                          "type": "text",
+                          "text": "Acme"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "n_home_4n",
+                      "layout": { "mode": "flex", "wrap": true, "gap": "$spacing.6", "justify": "center" },
+                      "source": { "file": "src/pages/Home.tsx", "line": 143, "col": 13, "component": "Home" },
+                      "platformRaw": {
+                        "tag": "div",
+                        "classes": ["flex", "flex-wrap", "gap-6", "justify-center"]
+                      },
+                      "origin": "imported",
+                      "type": "box",
+                      "children": [
+                        {
+                          "id": "n_home_4o",
+                          "style": { "color": "$color.muted-foreground", "fontSize": "$fontSize.sm" },
+                          "overrides": [
+                            {
+                              "when": { "state": "hover" },
+                              "style": { "color": "$color.foreground" }
+                            }
+                          ],
+                          "source": { "file": "src/pages/Home.tsx", "line": 144, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "a",
+                            "classes": ["text-muted-foreground", "text-sm", "hover:text-foreground"]
+                          },
+                          "origin": "imported",
+                          "type": "link",
+                          "href": "#",
+                          "children": [
+                            {
+                              "id": "n_home_4p",
+                              "source": { "file": "src/pages/Home.tsx", "line": 145, "col": 17, "component": "Home" },
+                              "platformRaw": { "tag": "span" },
+                              "origin": "imported",
+                              "type": "text",
+                              "text": "About"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "n_home_4q",
+                          "style": { "color": "$color.muted-foreground", "fontSize": "$fontSize.sm" },
+                          "overrides": [
+                            {
+                              "when": { "state": "hover" },
+                              "style": { "color": "$color.foreground" }
+                            }
+                          ],
+                          "source": { "file": "src/pages/Home.tsx", "line": 147, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "a",
+                            "classes": ["text-muted-foreground", "text-sm", "hover:text-foreground"]
+                          },
+                          "origin": "imported",
+                          "type": "link",
+                          "href": "#",
+                          "children": [
+                            {
+                              "id": "n_home_4r",
+                              "source": { "file": "src/pages/Home.tsx", "line": 148, "col": 17, "component": "Home" },
+                              "platformRaw": { "tag": "span" },
+                              "origin": "imported",
+                              "type": "text",
+                              "text": "Pricing"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "n_home_4s",
+                          "style": { "color": "$color.muted-foreground", "fontSize": "$fontSize.sm" },
+                          "overrides": [
+                            {
+                              "when": { "state": "hover" },
+                              "style": { "color": "$color.foreground" }
+                            }
+                          ],
+                          "source": { "file": "src/pages/Home.tsx", "line": 150, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "a",
+                            "classes": ["text-muted-foreground", "text-sm", "hover:text-foreground"]
+                          },
+                          "origin": "imported",
+                          "type": "link",
+                          "href": "#",
+                          "children": [
+                            {
+                              "id": "n_home_4t",
+                              "source": { "file": "src/pages/Home.tsx", "line": 151, "col": 17, "component": "Home" },
+                              "platformRaw": { "tag": "span" },
+                              "origin": "imported",
+                              "type": "text",
+                              "text": "Blog"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "n_home_4u",
+                          "style": { "color": "$color.muted-foreground", "fontSize": "$fontSize.sm" },
+                          "overrides": [
+                            {
+                              "when": { "state": "hover" },
+                              "style": { "color": "$color.foreground" }
+                            }
+                          ],
+                          "source": { "file": "src/pages/Home.tsx", "line": 153, "col": 15, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "a",
+                            "classes": ["text-muted-foreground", "text-sm", "hover:text-foreground"]
+                          },
+                          "origin": "imported",
+                          "type": "link",
+                          "href": "#",
+                          "children": [
+                            {
+                              "id": "n_home_4v",
+                              "source": { "file": "src/pages/Home.tsx", "line": 154, "col": 17, "component": "Home" },
+                              "platformRaw": { "tag": "span" },
+                              "origin": "imported",
+                              "type": "text",
+                              "text": "Contact"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "n_home_4w",
+                      "style": { "color": "$color.muted-foreground", "fontSize": "$fontSize.sm" },
+                      "source": { "file": "src/pages/Home.tsx", "line": 157, "col": 13, "component": "Home" },
+                      "platformRaw": {
+                        "tag": "p",
+                        "classes": ["text-muted-foreground", "text-sm"]
+                      },
+                      "origin": "imported",
+                      "type": "text",
+                      "text": "© 2026 Acme Inc."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

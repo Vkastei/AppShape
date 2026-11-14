@@ -1,0 +1,33 @@
+# Weekly dependency updates, grouped so there are a few pull requests a week, not dozens.
+# The fixtures are left out: their versions come from AppShape's generator (`apps.test.ts` checks
+# them); the nightly workflow tries them with the newest React, Next.js and Tailwind instead.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    exclude-paths:
+      - "fixtures/**"
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    groups:
+      tooling:
+        dependency-type: development
+        update-types: [minor, patch]
+      runtime:
+        dependency-type: production
+        update-types: [minor, patch]
+    # Electron majors change the runtime under the desktop app: update them on purpose
+    ignore:
+      - dependency-name: electron
+        update-types: [version-update:semver-major]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      actions:
+        patterns: ["*"]

@@ -1,0 +1,90 @@
+<style>@layer aps-reset {
+:where(.aps-frame) {
+  container: aps-frame / inline-size;
+  /* The frame is the page's viewport: fixed elements (a sticky header, a bottom bar) belong to it, not to the
+     board around it. A transform makes it their containing block; container queries alone don't. */
+  transform: translate(0);
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.5;
+  color: #111827;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  text-align: left;
+}
+:where(.aps-frame) :where(*, *::before, *::after) { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid; }
+:where(.aps-frame) :where(h1, h2, h3, h4, h5, h6) { font-size: inherit; font-weight: inherit; }
+:where(.aps-frame) :where(ol, ul, menu) { list-style: none; }
+:where(.aps-frame) :where(a) { color: inherit; text-decoration: inherit; }
+:where(.aps-frame) :where(img, svg, video, canvas) { display: block; vertical-align: middle; }
+:where(.aps-frame) :where(img, video) { max-width: 100%; height: auto; }
+/* Frames are still pictures: animations show their end state, transitions don't run. */
+:where(.aps-frame) :where(*, *::before, *::after) { animation-duration: 0s !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; transition-duration: 0s !important; transition-delay: 0s !important; }
+:where(.aps-frame) :where(button, input, select, textarea) { font: inherit; color: inherit; background: transparent; }
+:where(.aps-frame) :where(textarea) { resize: vertical; }
+:where(.aps-frame) :where(input, textarea)::placeholder { color: #9ca3af; opacity: 1; }
+:where(.aps-frame) :where(summary) { list-style: none; }
+:where(.aps-frame) :where([data-aps-icon]) {
+  display: inline-block; width: 1em; height: 1em; border: 1.5px solid currentColor; border-radius: 0.25em; opacity: 0.6;
+}
+:where(.aps-frame) :where([data-aps-icon-src]) {
+  display: block; border: 0; border-radius: 0; opacity: 1;
+  background-color: currentColor; mask: var(--aps-icon) center / contain no-repeat; -webkit-mask: var(--aps-icon) center / contain no-repeat;
+}
+:where(.aps-frame) :where([data-aps-placeholder]) {
+  display: flex; align-items: center; justify-content: center; min-height: 2.5rem; padding: 0.75rem;
+  border: 1.5px dashed #a5b4fc; border-radius: 0.5rem; background: #eef2ff; color: #4338ca;
+  font: 500 0.75rem/1.2 ui-sans-serif, system-ui, sans-serif;
+}
+:where(.aps-frame) :where([data-aps-field]) { display: flex; flex-direction: column; gap: 0.375rem; font-size: 0.875rem; line-height: 1.25rem; font-weight: 500; }
+}
+@layer aps-reset { :where(.aps-frame) { font-family: Inter, ui-sans-serif, system-ui, sans-serif; } }
+.aps-frame [data-aps="n_app"] { display: flex; flex-direction: column; min-height: 100vh; background-color: oklch(0.985 0.002 247.839); font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+.aps-frame [data-aps="n_nav"] { background-color: #fff; border-bottom-width: 1px; border-color: oklch(0.928 0.006 264.531); }
+.aps-frame [data-aps="n_nav_inner"] { display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding-top: 1rem; padding-right: 1.5rem; padding-bottom: 1rem; padding-left: 1.5rem; max-width: 72rem; margin-right: auto; margin-left: auto; }
+.aps-frame [data-aps="n_nav_logo"] { color: oklch(0.21 0.034 264.665); font-size: 1.125rem; font-weight: 700; line-height: 1.75rem; }
+.aps-frame [data-aps="n_nav_links"] { display: flex; flex-direction: row; gap: 1.5rem; align-items: center; color: oklch(0.446 0.03 256.802); font-size: 0.875rem; font-weight: 500; line-height: 1.25rem; }
+.aps-frame [data-aps="n_main"] { display: block; padding-top: 4rem; padding-right: 1.5rem; padding-bottom: 4rem; padding-left: 1.5rem; width: 100%; max-width: 72rem; margin-right: auto; margin-left: auto; }
+.aps-frame [data-aps="n_header"] { max-width: 42rem; margin-right: auto; margin-left: auto; text-align: center; }
+.aps-frame [data-aps="n_title"] { color: oklch(0.21 0.034 264.665); font-size: 2.25rem; font-weight: 700; line-height: 2.5rem; letter-spacing: -0.025em; }
+.aps-frame [data-aps="n_subtitle"] { margin-top: 1rem; color: oklch(0.446 0.03 256.802); font-size: 1.125rem; line-height: 1.75rem; }
+.aps-frame [data-aps="n_plans"] { display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 2rem; margin-top: 3rem; }
+.aps-frame [data-aps="n_card_starter_root"] { display: flex; flex-direction: column; padding-top: 1.5rem; padding-right: 1.5rem; padding-bottom: 1.5rem; padding-left: 1.5rem; background-color: #fff; border-width: 1px; border-color: oklch(0.928 0.006 264.531); border-radius: 0.75rem; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+.aps-frame [data-aps="n_card_starter_name"] { color: oklch(0.21 0.034 264.665); font-size: 1.125rem; font-weight: 600; line-height: 1.75rem; }
+.aps-frame [data-aps="n_card_starter_desc"] { margin-top: 0.5rem; color: oklch(0.446 0.03 256.802); font-size: 0.875rem; line-height: 1.25rem; }
+.aps-frame [data-aps="n_card_starter_price"] { display: flex; flex-direction: row; gap: 0.25rem; align-items: baseline; margin-top: 1.5rem; }
+.aps-frame [data-aps="n_card_starter_amount"] { color: oklch(0.21 0.034 264.665); font-size: 2.25rem; font-weight: 700; line-height: 2.5rem; }
+.aps-frame [data-aps="n_card_starter_period"] { color: oklch(0.551 0.027 264.364); font-size: 0.875rem; line-height: 1.25rem; }
+.aps-frame [data-aps="n_card_starter_cta_button"] { display: flex; flex-direction: row; align-items: center; justify-content: center; padding-top: 0.5rem; padding-right: 1rem; padding-bottom: 0.5rem; padding-left: 1rem; width: 100%; margin-top: 2rem; background-color: oklch(0.51 0.21 275); color: #fff; border-radius: 0.375rem; font-size: 0.875rem; font-weight: 500; line-height: 1.25rem; }
+.aps-frame [data-aps="n_card_starter_features"] { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1.5rem; flex-grow: 1; color: oklch(0.373 0.034 259.733); font-size: 0.875rem; line-height: 1.25rem; }
+.aps-frame [data-aps="n_card_pro_root"] { display: flex; flex-direction: column; padding-top: 1.5rem; padding-right: 1.5rem; padding-bottom: 1.5rem; padding-left: 1.5rem; background-color: #fff; border-width: 1px; border-color: oklch(0.928 0.006 264.531); border-radius: 0.75rem; box-shadow: 0 0 0 2px oklch(0.51 0.21 275), 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+.aps-frame [data-aps="n_card_pro_badge_el"] { display: flex; flex-direction: row; align-items: center; padding-top: 0.125rem; padding-right: 0.625rem; padding-bottom: 0.125rem; padding-left: 0.625rem; background-color: oklch(0.97 0.02 275); color: oklch(0.45 0.2 275); border-radius: 9999px; font-size: 0.75rem; font-weight: 500; line-height: 1rem; }
+.aps-frame [data-aps="n_card_pro_name"] { color: oklch(0.21 0.034 264.665); font-size: 1.125rem; font-weight: 600; line-height: 1.75rem; }
+.aps-frame [data-aps="n_card_pro_desc"] { margin-top: 0.5rem; color: oklch(0.446 0.03 256.802); font-size: 0.875rem; line-height: 1.25rem; }
+.aps-frame [data-aps="n_card_pro_price"] { display: flex; flex-direction: row; gap: 0.25rem; align-items: baseline; margin-top: 1.5rem; }
+.aps-frame [data-aps="n_card_pro_amount"] { color: oklch(0.21 0.034 264.665); font-size: 2.25rem; font-weight: 700; line-height: 2.5rem; }
+.aps-frame [data-aps="n_card_pro_period"] { color: oklch(0.551 0.027 264.364); font-size: 0.875rem; line-height: 1.25rem; }
+.aps-frame [data-aps="n_card_pro_cta_button"] { display: flex; flex-direction: row; align-items: center; justify-content: center; padding-top: 0.5rem; padding-right: 1rem; padding-bottom: 0.5rem; padding-left: 1rem; width: 100%; margin-top: 2rem; background-color: oklch(0.51 0.21 275); color: #fff; border-radius: 0.375rem; font-size: 0.875rem; font-weight: 500; line-height: 1.25rem; }
+.aps-frame [data-aps="n_card_pro_features"] { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1.5rem; flex-grow: 1; color: oklch(0.373 0.034 259.733); font-size: 0.875rem; line-height: 1.25rem; }
+.aps-frame [data-aps="n_card_team_root"] { display: flex; flex-direction: column; padding-top: 1.5rem; padding-right: 1.5rem; padding-bottom: 1.5rem; padding-left: 1.5rem; background-color: #fff; border-width: 1px; border-color: oklch(0.928 0.006 264.531); border-radius: 0.75rem; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+.aps-frame [data-aps="n_card_team_name"] { color: oklch(0.21 0.034 264.665); font-size: 1.125rem; font-weight: 600; line-height: 1.75rem; }
+.aps-frame [data-aps="n_card_team_desc"] { margin-top: 0.5rem; color: oklch(0.446 0.03 256.802); font-size: 0.875rem; line-height: 1.25rem; }
+.aps-frame [data-aps="n_card_team_price"] { display: flex; flex-direction: row; gap: 0.25rem; align-items: baseline; margin-top: 1.5rem; }
+.aps-frame [data-aps="n_card_team_amount"] { color: oklch(0.21 0.034 264.665); font-size: 2.25rem; font-weight: 700; line-height: 2.5rem; }
+.aps-frame [data-aps="n_card_team_period"] { color: oklch(0.551 0.027 264.364); font-size: 0.875rem; line-height: 1.25rem; }
+.aps-frame [data-aps="n_card_team_cta_button"] { display: flex; flex-direction: row; align-items: center; justify-content: center; padding-top: 0.5rem; padding-right: 1rem; padding-bottom: 0.5rem; padding-left: 1rem; width: 100%; margin-top: 2rem; background-color: oklch(0.51 0.21 275); color: #fff; border-radius: 0.375rem; font-size: 0.875rem; font-weight: 500; line-height: 1.25rem; }
+.aps-frame [data-aps="n_card_team_features"] { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1.5rem; flex-grow: 1; color: oklch(0.373 0.034 259.733); font-size: 0.875rem; line-height: 1.25rem; }
+.aps-frame [data-aps="n_faq"] { max-width: 48rem; margin-top: 5rem; margin-right: auto; margin-left: auto; }
+.aps-frame [data-aps="n_faq_title"] { color: oklch(0.21 0.034 264.665); font-size: 1.5rem; font-weight: 700; line-height: 2rem; letter-spacing: -0.025em; }
+.aps-frame [data-aps="n_faq_accordion"] { margin-top: 1.5rem; }
+.aps-frame [data-aps="n_footer_el"] { margin-top: auto; background-color: #fff; border-top-width: 1px; border-color: oklch(0.928 0.006 264.531); }
+.aps-frame [data-aps="n_footer_text"] { display: block; padding-top: 1.5rem; padding-right: 1.5rem; padding-bottom: 1.5rem; padding-left: 1.5rem; max-width: 72rem; margin-right: auto; margin-left: auto; color: oklch(0.551 0.027 264.364); font-size: 0.875rem; line-height: 1.25rem; }
+.aps-frame [data-aps="n_card_pro_badge"] > * { margin-bottom: 1rem; align-self: flex-start; }
+.aps-frame [data-aps="n_nav_home"]:hover { color: oklch(0.21 0.034 264.665); }
+.aps-frame [data-aps="n_nav_pricing"]:hover { color: oklch(0.21 0.034 264.665); }
+.aps-frame [data-aps="n_nav_contact"]:hover { color: oklch(0.21 0.034 264.665); }
+.aps-frame [data-aps="n_card_starter_cta_button"]:hover { background-color: oklch(0.45 0.2 275); }
+.aps-frame [data-aps="n_card_pro_cta_button"]:hover { background-color: oklch(0.45 0.2 275); }
+.aps-frame [data-aps="n_card_team_cta_button"]:hover { background-color: oklch(0.45 0.2 275); }
+@container aps-frame (min-width: 48rem) { .aps-frame [data-aps="n_plans"] { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@container aps-frame (min-width: 64rem) { .aps-frame [data-aps="n_plans"] { gap: 2.5rem; } }</style>
+<div class="aps-frame"><div data-aps="n_app"><div data-aps="n_navbar" style="display:contents"><nav data-aps="n_nav"><div data-aps="n_nav_inner"><a data-aps="n_nav_logo" data-href="/"><span data-aps="n_nav_logo_label">Acme</span></a><div data-aps="n_nav_links"><a data-aps="n_nav_home" data-href="/"><span data-aps="n_nav_home_label">Home</span></a><a data-aps="n_nav_pricing" data-href="/pricing"><span data-aps="n_nav_pricing_label">Pricing</span></a><a data-aps="n_nav_contact" data-aps-target="f_contact" data-href="/contact"><span data-aps="n_nav_contact_label">Contact</span></a></div></div></nav></div><main data-aps="n_main"><header data-aps="n_header"><h1 data-aps="n_title">Simple pricing for every team</h1><p data-aps="n_subtitle">Start for free and upgrade when your project grows.</p></header><div data-aps="n_plans"><div data-aps="n_card_starter" style="display:contents"><div data-aps="n_card_starter_root"><h2 data-aps="n_card_starter_name">Starter</h2><p data-aps="n_card_starter_desc">For side projects and trying things out.</p><p data-aps="n_card_starter_price"><span data-aps="n_card_starter_amount">$0</span><span data-aps="n_card_starter_period">/month</span></p><div data-aps="n_card_starter_cta" style="display:contents"><button data-aps="n_card_starter_cta_button" type="button"><span data-aps="n_card_starter_cta_label">Get started</span></button></div><ul data-aps="n_card_starter_features"><li data-aps="n_card_starter_f1">✓ 1 project</li><li data-aps="n_card_starter_f2">✓ Community support</li><li data-aps="n_card_starter_f3">✓ Basic analytics</li></ul></div></div><div data-aps="n_card_pro" style="display:contents"><div data-aps="n_card_pro_root"><div data-aps="n_card_pro_badge" style="display:contents"><span data-aps="n_card_pro_badge_el"><span data-aps="n_card_pro_badge_label">Most popular</span></span></div><h2 data-aps="n_card_pro_name">Pro</h2><p data-aps="n_card_pro_desc">For professionals shipping real products.</p><p data-aps="n_card_pro_price"><span data-aps="n_card_pro_amount">$19</span><span data-aps="n_card_pro_period">/month</span></p><div data-aps="n_card_pro_cta" style="display:contents"><button data-aps="n_card_pro_cta_button" type="button"><span data-aps="n_card_pro_cta_label">Get started</span></button></div><ul data-aps="n_card_pro_features"><li data-aps="n_card_pro_f1">✓ Unlimited projects</li><li data-aps="n_card_pro_f2">✓ Email support</li><li data-aps="n_card_pro_f3">✓ Advanced analytics</li><li data-aps="n_card_pro_f4">✓ Custom domains</li></ul></div></div><div data-aps="n_card_team" style="display:contents"><div data-aps="n_card_team_root"><h2 data-aps="n_card_team_name">Team</h2><p data-aps="n_card_team_desc">For teams that build many apps together.</p><p data-aps="n_card_team_price"><span data-aps="n_card_team_amount">$49</span><span data-aps="n_card_team_period">/month</span></p><div data-aps="n_card_team_cta" style="display:contents"><button data-aps="n_card_team_cta_button" type="button"><span data-aps="n_card_team_cta_label">Get started</span></button></div><ul data-aps="n_card_team_features"><li data-aps="n_card_team_f1">✓ Everything in Pro</li><li data-aps="n_card_team_f2">✓ Shared workspaces</li><li data-aps="n_card_team_f3">✓ Role-based access</li><li data-aps="n_card_team_f4">✓ Priority support</li></ul></div></div></div><section data-aps="n_faq"><h2 data-aps="n_faq_title">Frequently asked questions</h2><div data-aps="n_faq_accordion" data-aps-placeholder="">Accordion</div></section></main><div data-aps="n_footer" style="display:contents"><footer data-aps="n_footer_el"><p data-aps="n_footer_text">© 2026 Acme Inc.</p></footer></div></div></div>

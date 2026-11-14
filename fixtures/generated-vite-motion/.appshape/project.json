@@ -1,0 +1,11 @@
+{
+  "irVersion": 1,
+  "name": "generated-vite-motion",
+  "adapters": [],
+  "redaction": {
+    "mode": "strict",
+    "detectors": { "email": true, "phone": true, "longDigits": true, "secrets": true },
+    "patterns": [],
+    "selectors": []
+  }
+}

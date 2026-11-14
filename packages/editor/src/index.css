@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: var(--color-canvas);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* AppShape's own colors (brand: the logo's purple #8E44D6). Ink: text, strong buttons, borders of
+   floating panels. Purple (accent-*, 500 is the brand color): selection, the active tool, the main
+   action (white text on it). Teal: flows between screens, verified, success. Pink marks components
+   and instances. Zinc, tinted towards the ink, is the structure. Sticky-note colors are content. */
+@theme {
+  --font-sans: "Manrope Variable", "Manrope", ui-sans-serif, system-ui, sans-serif;
+
+  --color-ink: #1f1b2e;
+  --color-ink-soft: #57516b;
+  --color-paper: #fcfbfe;
+  --color-canvas: #f3f2f7;
+
+  /* zinc, retuned: a cool lavender grey at the light end (like the logo's white and purple), ink at
+     the dark end (only the editor's own UI uses them; screens bring their own colors) */
+  --color-zinc-50: #fafafc;
+  --color-zinc-100: #f3f2f7;
+  --color-zinc-200: #e5e3ec;
+  --color-zinc-300: #d3d0dc;
+  --color-zinc-400: #a5a0b1;
+  --color-zinc-500: #77728a;
+  --color-zinc-600: #57516b;
+  --color-zinc-700: #433e55;
+  --color-zinc-800: #2e2a3f;
+  --color-zinc-900: #1f1b2e;
+  --color-zinc-950: #13101d;
+
+  --color-accent-50: #f7f3fd;
+  --color-accent-100: #ede6fa;
+  --color-accent-200: #e0d2f6;
+  --color-accent-300: #c7a2eb;
+  --color-accent-400: #a768e0;
+  --color-accent-500: #8e44d6;
+  --color-accent-600: #7a2dbf;
+  --color-accent-700: #632999;
+  --color-accent-800: #512b79;
+  --color-accent-900: #321d49;
+
+  /* the start page's names for the same colors */
+  --color-brand: #8e44d6;
+  --color-brand-deep: #632999;
+  --color-brand-soft: #f3ecfc;
+
+  --shadow-offset: 3px 3px 0 0 #1f1b2e;
+  --shadow-offset-sm: 2px 2px 0 0 #1f1b2e;
+  --shadow-float: 0 1px 0 0 rgb(31 27 46 / 0.04), 0 6px 20px -6px rgb(31 27 46 / 0.18);
+}

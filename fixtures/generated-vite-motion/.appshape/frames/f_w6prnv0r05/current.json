@@ -1,0 +1,49 @@
+{
+  "id": "n_2rebrf8x0v",
+  "name": "Card",
+  "layout": {
+    "mode": "flex",
+    "direction": "column",
+    "padding": { "top": "$spacing.6", "right": "$spacing.6", "bottom": "$spacing.6", "left": "$spacing.6" }
+  },
+  "style": {
+    "background": "$color.card",
+    "color": "$color.card-foreground",
+    "borderWidth": 1,
+    "borderColor": "$color.border",
+    "radius": "$radius.xl",
+    "shadow": "$shadow.sm"
+  },
+  "origin": "added",
+  "type": "box",
+  "children": [
+    {
+      "id": "n_b0dhlx0vgs",
+      "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.2" },
+      "origin": "added",
+      "type": "slot",
+      "slotName": "content",
+      "children": [
+        {
+          "id": "n_1qn7eysoeg",
+          "style": {
+            "fontFamily": "$fontFamily.heading",
+            "fontSize": "$fontSize.lg",
+            "fontWeight": "$fontWeight.semibold"
+          },
+          "semantic": { "role": "heading", "level": 3 },
+          "origin": "added",
+          "type": "text",
+          "text": "Card title"
+        },
+        {
+          "id": "n_vqmju25zml",
+          "style": { "color": "$color.muted-foreground", "fontSize": "$fontSize.sm" },
+          "origin": "added",
+          "type": "text",
+          "text": "A short description of what this card is about."
+        }
+      ]
+    }
+  ]
+}

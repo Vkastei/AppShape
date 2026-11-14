@@ -1,0 +1,42 @@
+node_modules/
+dist/
+coverage/
+.turbo/
+
+*.log
+*.tsbuildinfo
+.DS_Store
+
+# Editor and tool settings
+.vscode/
+.claude/
+
+# AppShape local cache (raw captures, screenshots)
+.appshape/.cache/
+
+# Local registry config (may point at internal mirrors)
+.npmrc
+
+# Test output
+examples/m0-validation/runs/
+examples/draw-eval/runs/
+packages/e2e/loop-runs/
+fixtures/.copies/
+test-results/
+playwright-report/
+preview.html
+
+# Local scratch app, not part of the repository
+/test/
+
+# Private planning notes, not part of the repository
+docs/
+PLAN.md
+README-template.md
+
+# Local secrets (API keys)
+.env
+.env.*
+
+# Private words for scripts/check-public.mjs (email, company registry)
+.check-public.local

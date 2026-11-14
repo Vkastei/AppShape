@@ -1,0 +1,30 @@
+{
+  "id": "f_wk5jb97n0i",
+  "name": "Input",
+  "kind": "component",
+  "platform": "web",
+  "target": { "adapter": "react-vite" },
+  "viewports": [
+    { "id": "component", "width": 280 }
+  ],
+  "component": {
+    "description": "A text field with its label.",
+    "props": [
+      {
+        "name": "label",
+        "type": "string",
+        "bindings": [
+          { "nodeId": "n_o928ojzuqy", "field": "label" }
+        ]
+      },
+      {
+        "name": "placeholder",
+        "type": "string",
+        "bindings": [
+          { "nodeId": "n_o928ojzuqy", "field": "placeholder" }
+        ]
+      }
+    ],
+    "kit": "input"
+  }
+}

@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.9.0.schema.json
+PackageIdentifier: AppShape.AppShape
+PackageVersion: VERSION
+PackageLocale: en-US
+Publisher: AppShape
+PublisherUrl: https://github.com/OWNER
+PublisherSupportUrl: https://github.com/OWNER/REPO/issues
+PrivacyUrl: https://github.com/OWNER/REPO#privacy
+PackageName: AppShape
+PackageUrl: https://github.com/OWNER/REPO
+License: AGPL-3.0-only
+LicenseUrl: https://github.com/OWNER/REPO/blob/main/LICENSE
+ShortDescription: Design your React and Tailwind app visually; your coding agent applies it to the code.
+Description: |-
+  AppShape is a visual editor for React and Tailwind apps. Bring in the pages of an existing app or
+  start a new one, change them on a board with your design system, and hand the changes to your
+  coding agent (Claude Code, Codex) to apply; AppShape then checks the result in the running app.
+Moniker: appshape
+Tags:
+  - design
+  - react
+  - tailwind
+  - ui
+  - mcp
+  - visual-editor
+ReleaseNotesUrl: https://github.com/OWNER/REPO/releases/tag/vVERSION
+ManifestType: defaultLocale
+ManifestVersion: 1.9.0

@@ -1,0 +1,43 @@
+{
+  "id": "f_hmqtv7a91j",
+  "name": "Button",
+  "kind": "component",
+  "platform": "web",
+  "target": { "adapter": "react-vite" },
+  "viewports": [
+    { "id": "component", "width": 120 }
+  ],
+  "component": {
+    "description": "Main actions (primary), other actions (secondary, outline) and quiet ones (ghost).",
+    "props": [
+      {
+        "name": "label",
+        "type": "string",
+        "bindings": [
+          { "nodeId": "n_iwr6p6soy6", "field": "text" }
+        ]
+      },
+      {
+        "name": "variant",
+        "type": "enum",
+        "options": ["primary", "secondary", "outline", "ghost"],
+        "default": "primary"
+      },
+      {
+        "name": "size",
+        "type": "enum",
+        "options": ["sm", "md", "lg"],
+        "default": "md"
+      },
+      {
+        "name": "opens",
+        "type": "string",
+        "description": "Screen it opens",
+        "bindings": [
+          { "nodeId": "n_wuubzhtymk", "field": "target" }
+        ]
+      }
+    ],
+    "kit": "button"
+  }
+}

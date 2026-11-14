@@ -1,0 +1,18 @@
+{
+  "id": "f_contact",
+  "name": "Contact",
+  "kind": "new",
+  "platform": "web",
+  "target": { "adapter": "react-vite", "route": "/contact", "file": "src/pages/Contact.tsx" },
+  "viewports": [
+    { "id": "desktop", "width": 1280, "breakpoint": "lg" },
+    { "id": "mobile", "width": 390 }
+  ],
+  "annotations": [
+    {
+      "id": "a_contact_layout",
+      "kind": "intent",
+      "text": "Same page shell as Pricing: Navbar and Footer come from the app layout."
+    }
+  ]
+}

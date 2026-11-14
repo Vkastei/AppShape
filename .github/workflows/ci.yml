@@ -1,0 +1,40 @@
+# Every push to main and every pull request: typecheck, the tests, and the check for secrets and
+# private registries. The `ci` job is a required check on main (next to `cla`).
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+# a newer push to the same branch or pull request cancels the older run
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    # the capture and verify tests use Edge (installed on Windows runners), like the release build
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm typecheck
+
+      - run: pnpm test
+
+      - name: Nothing private in the repository
+        run: pnpm check:public

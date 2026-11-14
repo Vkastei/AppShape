@@ -1,0 +1,15 @@
+{
+  "id": "f_w6prnv0r05",
+  "name": "Card",
+  "kind": "component",
+  "platform": "web",
+  "target": { "adapter": "react-vite" },
+  "viewports": [
+    { "id": "component", "width": 320 }
+  ],
+  "component": {
+    "description": "A framed group of content. Put anything inside.",
+    "props": [],
+    "kit": "card"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "irVersion": 1,
+  "name": "Acme web (fixture)",
+  "adapters": [
+    {
+      "id": "react-vite",
+      "platform": "web",
+      "root": ".",
+      "styleDialect": "tailwind-v4",
+      "devCommand": "pnpm dev",
+      "devUrl": "http://localhost:5173"
+    }
+  ],
+  "redaction": {
+    "mode": "strict",
+    "detectors": {
+      "email": true,
+      "phone": true,
+      "longDigits": true,
+      "secrets": true
+    },
+    "patterns": [],
+    "selectors": []
+  }
+}

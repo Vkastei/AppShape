@@ -1,0 +1,30 @@
+{
+  "name": "@appshape/m0-validation",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "generate": "tsx scripts/generate.ts",
+    "check": "vitest run --config checks/vitest.config.ts",
+    "run-agent": "tsx scripts/run-agent.ts",
+    "test": "vitest run --dir test",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@appshape/ir": "workspace:*",
+    "@appshape/protocol": "workspace:*",
+    "@appshape/store": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "linkedom": "^0.18.13",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router": "^7.11.0",
+    "tsx": "^4.20.0",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

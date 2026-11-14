@@ -1,0 +1,12 @@
+{
+  "id": "f_today",
+  "name": "Today",
+  "kind": "imported",
+  "platform": "web",
+  "target": { "adapter": "vite-react-router", "route": "/today", "file": "src/pages/Today.tsx" },
+  "viewports": [
+    { "id": "desktop", "width": 1280, "breakpoint": "lg" },
+    { "id": "mobile", "width": 390 }
+  ],
+  "capture": { "at": "2026-10-14T10:38:20.903Z", "url": "/today", "redaction": "strict" }
+}

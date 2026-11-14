@@ -1,0 +1,23 @@
+{
+  "id": "f_ip8btm765l",
+  "name": "Checkbox",
+  "kind": "component",
+  "platform": "web",
+  "target": { "adapter": "react-vite" },
+  "viewports": [
+    { "id": "component", "width": 220 }
+  ],
+  "component": {
+    "description": "A box to tick, with its label.",
+    "props": [
+      {
+        "name": "label",
+        "type": "string",
+        "bindings": [
+          { "nodeId": "n_heoqhm2etw", "field": "text" }
+        ]
+      }
+    ],
+    "kit": "checkbox"
+  }
+}

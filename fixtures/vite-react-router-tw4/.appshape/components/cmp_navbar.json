@@ -1,0 +1,16 @@
+{
+  "id": "cmp_navbar",
+  "name": "Navbar",
+  "kind": "project",
+  "platform": "web",
+  "source": {
+    "file": "src/components/Navbar.tsx",
+    "exportName": "Navbar"
+  },
+  "usage": {
+    "instances": 1,
+    "frames": [
+      "f_pricing"
+    ]
+  }
+}

@@ -1,0 +1,402 @@
+{
+  "specVersion": 1,
+  "generatedAt": "2026-10-05T10:00:00.000Z",
+  "changeset": {
+    "id": "cs_001",
+    "title": "Pricing refresh",
+    "description": "Make the pricing page feel more polished, highlight the Pro plan and answer common questions.",
+    "status": "ready"
+  },
+  "project": {
+    "name": "Acme web (fixture)",
+    "root": "fixtures/vite-react-router-tw4",
+    "stack": [
+      "React 19",
+      "Vite",
+      "React Router 7 (declarative routes)",
+      "Tailwind CSS v4"
+    ],
+    "adapter": "react-vite",
+    "styleDialect": "tailwind-v4"
+  },
+  "tokens": [
+    "Colors: `primary-50`, `primary-100`, `primary-600`, `primary-700` (defined in `src/index.css` under `@theme`), plus Tailwind's default palette (`gray-*`, `white`).",
+    "Radius, shadows, spacing and font sizes: Tailwind defaults (`rounded-md|lg|xl|full`, `shadow-sm|md`, `gap-*`, `text-*`).",
+    "Font: `font-sans` = Inter."
+  ],
+  "components": [
+    {
+      "name": "PricingCard",
+      "file": "src/components/PricingCard.tsx",
+      "kind": "project",
+      "usage": "Rendered once per plan from `plans` in `src/pages/Pricing.tsx`."
+    },
+    {
+      "name": "Button",
+      "file": "src/components/ui/button.tsx",
+      "kind": "ui-kit",
+      "usage": "Variants `primary` (default) and `secondary`; pass extra classes via `className`."
+    },
+    {
+      "name": "Badge",
+      "file": "src/components/ui/badge.tsx",
+      "kind": "ui-kit",
+      "usage": "Pill label; extra classes via `className`."
+    },
+    {
+      "name": "Accordion",
+      "file": "src/components/ui/accordion.tsx",
+      "kind": "ui-kit",
+      "usage": "`items: { question, answer }[]`; extra classes via `className`."
+    }
+  ],
+  "frames": [
+    {
+      "frameId": "f_pricing",
+      "name": "Pricing",
+      "kind": "imported",
+      "platform": "web",
+      "target": {
+        "adapter": "react-vite",
+        "route": "/pricing",
+        "file": "src/pages/Pricing.tsx"
+      },
+      "viewports": [
+        "desktop 1280",
+        "mobile 390"
+      ],
+      "changes": [
+        {
+          "id": "c1",
+          "opIds": [
+            "op_c1_1",
+            "op_c1_2",
+            "op_c1_3"
+          ],
+          "kind": "restyle",
+          "title": "Make the pricing cards rounder, with a stronger shadow",
+          "node": {
+            "id": "n_card_starter_root",
+            "name": "PricingCard root",
+            "path": "App shell › Pricing page › Plans grid › PricingCard (Starter)",
+            "element": "div",
+            "source": {
+              "file": "src/components/PricingCard.tsx",
+              "line": 6,
+              "col": 5,
+              "component": "PricingCard",
+              "owner": "Pricing"
+            }
+          },
+          "scope": "component",
+          "instances": {
+            "count": 3
+          },
+          "classes": {
+            "remove": [
+              "rounded-md",
+              "shadow-sm"
+            ],
+            "add": [
+              "rounded-xl",
+              "shadow-md"
+            ]
+          }
+        },
+        {
+          "id": "c2",
+          "opIds": [
+            "op_c2"
+          ],
+          "kind": "restyle",
+          "title": "Highlight the Pro plan card with a ring",
+          "node": {
+            "id": "n_card_pro_root",
+            "name": "PricingCard root",
+            "path": "App shell › Pricing page › Plans grid › PricingCard (Pro)",
+            "element": "div",
+            "source": {
+              "file": "src/components/PricingCard.tsx",
+              "line": 6,
+              "col": 5,
+              "component": "PricingCard",
+              "owner": "Pricing"
+            }
+          },
+          "scope": "instance",
+          "instances": {
+            "count": 3,
+            "which": "the card for the plan with id \"pro\" (2nd of 3)"
+          },
+          "classes": {
+            "remove": [],
+            "add": [
+              "ring-2",
+              "ring-primary-600"
+            ]
+          }
+        },
+        {
+          "id": "c3",
+          "opIds": [
+            "op_c3"
+          ],
+          "kind": "insert",
+          "title": "Add a “Most popular” badge to the Pro plan card",
+          "scope": "instance",
+          "instances": {
+            "count": 3,
+            "which": "the card for the plan with id \"pro\" (2nd of 3)"
+          },
+          "position": {
+            "parent": {
+              "id": "n_card_pro_root",
+              "name": "PricingCard root",
+              "path": "App shell › Pricing page › Plans grid › PricingCard (Pro)",
+              "element": "div",
+              "source": {
+                "file": "src/components/PricingCard.tsx",
+                "line": 6,
+                "col": 5,
+                "component": "PricingCard",
+                "owner": "Pricing"
+              }
+            },
+            "before": {
+              "id": "n_card_pro_name",
+              "name": "Plan name",
+              "path": "App shell › Pricing page › Plans grid › PricingCard (Pro) › Card",
+              "element": "h2",
+              "source": {
+                "file": "src/components/PricingCard.tsx",
+                "line": 7,
+                "col": 7,
+                "component": "PricingCard",
+                "owner": "Pricing"
+              }
+            }
+          },
+          "tree": "<Badge className=\"mb-4 self-start\">Most popular</Badge>"
+        },
+        {
+          "id": "c4",
+          "opIds": [
+            "op_c4"
+          ],
+          "kind": "retext",
+          "title": "Change the page title",
+          "node": {
+            "id": "n_title",
+            "name": "Title",
+            "path": "App shell › Pricing page › Header",
+            "element": "h1",
+            "source": {
+              "file": "src/pages/Pricing.tsx",
+              "line": 9,
+              "col": 9,
+              "component": "Pricing",
+              "owner": "AppRoutes"
+            }
+          },
+          "text": {
+            "from": "Pricing",
+            "to": "Simple pricing for every team"
+          }
+        },
+        {
+          "id": "c5",
+          "opIds": [
+            "op_c5"
+          ],
+          "kind": "insert",
+          "title": "Add an FAQ section below the plans",
+          "position": {
+            "parent": {
+              "id": "n_main",
+              "name": "Pricing page",
+              "path": "App shell",
+              "element": "main",
+              "source": {
+                "file": "src/pages/Pricing.tsx",
+                "line": 7,
+                "col": 5,
+                "component": "Pricing",
+                "owner": "AppRoutes"
+              }
+            },
+            "after": {
+              "id": "n_plans",
+              "name": "Plans grid",
+              "path": "App shell › Pricing page",
+              "element": "div",
+              "source": {
+                "file": "src/pages/Pricing.tsx",
+                "line": 12,
+                "col": 7,
+                "component": "Pricing",
+                "owner": "AppRoutes"
+              }
+            }
+          },
+          "tree": "<section className=\"mx-auto mt-20 max-w-3xl\">\n  <h2 className=\"text-2xl font-bold tracking-tight text-gray-900\">Frequently asked questions</h2>\n  <Accordion className=\"mt-6\" items={faqItems} />\n</section>\n\n// faqItems (4 entries):\n// - {\"question\":\"Can I change plans later?\",\"answer\":\"Yes. You can upgrade or downgrade at any time; the change applies from the next billing period.\"}\n// - {\"question\":\"Is there a free trial for paid plans?\",\"answer\":\"Every paid plan starts with a 14-day free trial. No credit card required.\"}\n// - {\"question\":\"Which payment methods do you accept?\",\"answer\":\"All major credit cards and SEPA direct debit.\"}\n// - {\"question\":\"Can I cancel anytime?\",\"answer\":\"Yes. Cancel in your account settings and keep access until the end of the billing period.\"}"
+        },
+        {
+          "id": "c6",
+          "opIds": [
+            "op_c6"
+          ],
+          "kind": "delete",
+          "title": "Remove the “Compare all features” link",
+          "details": "Remove the whole paragraph that wraps the link.",
+          "node": {
+            "id": "n_compare",
+            "name": "Compare link row",
+            "path": "App shell › Pricing page",
+            "element": "p",
+            "source": {
+              "file": "src/pages/Pricing.tsx",
+              "line": 17,
+              "col": 7,
+              "component": "Pricing",
+              "owner": "AppRoutes"
+            }
+          }
+        },
+        {
+          "id": "c7",
+          "opIds": [
+            "op_c7_1",
+            "op_c7_2",
+            "op_c7_3"
+          ],
+          "kind": "move",
+          "title": "Move the “Get started” button directly below the price",
+          "details": "Order inside each card becomes: name, description, price, button, features.",
+          "node": {
+            "id": "n_card_starter_cta",
+            "name": "Get started button",
+            "path": "App shell › Pricing page › Plans grid › PricingCard (Starter) › Card",
+            "element": "Button",
+            "source": {
+              "file": "src/components/PricingCard.tsx",
+              "line": 18,
+              "col": 7,
+              "component": "PricingCard",
+              "owner": "Pricing"
+            }
+          },
+          "scope": "component",
+          "instances": {
+            "count": 3
+          },
+          "position": {
+            "parent": {
+              "id": "n_card_starter_root",
+              "name": "PricingCard root",
+              "path": "App shell › Pricing page › Plans grid › PricingCard (Starter)",
+              "element": "div",
+              "source": {
+                "file": "src/components/PricingCard.tsx",
+                "line": 6,
+                "col": 5,
+                "component": "PricingCard",
+                "owner": "Pricing"
+              }
+            },
+            "after": {
+              "id": "n_card_starter_price",
+              "name": "Price",
+              "path": "App shell › Pricing page › Plans grid › PricingCard (Starter) › Card",
+              "element": "p",
+              "source": {
+                "file": "src/components/PricingCard.tsx",
+                "line": 9,
+                "col": 7,
+                "component": "PricingCard",
+                "owner": "Pricing"
+              }
+            }
+          }
+        },
+        {
+          "id": "c8",
+          "opIds": [
+            "op_c8_1",
+            "op_c8_2"
+          ],
+          "kind": "relayout",
+          "title": "Increase the gap between the pricing cards",
+          "node": {
+            "id": "n_plans",
+            "name": "Plans grid",
+            "path": "App shell › Pricing page",
+            "element": "div",
+            "source": {
+              "file": "src/pages/Pricing.tsx",
+              "line": 12,
+              "col": 7,
+              "component": "Pricing",
+              "owner": "AppRoutes"
+            }
+          },
+          "classes": {
+            "remove": [
+              "gap-6"
+            ],
+            "add": [
+              "gap-8",
+              "lg:gap-10"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "requirements": [
+    "Keep `src/data/plans.ts` as the single source of truth for plans. Which plan is highlighted (c2, c3) must come from the data, not from the array index or the plan name in JSX.",
+    "FAQ content is static for now. Put the questions in a new data file `src/data/faq.ts`.",
+    "Do not change the Navbar, the Footer or the Home page."
+  ],
+  "acceptance": [
+    {
+      "changeId": "c1",
+      "text": "All three cards use `rounded-xl` and `shadow-md` and no longer `rounded-md` / `shadow-sm`."
+    },
+    {
+      "changeId": "c2",
+      "text": "Only the Pro card has `ring-2 ring-primary-600`."
+    },
+    {
+      "changeId": "c3",
+      "text": "Only the Pro card shows a “Most popular” `Badge`, above the plan name."
+    },
+    {
+      "changeId": "c4",
+      "text": "The page `h1` reads “Simple pricing for every team”."
+    },
+    {
+      "changeId": "c5",
+      "text": "Below the plans there is an `h2` “Frequently asked questions” followed by an `Accordion` with the 4 questions."
+    },
+    {
+      "changeId": "c6",
+      "text": "There is no “Compare all features” link anymore."
+    },
+    {
+      "changeId": "c7",
+      "text": "In every card the “Get started” button comes after the price and before the feature list."
+    },
+    {
+      "changeId": "c8",
+      "text": "The plans grid uses `gap-8 lg:gap-10` (and still `md:grid-cols-3`)."
+    },
+    {
+      "text": "The app still type-checks (`pnpm --filter @appshape-fixtures/vite-react-router-tw4 typecheck`)."
+    }
+  ],
+  "hints": [
+    "Routes are declared in `src/App.tsx` with `<Routes>`/`<Route>` from `react-router` (v7, declarative mode).",
+    "Use `Link`/`NavLink` from `react-router` for internal navigation.",
+    "Tailwind CSS v4: theme tokens live in `src/index.css` under `@theme`; use their utilities (e.g. `bg-primary-600`). There is no tailwind.config.js."
+  ]
+}

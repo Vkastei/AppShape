@@ -1,0 +1,11 @@
+{
+  "id": "cmp_footer",
+  "name": "Footer",
+  "kind": "project",
+  "platform": "web",
+  "source": { "file": "src/components/Footer.tsx", "exportName": "Footer" },
+  "usage": {
+    "instances": 1,
+    "frames": ["f_pricing"]
+  }
+}

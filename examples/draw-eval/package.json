@@ -1,0 +1,28 @@
+{
+  "name": "@appshape/draw-eval",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Evaluation of AppShape's AI on drawn requests (Draw & describe, slice 6): real model runs, scored automatically.",
+  "type": "module",
+  "scripts": {
+    "eval": "tsx scripts/run.ts",
+    "test": "vitest run --dir test",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@appshape/ai": "workspace:*",
+    "@appshape/capture": "workspace:*",
+    "@appshape/codegen": "workspace:*",
+    "@appshape/dialect-tailwind": "workspace:*",
+    "@appshape/ir": "workspace:*",
+    "@appshape/kit": "workspace:*",
+    "@appshape/render": "workspace:*",
+    "@appshape/store": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "tsx": "^4.20.0",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

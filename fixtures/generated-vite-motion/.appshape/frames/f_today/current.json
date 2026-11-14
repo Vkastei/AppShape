@@ -1,0 +1,260 @@
+{
+  "id": "n_today_0",
+  "platformRaw": { "tag": "body" },
+  "origin": "imported",
+  "type": "box",
+  "children": [
+    {
+      "id": "n_today_1",
+      "platformRaw": { "tag": "div" },
+      "origin": "imported",
+      "type": "box",
+      "children": [
+        {
+          "id": "n_today_2",
+          "layout": {
+            "mode": "flex",
+            "direction": "column",
+            "gap": "$spacing.6",
+            "padding": { "top": "$spacing.6", "right": "$spacing.6", "bottom": "$spacing.6", "left": "$spacing.6" }
+          },
+          "box": { "minHeight": "100vh" },
+          "source": { "file": "src/pages/Today.tsx", "line": 6, "col": 5, "component": "Today" },
+          "platformRaw": {
+            "tag": "div",
+            "classes": ["flex", "flex-col", "gap-6", "p-6", "min-h-screen"]
+          },
+          "origin": "imported",
+          "type": "box",
+          "children": [
+            {
+              "id": "n_today_3",
+              "style": { "color": "$color.brand-600", "fontSize": "$fontSize.sm", "fontWeight": "$fontWeight.medium" },
+              "source": { "file": "src/pages/Today.tsx", "line": 7, "col": 7, "component": "Today", "owner": "Link" },
+              "platformRaw": {
+                "tag": "a",
+                "element": "Link",
+                "classes": ["text-brand-600", "text-sm", "font-medium"]
+              },
+              "origin": "imported",
+              "type": "link",
+              "href": "/",
+              "targetFrameId": "f_home",
+              "children": [
+                {
+                  "id": "n_today_4",
+                  "source": { "file": "src/pages/Today.tsx", "line": 8, "col": 9, "component": "Today" },
+                  "platformRaw": { "tag": "span" },
+                  "origin": "imported",
+                  "type": "text",
+                  "text": "← Back"
+                }
+              ]
+            },
+            {
+              "id": "n_today_5",
+              "style": { "fontSize": "$fontSize.3xl", "fontWeight": "$fontWeight.bold" },
+              "semantic": { "role": "heading", "level": 1 },
+              "source": { "file": "src/pages/Today.tsx", "line": 10, "col": 7, "component": "Today" },
+              "platformRaw": {
+                "tag": "h1",
+                "classes": ["text-3xl", "font-bold"]
+              },
+              "origin": "imported",
+              "type": "text",
+              "text": "Today"
+            },
+            {
+              "id": "n_today_6",
+              "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.4" },
+              "box": { "maxWidth": "$size.md" },
+              "source": { "file": "src/pages/Today.tsx", "line": 11, "col": 7, "component": "Today" },
+              "platformRaw": {
+                "tag": "form",
+                "classes": ["flex", "flex-col", "gap-4", "max-w-md"]
+              },
+              "origin": "imported",
+              "type": "box",
+              "children": [
+                {
+                  "id": "n_today_7",
+                  "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.1.5" },
+                  "style": { "fontSize": "$fontSize.sm", "fontWeight": "$fontWeight.medium" },
+                  "source": { "file": "src/pages/Today.tsx", "line": 12, "col": 9, "component": "Today" },
+                  "platformRaw": {
+                    "tag": "label",
+                    "classes": ["flex", "flex-col", "gap-1.5", "text-sm", "font-medium"]
+                  },
+                  "origin": "imported",
+                  "type": "box",
+                  "children": [
+                    {
+                      "id": "n_today_8",
+                      "platformRaw": { "tag": "span", "element": "#text" },
+                      "origin": "imported",
+                      "type": "text",
+                      "text": "Habit"
+                    },
+                    {
+                      "id": "n_today_9",
+                      "layout": {
+                        "padding": { "top": "$spacing.2", "right": "$spacing.3", "bottom": "$spacing.2", "left": "$spacing.3" }
+                      },
+                      "style": {
+                        "borderWidth": 1,
+                        "borderColor": "$color.gray-300",
+                        "radius": "$radius.md",
+                        "fontSize": "$fontSize.sm"
+                      },
+                      "source": { "file": "src/pages/Today.tsx", "line": 14, "col": 11, "component": "Today" },
+                      "platformRaw": {
+                        "tag": "input",
+                        "classes": ["px-3", "py-2", "border", "border-gray-300", "rounded-md", "text-sm"]
+                      },
+                      "origin": "imported",
+                      "type": "input",
+                      "inputType": "text",
+                      "placeholder": "e.g. Read 10 pages"
+                    }
+                  ]
+                },
+                {
+                  "id": "n_today_a",
+                  "layout": {
+                    "mode": "flex",
+                    "gap": "$spacing.2",
+                    "align": "center",
+                    "justify": "center",
+                    "padding": { "top": "$spacing.2", "right": "$spacing.4", "bottom": "$spacing.2", "left": "$spacing.4" }
+                  },
+                  "box": { "alignSelf": "start" },
+                  "style": {
+                    "background": "$color.brand-600",
+                    "color": "$color.white",
+                    "radius": "$radius.md",
+                    "fontSize": "$fontSize.sm",
+                    "fontWeight": "$fontWeight.medium"
+                  },
+                  "overrides": [
+                    {
+                      "when": { "state": "hover" },
+                      "style": { "background": "$color.brand-700" }
+                    }
+                  ],
+                  "source": {
+                    "file": "src/components/Button.tsx",
+                    "line": 27,
+                    "col": 5,
+                    "component": "Button",
+                    "owner": "Link"
+                  },
+                  "platformRaw": {
+                    "tag": "a",
+                    "element": "Link",
+                    "classes": ["flex", "gap-2", "items-center", "justify-center", "px-4", "py-2", "self-start", "bg-brand-600", "text-white", "rounded-md", "text-sm", "font-medium", "hover:bg-brand-700"]
+                  },
+                  "origin": "imported",
+                  "type": "link",
+                  "href": "/today",
+                  "children": [
+                    {
+                      "id": "n_today_b",
+                      "source": { "file": "src/components/Button.tsx", "line": 28, "col": 7, "component": "Button" },
+                      "platformRaw": { "tag": "span" },
+                      "origin": "imported",
+                      "type": "text",
+                      "text": "Save habit"
+                    },
+                    {
+                      "id": "n_today_c",
+                      "box": {
+                        "width": { "mode": "fixed", "value": "1em" },
+                        "height": { "mode": "fixed", "value": "1em" }
+                      },
+                      "source": {
+                        "file": "src/components/Button.tsx",
+                        "line": 30,
+                        "col": 9,
+                        "component": "Button",
+                        "owner": "Anonymous"
+                      },
+                      "platformRaw": {
+                        "tag": "svg",
+                        "element": "ArrowRight",
+                        "classes": ["lucide", "lucide-arrow-right", "size-[1em]"]
+                      },
+                      "origin": "imported",
+                      "type": "icon",
+                      "icon": "arrow-right",
+                      "set": "lucide"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "n_today_d",
+              "layout": { "mode": "flex", "gap": "$spacing.2" },
+              "style": { "color": "$color.gray-500", "fontSize": "$fontSize.sm" },
+              "overrides": [
+                {
+                  "when": { "viewport": "md" },
+                  "hidden": false
+                }
+              ],
+              "hidden": true,
+              "source": { "file": "src/pages/Today.tsx", "line": 18, "col": 7, "component": "Today" },
+              "platformRaw": {
+                "tag": "div",
+                "classes": ["gap-2", "text-gray-500", "text-sm", "hidden", "md:flex"]
+              },
+              "origin": "imported",
+              "type": "box",
+              "children": [
+                {
+                  "id": "n_today_e",
+                  "source": { "file": "src/pages/Today.tsx", "line": 19, "col": 9, "component": "Today" },
+                  "platformRaw": { "tag": "p" },
+                  "origin": "imported",
+                  "type": "text",
+                  "text": "Tip: habits stick best when they are small."
+                }
+              ]
+            },
+            {
+              "id": "n_r1f1haizfi",
+              "name": "Row",
+              "layout": { "mode": "flex", "direction": "row", "gap": "$spacing.6", "align": "start" },
+              "origin": "added",
+              "type": "box",
+              "children": [
+                {
+                  "id": "n_5r9xj57dsh",
+                  "box": {
+                    "width": { "mode": "fixed", "value": 224 }
+                  },
+                  "origin": "added",
+                  "type": "instance",
+                  "componentId": "f_wk5jb97n0i",
+                  "props": {},
+                  "children": []
+                },
+                {
+                  "id": "n_xzzfnim8p5",
+                  "box": {
+                    "width": { "mode": "fixed", "value": 224 }
+                  },
+                  "origin": "added",
+                  "type": "instance",
+                  "componentId": "f_wk5jb97n0i",
+                  "props": {},
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

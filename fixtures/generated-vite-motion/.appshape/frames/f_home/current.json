@@ -1,0 +1,798 @@
+{
+  "id": "n_home_0",
+  "platformRaw": { "tag": "body" },
+  "origin": "imported",
+  "type": "box",
+  "children": [
+    {
+      "id": "n_home_1",
+      "platformRaw": { "tag": "div" },
+      "origin": "imported",
+      "type": "box",
+      "children": [
+        {
+          "id": "n_home_2",
+          "layout": {
+            "mode": "flex",
+            "direction": "column",
+            "gap": "$spacing.12",
+            "padding": { "top": "$spacing.6", "right": "$spacing.6", "bottom": "$spacing.6", "left": "$spacing.6" }
+          },
+          "box": { "minHeight": "100vh" },
+          "style": { "background": "$color.gray-50" },
+          "overrides": [
+            {
+              "when": { "viewport": "md" },
+              "layout": {
+                "padding": { "top": "$spacing.12", "right": "$spacing.12", "bottom": "$spacing.12", "left": "$spacing.12" }
+              }
+            }
+          ],
+          "source": { "file": "src/pages/Home.tsx", "line": 13, "col": 7, "component": "Home" },
+          "platformRaw": {
+            "tag": "main",
+            "classes": ["flex", "flex-col", "gap-12", "p-6", "min-h-screen", "bg-gray-50", "md:p-12"]
+          },
+          "origin": "imported",
+          "type": "box",
+          "children": [
+            {
+              "id": "n_home_3",
+              "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.4" },
+              "box": { "maxWidth": "$size.3xl" },
+              "source": { "file": "src/pages/Home.tsx", "line": 14, "col": 9, "component": "Home" },
+              "platformRaw": {
+                "tag": "header",
+                "classes": ["flex", "flex-col", "gap-4", "max-w-3xl"]
+              },
+              "origin": "imported",
+              "type": "box",
+              "children": [
+                {
+                  "id": "n_home_4",
+                  "style": {
+                    "color": "$color.gray-900",
+                    "fontSize": "$fontSize.4xl",
+                    "fontWeight": "$fontWeight.bold",
+                    "letterSpacing": "$letterSpacing.tight"
+                  },
+                  "overrides": [
+                    {
+                      "when": { "viewport": "md" },
+                      "style": { "fontSize": "$fontSize.6xl" }
+                    }
+                  ],
+                  "semantic": { "role": "heading", "level": 1 },
+                  "source": { "file": "src/pages/Home.tsx", "line": 15, "col": 11, "component": "Home", "owner": "motion.h1" },
+                  "platformRaw": {
+                    "tag": "h1",
+                    "element": "motion.h1",
+                    "classes": ["text-gray-900", "text-4xl", "font-bold", "tracking-tight", "md:text-6xl"],
+                    "props": { "style": "opacity: 1" }
+                  },
+                  "origin": "imported",
+                  "type": "text",
+                  "text": "Build better habits"
+                },
+                {
+                  "id": "n_home_5",
+                  "style": { "color": "$color.gray-600", "fontSize": "$fontSize.lg" },
+                  "source": { "file": "src/pages/Home.tsx", "line": 16, "col": 11, "component": "Home" },
+                  "platformRaw": {
+                    "tag": "p",
+                    "classes": ["text-gray-600", "text-lg"]
+                  },
+                  "origin": "imported",
+                  "type": "text",
+                  "text": "Small steps every day. Track what matters and see your progress grow."
+                },
+                {
+                  "id": "n_home_6",
+                  "layout": { "mode": "flex", "wrap": true, "gap": "$spacing.3" },
+                  "source": { "file": "src/pages/Home.tsx", "line": 17, "col": 11, "component": "Home" },
+                  "platformRaw": {
+                    "tag": "div",
+                    "classes": ["flex", "flex-wrap", "gap-3"]
+                  },
+                  "origin": "imported",
+                  "type": "box",
+                  "children": [
+                    {
+                      "id": "n_home_7",
+                      "layout": {
+                        "mode": "flex",
+                        "gap": "$spacing.2",
+                        "align": "center",
+                        "justify": "center",
+                        "padding": { "top": "$spacing.2", "right": "$spacing.4", "bottom": "$spacing.2", "left": "$spacing.4" }
+                      },
+                      "box": { "alignSelf": "start" },
+                      "style": {
+                        "background": "$color.brand-600",
+                        "color": "$color.white",
+                        "radius": "$radius.md",
+                        "fontSize": "$fontSize.sm",
+                        "fontWeight": "$fontWeight.medium"
+                      },
+                      "overrides": [
+                        {
+                          "when": { "state": "hover" },
+                          "style": { "background": "$color.brand-700" }
+                        }
+                      ],
+                      "source": {
+                        "file": "src/components/Button.tsx",
+                        "line": 27,
+                        "col": 5,
+                        "component": "Button",
+                        "owner": "Link",
+                        "repeated": { "count": 2, "index": 0 }
+                      },
+                      "platformRaw": {
+                        "tag": "a",
+                        "element": "Link",
+                        "classes": ["flex", "gap-2", "items-center", "justify-center", "px-4", "py-2", "self-start", "bg-brand-600", "text-white", "rounded-md", "text-sm", "font-medium", "hover:bg-brand-700"]
+                      },
+                      "origin": "imported",
+                      "type": "link",
+                      "href": "/today",
+                      "targetFrameId": "f_today",
+                      "children": [
+                        {
+                          "id": "n_home_8",
+                          "source": {
+                            "file": "src/components/Button.tsx",
+                            "line": 28,
+                            "col": 7,
+                            "component": "Button",
+                            "repeated": { "count": 2, "index": 0 }
+                          },
+                          "platformRaw": { "tag": "span" },
+                          "origin": "imported",
+                          "type": "text",
+                          "text": "Start today"
+                        },
+                        {
+                          "id": "n_home_9",
+                          "box": {
+                            "width": { "mode": "fixed", "value": "1em" },
+                            "height": { "mode": "fixed", "value": "1em" }
+                          },
+                          "source": {
+                            "file": "src/components/Button.tsx",
+                            "line": 30,
+                            "col": 9,
+                            "component": "Button",
+                            "owner": "Anonymous"
+                          },
+                          "platformRaw": {
+                            "tag": "svg",
+                            "element": "ArrowRight",
+                            "classes": ["lucide", "lucide-arrow-right", "size-[1em]"]
+                          },
+                          "origin": "imported",
+                          "type": "icon",
+                          "icon": "arrow-right",
+                          "set": "lucide"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "n_home_a",
+                      "layout": {
+                        "mode": "flex",
+                        "gap": "$spacing.2",
+                        "align": "center",
+                        "justify": "center",
+                        "padding": { "top": "$spacing.2", "right": "$spacing.4", "bottom": "$spacing.2", "left": "$spacing.4" }
+                      },
+                      "box": { "alignSelf": "start" },
+                      "style": {
+                        "background": "$color.white",
+                        "color": "$color.gray-900",
+                        "borderWidth": 1,
+                        "borderColor": "$color.gray-300",
+                        "radius": "$radius.md",
+                        "fontSize": "$fontSize.sm",
+                        "fontWeight": "$fontWeight.medium"
+                      },
+                      "overrides": [
+                        {
+                          "when": { "state": "hover" },
+                          "style": { "background": "$color.gray-50" }
+                        }
+                      ],
+                      "source": {
+                        "file": "src/components/Button.tsx",
+                        "line": 27,
+                        "col": 5,
+                        "component": "Button",
+                        "owner": "Link",
+                        "repeated": { "count": 2, "index": 1 }
+                      },
+                      "platformRaw": {
+                        "tag": "a",
+                        "element": "Link",
+                        "classes": ["flex", "gap-2", "items-center", "justify-center", "px-4", "py-2", "self-start", "rounded-md", "text-sm", "font-medium", "bg-white", "text-gray-900", "border", "border-gray-300", "hover:bg-gray-50"]
+                      },
+                      "origin": "imported",
+                      "type": "link",
+                      "href": "/",
+                      "children": [
+                        {
+                          "id": "n_home_b",
+                          "source": {
+                            "file": "src/components/Button.tsx",
+                            "line": 28,
+                            "col": 7,
+                            "component": "Button",
+                            "repeated": { "count": 2, "index": 1 }
+                          },
+                          "platformRaw": { "tag": "span" },
+                          "origin": "imported",
+                          "type": "text",
+                          "text": "Learn more"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "n_home_c",
+              "layout": { "mode": "grid", "gap": "$spacing.6", "columns": 1 },
+              "overrides": [
+                {
+                  "when": { "viewport": "md" },
+                  "layout": { "columns": 3 }
+                }
+              ],
+              "source": { "file": "src/pages/Home.tsx", "line": 22, "col": 9, "component": "Home", "owner": "motion.div" },
+              "platformRaw": {
+                "tag": "div",
+                "element": "motion.div",
+                "classes": ["grid", "grid-cols-1", "gap-6", "md:grid-cols-3"]
+              },
+              "origin": "imported",
+              "type": "box",
+              "children": [
+                {
+                  "id": "n_home_d",
+                  "layout": {
+                    "mode": "flex",
+                    "direction": "column",
+                    "gap": "$spacing.3",
+                    "align": "start",
+                    "padding": { "top": "$spacing.6", "right": "$spacing.6", "bottom": "$spacing.6", "left": "$spacing.6" }
+                  },
+                  "style": {
+                    "background": "$color.white",
+                    "borderWidth": 1,
+                    "borderColor": "$color.gray-200",
+                    "radius": "$radius.xl",
+                    "shadow": "$shadow.sm",
+                    "transition": { "property": "shadow", "duration": 500, "easing": "in" },
+                    "motion": { "preset": "slide-up", "trigger": "scroll", "easing": "in" }
+                  },
+                  "source": {
+                    "file": "src/components/Card.tsx",
+                    "line": 16,
+                    "col": 5,
+                    "component": "Card",
+                    "owner": "motion.div",
+                    "repeated": { "count": 3, "index": 0 }
+                  },
+                  "platformRaw": {
+                    "tag": "div",
+                    "element": "motion.div",
+                    "classes": ["flex", "flex-col", "gap-3", "p-6", "bg-white", "border", "border-gray-200", "rounded-xl", "shadow-sm"],
+                    "props": { "style": "opacity: 1; transform: none" }
+                  },
+                  "origin": "imported",
+                  "type": "box",
+                  "children": [
+                    {
+                      "id": "n_home_e",
+                      "style": { "fontSize": "$fontSize.lg", "fontWeight": "$fontWeight.semibold" },
+                      "semantic": { "role": "heading", "level": 3 },
+                      "source": {
+                        "file": "src/components/Card.tsx",
+                        "line": 17,
+                        "col": 7,
+                        "component": "Card",
+                        "repeated": { "count": 3, "index": 0 }
+                      },
+                      "platformRaw": {
+                        "tag": "h3",
+                        "classes": ["text-lg", "font-semibold"]
+                      },
+                      "origin": "imported",
+                      "type": "text",
+                      "text": "Daily check-ins"
+                    },
+                    {
+                      "id": "n_home_f",
+                      "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.2" },
+                      "source": {
+                        "file": "src/components/Card.tsx",
+                        "line": 18,
+                        "col": 7,
+                        "component": "Card",
+                        "repeated": { "count": 3, "index": 0 }
+                      },
+                      "platformRaw": {
+                        "tag": "div",
+                        "classes": ["flex", "flex-col", "gap-2"]
+                      },
+                      "origin": "imported",
+                      "type": "box",
+                      "children": [
+                        {
+                          "id": "n_home_g",
+                          "style": { "color": "$color.gray-600", "fontSize": "$fontSize.sm" },
+                          "source": {
+                            "file": "src/components/Card.tsx",
+                            "line": 21,
+                            "col": 13,
+                            "component": "Card",
+                            "repeated": { "count": 2, "index": 0 }
+                          },
+                          "platformRaw": {
+                            "tag": "p",
+                            "classes": ["text-gray-600", "text-sm"]
+                          },
+                          "origin": "imported",
+                          "type": "text",
+                          "text": "Supporting text for this card."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "n_home_h",
+                  "layout": {
+                    "mode": "flex",
+                    "direction": "column",
+                    "gap": "$spacing.3",
+                    "align": "start",
+                    "padding": { "top": "$spacing.6", "right": "$spacing.6", "bottom": "$spacing.6", "left": "$spacing.6" }
+                  },
+                  "style": {
+                    "background": "$color.white",
+                    "borderWidth": 1,
+                    "borderColor": "$color.gray-200",
+                    "radius": "$radius.xl",
+                    "shadow": "$shadow.sm",
+                    "transition": { "property": "shadow", "duration": 500, "easing": "in" },
+                    "motion": { "preset": "slide-up", "trigger": "scroll", "easing": "in" }
+                  },
+                  "source": {
+                    "file": "src/components/Card.tsx",
+                    "line": 16,
+                    "col": 5,
+                    "component": "Card",
+                    "owner": "motion.div",
+                    "repeated": { "count": 3, "index": 1 }
+                  },
+                  "platformRaw": {
+                    "tag": "div",
+                    "element": "motion.div",
+                    "classes": ["flex", "flex-col", "gap-3", "p-6", "bg-white", "border", "border-gray-200", "rounded-xl", "shadow-sm"],
+                    "props": { "style": "opacity: 1; transform: none" }
+                  },
+                  "origin": "imported",
+                  "type": "box",
+                  "children": [
+                    {
+                      "id": "n_home_i",
+                      "style": { "fontSize": "$fontSize.lg", "fontWeight": "$fontWeight.semibold" },
+                      "semantic": { "role": "heading", "level": 3 },
+                      "source": {
+                        "file": "src/components/Card.tsx",
+                        "line": 17,
+                        "col": 7,
+                        "component": "Card",
+                        "repeated": { "count": 3, "index": 1 }
+                      },
+                      "platformRaw": {
+                        "tag": "h3",
+                        "classes": ["text-lg", "font-semibold"]
+                      },
+                      "origin": "imported",
+                      "type": "text",
+                      "text": "Streaks"
+                    },
+                    {
+                      "id": "n_home_j",
+                      "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.2" },
+                      "source": {
+                        "file": "src/components/Card.tsx",
+                        "line": 18,
+                        "col": 7,
+                        "component": "Card",
+                        "repeated": { "count": 3, "index": 1 }
+                      },
+                      "platformRaw": {
+                        "tag": "div",
+                        "classes": ["flex", "flex-col", "gap-2"]
+                      },
+                      "origin": "imported",
+                      "type": "box",
+                      "children": [
+                        {
+                          "id": "n_home_k",
+                          "style": { "color": "$color.gray-600", "fontSize": "$fontSize.sm" },
+                          "source": { "file": "src/pages/Home.tsx", "line": 25, "col": 13, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "p",
+                            "classes": ["text-gray-600", "text-sm"]
+                          },
+                          "origin": "imported",
+                          "type": "text",
+                          "text": "Keep the chain going."
+                        },
+                        {
+                          "id": "n_home_l",
+                          "box": {
+                            "width": { "mode": "fill" }
+                          },
+                          "style": { "radius": "$radius.lg" },
+                          "source": { "file": "src/pages/Home.tsx", "line": 26, "col": 13, "component": "Home" },
+                          "platformRaw": {
+                            "tag": "img",
+                            "classes": ["w-full", "rounded-lg", "object-cover"]
+                          },
+                          "origin": "imported",
+                          "type": "image",
+                          "src": "/images/11f19534882bbecc.svg",
+                          "alt": "Streak chart",
+                          "fit": "cover"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "n_home_m",
+                  "layout": {
+                    "mode": "flex",
+                    "direction": "column",
+                    "gap": "$spacing.3",
+                    "align": "start",
+                    "padding": { "top": "$spacing.6", "right": "$spacing.6", "bottom": "$spacing.6", "left": "$spacing.6" }
+                  },
+                  "style": {
+                    "background": "$color.white",
+                    "borderWidth": 1,
+                    "borderColor": "$color.gray-200",
+                    "radius": "$radius.xl",
+                    "shadow": "$shadow.sm",
+                    "transition": { "property": "shadow", "duration": 500, "easing": "in" },
+                    "motion": { "preset": "slide-up", "trigger": "scroll", "easing": "in" }
+                  },
+                  "source": {
+                    "file": "src/components/Card.tsx",
+                    "line": 16,
+                    "col": 5,
+                    "component": "Card",
+                    "owner": "motion.div",
+                    "repeated": { "count": 3, "index": 2 }
+                  },
+                  "platformRaw": {
+                    "tag": "div",
+                    "element": "motion.div",
+                    "classes": ["flex", "flex-col", "gap-3", "p-6", "bg-white", "border", "border-gray-200", "rounded-xl", "shadow-sm"],
+                    "props": { "style": "opacity: 1; transform: none" }
+                  },
+                  "origin": "imported",
+                  "type": "box",
+                  "children": [
+                    {
+                      "id": "n_home_n",
+                      "style": { "fontSize": "$fontSize.lg", "fontWeight": "$fontWeight.semibold" },
+                      "semantic": { "role": "heading", "level": 3 },
+                      "source": {
+                        "file": "src/components/Card.tsx",
+                        "line": 17,
+                        "col": 7,
+                        "component": "Card",
+                        "repeated": { "count": 3, "index": 2 }
+                      },
+                      "platformRaw": {
+                        "tag": "h3",
+                        "classes": ["text-lg", "font-semibold"]
+                      },
+                      "origin": "imported",
+                      "type": "text",
+                      "text": "Insights"
+                    },
+                    {
+                      "id": "n_home_o",
+                      "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.2" },
+                      "source": {
+                        "file": "src/components/Card.tsx",
+                        "line": 18,
+                        "col": 7,
+                        "component": "Card",
+                        "repeated": { "count": 3, "index": 2 }
+                      },
+                      "platformRaw": {
+                        "tag": "div",
+                        "classes": ["flex", "flex-col", "gap-2"]
+                      },
+                      "origin": "imported",
+                      "type": "box",
+                      "children": [
+                        {
+                          "id": "n_home_p",
+                          "style": { "color": "$color.gray-600", "fontSize": "$fontSize.sm" },
+                          "source": {
+                            "file": "src/components/Card.tsx",
+                            "line": 21,
+                            "col": 13,
+                            "component": "Card",
+                            "repeated": { "count": 2, "index": 1 }
+                          },
+                          "platformRaw": {
+                            "tag": "p",
+                            "classes": ["text-gray-600", "text-sm"]
+                          },
+                          "origin": "imported",
+                          "type": "text",
+                          "text": "Supporting text for this card."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "n_a28qx8oa9e",
+      "name": "Contact",
+      "layout": {
+        "mode": "flex",
+        "direction": "column",
+        "align": "center",
+        "padding": {
+          "top": "$spacing.section",
+          "right": "$spacing.gutter",
+          "bottom": "$spacing.section",
+          "left": "$spacing.gutter"
+        }
+      },
+      "style": {},
+      "overrides": [
+        {
+          "when": { "viewport": "md" },
+          "layout": {
+            "padding": {
+              "top": "$spacing.section-lg",
+              "right": "$spacing.gutter",
+              "bottom": "$spacing.section-lg",
+              "left": "$spacing.gutter"
+            }
+          }
+        }
+      ],
+      "semantic": { "role": "section" },
+      "origin": "added",
+      "type": "box",
+      "children": [
+        {
+          "id": "n_w9z3njhxq8",
+          "name": "Content",
+          "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.12" },
+          "box": {
+            "width": { "mode": "fill" },
+            "maxWidth": "$size.content"
+          },
+          "origin": "added",
+          "type": "box",
+          "children": [
+            {
+              "id": "n_lzzuoa0jvx",
+              "layout": { "mode": "grid", "gap": "$spacing.12", "columns": 1 },
+              "overrides": [
+                {
+                  "when": { "viewport": "lg" },
+                  "layout": { "columns": 2 }
+                }
+              ],
+              "origin": "added",
+              "type": "box",
+              "children": [
+                {
+                  "id": "n_vzqdh3knbu",
+                  "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.6" },
+                  "origin": "added",
+                  "type": "box",
+                  "children": [
+                    {
+                      "id": "n_dvwayx9de6",
+                      "style": {
+                        "color": "$color.accent-foreground",
+                        "fontSize": "$fontSize.sm",
+                        "fontWeight": "$fontWeight.semibold"
+                      },
+                      "origin": "added",
+                      "type": "text",
+                      "text": "Contact"
+                    },
+                    {
+                      "id": "n_7vd9ez4ep0",
+                      "style": { "textStyle": "h2" },
+                      "semantic": { "role": "heading", "level": 2 },
+                      "origin": "added",
+                      "type": "text",
+                      "text": "Let's talk"
+                    },
+                    {
+                      "id": "n_k9oe3rplm2",
+                      "style": {
+                        "color": "$color.muted-foreground",
+                        "fontSize": "$fontSize.lg",
+                        "lineHeight": "$lineHeight.relaxed"
+                      },
+                      "origin": "added",
+                      "type": "text",
+                      "text": "Questions, ideas or a demo? We answer within one working day."
+                    },
+                    {
+                      "id": "n_5qyuu3f9hq",
+                      "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.4" },
+                      "origin": "added",
+                      "type": "box",
+                      "children": [
+                        {
+                          "id": "n_ytrfmqeubd",
+                          "layout": { "mode": "flex", "direction": "row", "gap": "$spacing.3", "align": "center" },
+                          "origin": "added",
+                          "type": "box",
+                          "children": [
+                            {
+                              "id": "n_qhd0rex7d8",
+                              "style": { "color": "$color.primary" },
+                              "origin": "added",
+                              "type": "icon",
+                              "icon": "mail",
+                              "set": "lucide"
+                            },
+                            { "id": "n_y8ov5n41bn", "origin": "added", "type": "text", "text": "hello@acme.com" }
+                          ]
+                        },
+                        {
+                          "id": "n_2011gp5jre",
+                          "layout": { "mode": "flex", "direction": "row", "gap": "$spacing.3", "align": "center" },
+                          "origin": "added",
+                          "type": "box",
+                          "children": [
+                            {
+                              "id": "n_y2rqgt0l6s",
+                              "style": { "color": "$color.primary" },
+                              "origin": "added",
+                              "type": "icon",
+                              "icon": "phone",
+                              "set": "lucide"
+                            },
+                            { "id": "n_23gaxqz748", "origin": "added", "type": "text", "text": "+49 30 1234 5678" }
+                          ]
+                        },
+                        {
+                          "id": "n_twvyval8ec",
+                          "layout": { "mode": "flex", "direction": "row", "gap": "$spacing.3", "align": "center" },
+                          "origin": "added",
+                          "type": "box",
+                          "children": [
+                            {
+                              "id": "n_8tsj33rddr",
+                              "style": { "color": "$color.primary" },
+                              "origin": "added",
+                              "type": "icon",
+                              "icon": "map-pin",
+                              "set": "lucide"
+                            },
+                            { "id": "n_jirev45toj", "origin": "added", "type": "text", "text": "Torstraße 1, Berlin" }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "n_1ije57ydrd",
+                  "origin": "added",
+                  "type": "instance",
+                  "componentId": "f_w6prnv0r05",
+                  "props": {},
+                  "children": [
+                    {
+                      "id": "n_p0f5ub3m5c",
+                      "layout": { "mode": "flex", "direction": "column", "gap": "$spacing.4" },
+                      "origin": "added",
+                      "type": "slot",
+                      "slotName": "content",
+                      "children": [
+                        {
+                          "id": "n_9cu8o2vosl",
+                          "layout": { "mode": "grid", "gap": "$spacing.4", "columns": 1 },
+                          "overrides": [
+                            {
+                              "when": { "viewport": "md" },
+                              "layout": { "columns": 2 }
+                            }
+                          ],
+                          "origin": "added",
+                          "type": "box",
+                          "children": [
+                            {
+                              "id": "n_oiuw0w6oye",
+                              "origin": "added",
+                              "type": "instance",
+                              "componentId": "f_wk5jb97n0i",
+                              "props": { "label": "First name", "placeholder": "Jane" },
+                              "children": []
+                            },
+                            {
+                              "id": "n_pblxzb8uub",
+                              "origin": "added",
+                              "type": "instance",
+                              "componentId": "f_wk5jb97n0i",
+                              "props": { "label": "Last name", "placeholder": "Doe" },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": "n_ivcnb6gzta",
+                          "origin": "added",
+                          "type": "instance",
+                          "componentId": "f_wk5jb97n0i",
+                          "props": { "label": "Email", "placeholder": "jane@company.com" },
+                          "children": []
+                        },
+                        {
+                          "id": "n_xnxr7o47rs",
+                          "origin": "added",
+                          "type": "instance",
+                          "componentId": "f_h2pe14zaa9",
+                          "props": { "label": "Message", "placeholder": "How can we help?" },
+                          "children": []
+                        },
+                        {
+                          "id": "n_8b6a9jewcu",
+                          "origin": "added",
+                          "type": "instance",
+                          "componentId": "f_ip8btm765l",
+                          "props": { "label": "I agree to the privacy policy" },
+                          "children": []
+                        },
+                        {
+                          "id": "n_xmy2fh3r84",
+                          "box": {
+                            "width": { "mode": "fill" }
+                          },
+                          "origin": "added",
+                          "type": "instance",
+                          "componentId": "f_hmqtv7a91j",
+                          "props": { "label": "Send message" },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
