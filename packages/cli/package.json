@@ -20,10 +20,10 @@
     "@appshape/protocol": "workspace:*",
     "@appshape/server": "workspace:*",
     "@appshape/store": "workspace:*",
-    "@modelcontextprotocol/sdk": "^1.32.1",
-    "lucide-static": "^1.52.0",
-    "playwright-core": "^1.63.0",
-    "tailwindcss": "^4.3.3",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "lucide-static": "^1.72.0",
+    "playwright-core": "^1.65.0",
+    "tailwindcss": "^4.3.5",
     "zod": "catalog:"
   },
   "devDependencies": {
