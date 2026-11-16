@@ -22,11 +22,11 @@ jobs:
         os: [windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: pnpm
@@ -73,7 +73,7 @@ jobs:
       # (`gh attestation verify AppShape-Setup-<version>.exe --repo <owner>/<repo>`); public repositories only
       - name: Build provenance
         if: startsWith(github.ref, 'refs/tags/v') && github.event.repository.visibility == 'public'
-        uses: actions/attest-build-provenance@v2
+        uses: actions/attest-build-provenance@v4
         with:
           subject-path: packages/desktop/release/*.exe
 
@@ -84,7 +84,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: appshape-${{ env.APPSHAPE_VERSION }}-${{ matrix.os }}
           path: |
