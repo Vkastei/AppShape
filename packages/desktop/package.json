@@ -21,9 +21,9 @@
   "devDependencies": {
     "@appshape/cli": "workspace:*",
     "@types/node": "catalog:",
-    "electron": "^44.5.1",
-    "electron-builder": "^26.15.3",
-    "electron-updater": "^6.8.9",
+    "electron": "^44.11.3",
+    "electron-builder": "^26.18.0",
+    "electron-updater": "^6.8.11",
     "esbuild": "^0.28.2",
     "playwright-core": "^1.63.0",
     "typescript": "catalog:",
